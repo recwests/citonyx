@@ -24,30 +24,6 @@
     "updatedAt": "2026-06-26"
   },
   {
-    "provider": "Vast.ai",
-    "providerSlug": "vast",
-    "gpu": "H100 80GB",
-    "gpuSlug": "h100-80gb",
-    "pricePerHourUsd": 1.87,
-    "billing": "on-demand",
-    "region": null,
-    "affiliateUrl": "https://vast.ai/",
-    "sourceUrl": "https://vast.ai/pricing",
-    "updatedAt": "2026-06-26"
-  },
-  {
-    "provider": "Vast.ai",
-    "providerSlug": "vast",
-    "gpu": "RTX 4090",
-    "gpuSlug": "rtx-4090",
-    "pricePerHourUsd": 0.31,
-    "billing": "on-demand",
-    "region": null,
-    "affiliateUrl": "https://vast.ai/",
-    "sourceUrl": "https://vast.ai/pricing",
-    "updatedAt": "2026-06-26"
-  },
-  {
     "provider": "Lambda",
     "providerSlug": "lambda",
     "gpu": "H100 80GB",
@@ -69,6 +45,30 @@
     "region": null,
     "affiliateUrl": "https://lambdalabs.com/",
     "sourceUrl": "https://lambdalabs.com/service/gpu-cloud",
+    "updatedAt": "2026-06-26"
+  },
+  {
+    "provider": "Vast.ai",
+    "providerSlug": "vast",
+    "gpu": "RTX 4090",
+    "gpuSlug": "rtx-4090",
+    "pricePerHourUsd": 0.3,
+    "billing": "on-demand",
+    "region": null,
+    "affiliateUrl": "https://vast.ai/",
+    "sourceUrl": "https://vast.ai/",
+    "updatedAt": "2026-06-26"
+  },
+  {
+    "provider": "Vast.ai",
+    "providerSlug": "vast",
+    "gpu": "H100 80GB",
+    "gpuSlug": "h100-80gb",
+    "pricePerHourUsd": 1.92,
+    "billing": "on-demand",
+    "region": null,
+    "affiliateUrl": "https://vast.ai/",
+    "sourceUrl": "https://vast.ai/",
     "updatedAt": "2026-06-26"
   }
 ]
