@@ -1,0 +1,5 @@
+# CiteLab measurement runner — Gemini grounding channel.
+# Install into a venv, or point PYTHONPATH at a prebuilt lib dir.
+google-genai
+pyyaml
+jsonschema  # optional: runner falls back to a minimal validator if absent
