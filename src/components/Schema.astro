@@ -20,6 +20,17 @@ type OrganizationSchema = {
 };
 type LearningResourceSchema = { type: 'LearningResource'; headline: string; description: string; provider: string };
 type ItemListSchema = { type: 'ItemList'; items: { name: string; url: string }[] };
+type DatasetSchema = {
+  type: 'Dataset';
+  name: string;
+  description: string;
+  url: string;
+  creator: { name: string; url?: string };
+  dateModified: string;
+  keywords: string[];
+  license?: string;
+  distribution: { encodingFormat: string; contentUrl: string }[];
+};
 
 type Props =
   | ArticleSchema
@@ -28,7 +39,8 @@ type Props =
   | WebSiteSchema
   | OrganizationSchema
   | LearningResourceSchema
-  | ItemListSchema;
+  | ItemListSchema
+  | DatasetSchema;
 
 function buildSchema(schema: Props) {
   const base = { '@context': 'https://schema.org' };
@@ -100,6 +112,27 @@ function buildSchema(schema: Props) {
           position: i + 1,
           name: item.name,
           url: item.url,
+        })),
+      };
+    case 'Dataset':
+      return {
+        ...base,
+        '@type': 'Dataset',
+        name: schema.name,
+        description: schema.description,
+        url: schema.url,
+        creator: {
+          '@type': 'Organization',
+          name: schema.creator.name,
+          ...(schema.creator.url ? { url: schema.creator.url } : {}),
+        },
+        dateModified: schema.dateModified,
+        keywords: schema.keywords,
+        ...(schema.license ? { license: schema.license } : {}),
+        distribution: schema.distribution.map((d) => ({
+          '@type': 'DataDownload',
+          encodingFormat: d.encodingFormat,
+          contentUrl: d.contentUrl,
         })),
       };
     default:

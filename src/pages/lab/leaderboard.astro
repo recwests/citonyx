@@ -1,0 +1,200 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Schema from '~/components/Schema.astro';
+import { SITE } from 'astrowind:config';
+import { getLeaderboardData, formatRate, platformLabel } from '~/utils/leaderboard';
+
+export const prerender = true;
+
+const data = getLeaderboardData();
+
+const TOP_N = 25;
+const topCompetitors = data.topCompetitors.slice(0, TOP_N);
+
+const pageUrl = new URL('/lab/leaderboard', SITE.site).href;
+const jsonUrl = new URL('/lab/citonyx-dataset.json', SITE.site).href;
+const csvUrl = new URL('/lab/citonyx-dataset.csv', SITE.site).href;
+
+const lastUpdatedHuman = data.lastUpdated
+  ? new Date(`${data.lastUpdated}T00:00:00Z`).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC',
+    })
+  : 'n/a';
+
+const platformsHuman = data.platformsCovered.map(platformLabel).join(', ') || 'none yet';
+
+// Answer-first capsule (real numbers; 0% is stated plainly).
+const capsule =
+  `As of ${lastUpdatedHuman}, Citonyx is cited in ${formatRate(data.overallRate)} of AI answers across ` +
+  `${data.distinctPrompts} test prompts (${data.totalRuns} runs, ${platformsHuman}). ` +
+  `That is the honest baseline — the table below shows which domains AI answer engines currently cite ` +
+  `for generative-engine-optimization questions, so you can see who is winning the answer box today.`;
+
+const metadata = {
+  title: 'AI Citation Leaderboard',
+  description: `Which domains AI answer engines cite for GEO questions. As of ${lastUpdatedHuman}, Citonyx's citation rate is ${formatRate(
+    data.overallRate
+  )} across ${data.totalRuns} measured runs.`,
+};
+
+const cards = [
+  {
+    label: 'Overall citation rate',
+    value: formatRate(data.overallRate),
+    sub: `${data.citedRuns}/${data.totalRuns} runs`,
+  },
+  ...data.platforms.map((p) => ({
+    label: `${platformLabel(p.platform)} citation rate`,
+    value: formatRate(p.rate),
+    sub: `${p.cited}/${p.total} runs`,
+  })),
+  { label: 'Test prompts', value: String(data.distinctPrompts), sub: 'fixed citation panel' },
+  { label: 'Total runs', value: String(data.totalRuns), sub: `N≥3 per prompt` },
+  { label: 'Competitor domains', value: String(data.distinctCompetitorDomains), sub: 'distinct, cited by AI' },
+  { label: 'Last updated', value: lastUpdatedHuman, sub: 'grows as runs accrue' },
+];
+---
+
+<Layout metadata={metadata}>
+  <Schema
+    type="Dataset"
+    name="Citonyx AI Citation Leaderboard dataset"
+    description="Per-run measurements of whether AI answer engines cite Citonyx and which competitor domains they cite for generative-engine-optimization (GEO) questions."
+    url={pageUrl}
+    creator={{ name: SITE.name, url: SITE.site }}
+    dateModified={data.lastUpdated ?? new Date().toISOString().slice(0, 10)}
+    keywords={['generative engine optimization', 'GEO', 'AI citations', 'answer engine optimization', 'LLM SEO']}
+    license="https://creativecommons.org/licenses/by/4.0/"
+    distribution={[
+      { encodingFormat: 'application/json', contentUrl: jsonUrl },
+      { encodingFormat: 'text/csv', contentUrl: csvUrl },
+    ]}
+  />
+  <Schema
+    type="BreadcrumbList"
+    items={[
+      { name: 'Home', href: new URL('/', SITE.site).href },
+      { name: 'AI Citation Leaderboard', href: pageUrl },
+    ]}
+  />
+
+  <WidgetWrapper containerClass="max-w-5xl mx-auto">
+    <div class="mb-8 max-w-3xl">
+      <p class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">Lab</p>
+      <h1 class="font-bold font-heading text-heading text-4xl md:text-5xl leading-tighter tracking-tighter mt-2">
+        AI Citation Leaderboard
+      </h1>
+      <p class="mt-5 text-lg text-muted leading-relaxed" data-answer-capsule>{capsule}</p>
+      <p class="mt-3 text-sm text-muted">
+        Last updated <time datetime={data.lastUpdated ?? ''}>{lastUpdatedHuman}</time> · Maintained by {SITE.name}
+      </p>
+    </div>
+
+    <!-- Headline metric cards -->
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-12">
+      {
+        cards.map((c) => (
+          <div class="p-5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white/40 dark:bg-slate-800/40">
+            <div class="text-sm text-muted">{c.label}</div>
+            <div class="text-3xl font-bold mt-1 text-heading">{c.value}</div>
+            <div class="text-xs text-muted mt-1">{c.sub}</div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Competitor citation table -->
+    <h2 class="text-2xl font-bold mb-2 text-heading">Who AI engines cite for GEO topics</h2>
+    <p class="text-sm text-muted mb-5 max-w-3xl">
+      Top {topCompetitors.length} domains AI answer engines cited across our fixed prompt set, by number of citations.
+    </p>
+    {
+      topCompetitors.length > 0 ? (
+        <div class="overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-700 mb-12">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50 dark:bg-slate-800">
+              <tr>
+                <th class="px-4 py-3 font-semibold w-16">#</th>
+                <th class="px-4 py-3 font-semibold">Domain</th>
+                <th class="px-4 py-3 font-semibold text-right">Citations</th>
+              </tr>
+            </thead>
+            <tbody>
+              {topCompetitors.map((c, i) => (
+                <tr class="border-t border-slate-100 dark:border-slate-700/60">
+                  <td class="px-4 py-2.5 text-muted tabular-nums">{i + 1}</td>
+                  <td class="px-4 py-2.5 font-medium">{c.domain}</td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">{c.count}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p class="text-muted mb-12">No competitor domains recorded yet.</p>
+      )
+    }
+
+    <!-- Downloads -->
+    <h2 class="text-2xl font-bold mb-2 text-heading">Download the data</h2>
+    <p class="text-sm text-muted mb-4 max-w-3xl">
+      The full run records ({data.totalRuns} rows) are public. CC BY 4.0 — attribute {SITE.name}.
+    </p>
+    <div class="flex flex-wrap gap-3 mb-12">
+      <a
+        href="/lab/citonyx-dataset.json"
+        class="inline-flex items-center px-4 py-2 rounded-md border border-slate-300 dark:border-slate-600 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+        download
+      >
+        Download JSON
+      </a>
+      <a
+        href="/lab/citonyx-dataset.csv"
+        class="inline-flex items-center px-4 py-2 rounded-md border border-slate-300 dark:border-slate-600 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+        download
+      >
+        Download CSV
+      </a>
+    </div>
+
+    <!-- Methodology -->
+    <h2 class="text-2xl font-bold mb-4 text-heading">Methodology</h2>
+    <div class="prose dark:prose-invert max-w-3xl text-muted">
+      <ul>
+        <li>
+          <strong>Engines.</strong> We query AI answer engines ({
+            platformsHuman || 'ChatGPT, Perplexity, Gemini, Google AI Overviews, Bing Copilot'
+          }) and record whether {SITE.name} appears in the answer as a link, quote, or brand mention.
+        </li>
+        <li>
+          <strong>Repeats.</strong> Each prompt/engine pair is run <strong>N&nbsp;&ge;&nbsp;3</strong> times to account for
+          model non-determinism; every individual run is stored as its own record.
+        </li>
+        <li>
+          <strong>ChatGPT channel.</strong> Observed via an anonymous, search-forced backend channel (no signed-in account,
+          search explicitly triggered) so results reflect public, logged-out behavior.
+        </li>
+        <li>
+          <strong>Gemini.</strong> Queried through grounded API responses; Perplexity through its Sonar API. The query method
+          (api / reverse / manual) is recorded per run because the same platform can answer differently per channel.
+        </li>
+        <li>
+          <strong>No UI scraping.</strong> We do not scrape the ChatGPT or Perplexity web UIs beyond permitted/anonymous access.
+          Answers are not replayable, so we preserve short verbatim excerpts as evidence.
+        </li>
+        <li>
+          <strong>Fixed prompt set.</strong> The citation panel is a fixed set of {data.distinctPrompts} GEO-related prompts.
+          It is intentionally narrow, so these numbers describe that prompt set — not all of AI search.
+        </li>
+        <li>
+          <strong>Updates.</strong> Data grows as runs accrue. Current snapshot: {data.totalRuns} runs over
+          {data.byDate.length} measurement {data.byDate.length === 1 ? 'date' : 'dates'} (latest {lastUpdatedHuman}).
+        </li>
+      </ul>
+    </div>
+  </WidgetWrapper>
+</Layout>

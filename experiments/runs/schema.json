@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "CiteLab Measurement Run Record",
+  "title": "Citonyx Measurement Run Record",
   "description": "One observation of whether this site was cited by a single AI answer engine for a single prompt on a single run. Multiple records (N>=3 per prompt/platform) are collected per date file. See ../README.md for the recording protocol.",
   "type": "object",
   "additionalProperties": false,

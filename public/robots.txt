@@ -19,4 +19,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://citelab-eks.pages.dev/sitemap-index.xml
+Sitemap: https://citonyx.pages.dev/sitemap-index.xml

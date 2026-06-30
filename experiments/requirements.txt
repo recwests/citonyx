@@ -1,4 +1,4 @@
-# CiteLab measurement runner — Gemini grounding channel.
+# Citonyx measurement runner — Gemini grounding channel.
 # Install into a venv, or point PYTHONPATH at a prebuilt lib dir.
 google-genai
 pyyaml

@@ -1,13 +1,17 @@
 import { getPermalink, getAsset } from './utils/permalinks';
 
-// NOTE: GitHub links target https://github.com/recwests/citelab — they go live once the repo is renamed/published under that account.
-const GITHUB_URL = 'https://github.com/recwests/citelab';
+// NOTE: GitHub links target https://github.com/recwests/citonyx — they go live once the repo is renamed/published under that account.
+const GITHUB_URL = 'https://github.com/recwests/citonyx';
 
 export const headerData = {
   links: [
     {
       text: 'Home',
       href: getPermalink('/'),
+    },
+    {
+      text: 'Leaderboard',
+      href: getPermalink('/lab/leaderboard'),
     },
     {
       text: 'GEO Practices',
@@ -33,6 +37,14 @@ export const footerData = {
       ],
     },
     {
+      title: 'Lab',
+      links: [
+        { text: 'AI Citation Leaderboard', href: getPermalink('/lab/leaderboard') },
+        { text: 'Dataset (JSON)', href: getPermalink('/lab/citonyx-dataset.json') },
+        { text: 'Dataset (CSV)', href: getPermalink('/lab/citonyx-dataset.csv') },
+      ],
+    },
+    {
       title: 'Resources',
       links: [{ text: 'llms.txt', href: getAsset('/llms.txt') }],
     },
@@ -42,10 +54,10 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    // Activates after the repo is renamed/published as recwests/citelab.
+    // Activates after the repo is renamed/published as recwests/citonyx.
     { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: GITHUB_URL },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="${GITHUB_URL}">CiteLab</a> · All rights reserved.
+    Made by <a class="text-blue-600 underline dark:text-muted" href="${GITHUB_URL}">Citonyx</a> · All rights reserved.
   `,
 };

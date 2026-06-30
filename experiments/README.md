@@ -1,6 +1,6 @@
-# CiteLab — Measurement Harness (skeleton)
+# Citonyx — Measurement Harness (skeleton)
 
-CiteLab is a GEO testbed: it measures whether AI answer engines (ChatGPT,
+Citonyx is a GEO testbed: it measures whether AI answer engines (ChatGPT,
 Perplexity, Google AI Overviews, Gemini, Bing/Copilot) **cite this site** for
 the questions our content targets.
 
@@ -18,15 +18,15 @@ next auto channel; ChatGPT, Google AI Overviews and Bing/Copilot stay manual
 (see the platforms table below).
 
 ```bash
-# the key lives in ~/.config/citelab/secrets.env as GEMINI_API_KEY=...
+# the key lives in ~/.config/citonyx/secrets.env as GEMINI_API_KEY=...
 # `set -a` exports it to the python child; secrets.env has no `export` lines.
-set -a; source ~/.config/citelab/secrets.env; set +a
-PYTHONPATH=~/.local/citelab-libs python3 experiments/runner.py --limit 3   # smoke test
-PYTHONPATH=~/.local/citelab-libs python3 experiments/runner.py             # full panel (N=3)
+set -a; source ~/.config/citonyx/secrets.env; set +a
+PYTHONPATH=~/.local/citonyx-libs python3 experiments/runner.py --limit 3   # smoke test
+PYTHONPATH=~/.local/citonyx-libs python3 experiments/runner.py             # full panel (N=3)
 ```
 
 Config via env (all overridable): `N` (repeats/prompt, default 3),
-`TARGET_DOMAIN` (default `citelab-eks.pages.dev`), `MODEL` (default
+`TARGET_DOMAIN` (default `citonyx.pages.dev`), `MODEL` (default
 `gemini-2.5-flash`). `--limit K` runs only the first K prompts.
 
 Each prompt × `run_index` produces one record (validated against
@@ -58,16 +58,16 @@ session and solves ChatGPT's proof-of-work challenge itself.
 
 ```bash
 # one-time install (no key needed):
-git clone https://github.com/s5treak/reverse-chatgpt ~/.local/citelab-libs/reverse-chatgpt
-pip install --target=~/.local/citelab-libs --break-system-packages curl_cffi beautifulsoup4 lxml
+git clone https://github.com/s5treak/reverse-chatgpt ~/.local/citonyx-libs/reverse-chatgpt
+pip install --target=~/.local/citonyx-libs --break-system-packages curl_cffi beautifulsoup4 lxml
 
-PYTHONPATH=~/.local/citelab-libs python3 experiments/runner.py --channel chatgpt --limit 2  # smoke
-PYTHONPATH=~/.local/citelab-libs python3 experiments/runner.py --channel chatgpt            # full panel
+PYTHONPATH=~/.local/citonyx-libs python3 experiments/runner.py --channel chatgpt --limit 2  # smoke
+PYTHONPATH=~/.local/citonyx-libs python3 experiments/runner.py --channel chatgpt            # full panel
 ```
 
 Config via env: `N`, `TARGET_DOMAIN` (shared with the gemini channel),
 `CHATGPT_SEARCH_SUFFIX` (default `"Cite your sources."`), `CHATGPT_LIB_DIR`
-(default `~/.local/citelab-libs/reverse-chatgpt`), `CHATGPT_TIME_BUDGET`
+(default `~/.local/citonyx-libs/reverse-chatgpt`), `CHATGPT_TIME_BUDGET`
 (seconds before the channel stops launching new prompts, default 900).
 
 **Run LOCALLY.** The anonymous backend is IP-sensitive — datacenter/cloud IPs

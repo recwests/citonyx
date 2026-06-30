@@ -1,6 +1,6 @@
-# CiteLab — Target Query Panel
+# Citonyx — Target Query Panel
 #
-# This file is the set of TARGETS for the CiteLab measurement experiment.
+# This file is the set of TARGETS for the Citonyx measurement experiment.
 # Each entry is a question a real person might ask an AI answer engine
 # (ChatGPT, Perplexity, Google AI Overviews, Gemini) on a topic where this
 # site would want to be CITED. These prompts are the experiment's inputs:
@@ -13,7 +13,7 @@
 #   technical     - how-to / implementation / markup / structure queries
 #   measurement   - tracking, metrics, correlation, ROI queries
 #
-# NOTE: prompts are intentionally NOT self-referential (no "what is CiteLab").
+# NOTE: prompts are intentionally NOT self-referential (no "what is Citonyx").
 
 - id: p001
   prompt: 'what is generative engine optimization'

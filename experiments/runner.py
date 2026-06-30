@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CiteLab measurement runner — multi-channel.
+"""Citonyx measurement runner — multi-channel.
 
 Two measurement channels, selected with ``--channel``:
 
@@ -22,20 +22,20 @@ runs/<YYYY-MM-DD>.json.
 
 Usage:
     # Gemini grounding channel (default):
-    source ~/.config/citelab/secrets.env
-    PYTHONPATH=~/.local/citelab-libs python3 experiments/runner.py [--limit K]
+    source ~/.config/citonyx/secrets.env
+    PYTHONPATH=~/.local/citonyx-libs python3 experiments/runner.py [--limit K]
 
     # Anonymous ChatGPT channel (no key; run LOCALLY — datacenter IPs get blocked):
-    PYTHONPATH=~/.local/citelab-libs python3 experiments/runner.py \
+    PYTHONPATH=~/.local/citonyx-libs python3 experiments/runner.py \
         --channel chatgpt [--limit K]
 
 Env (all overridable):
     GEMINI_API_KEY        required for --channel gemini — never logged
     N                     repeats per prompt (default 3)
-    TARGET_DOMAIN         our domain (default citelab-eks.pages.dev)
+    TARGET_DOMAIN         our domain (default citonyx.pages.dev)
     MODEL                 gemini model id (default gemini-2.5-flash)
     CHATGPT_SEARCH_SUFFIX nudge appended to force search (default "Cite your sources.")
-    CHATGPT_LIB_DIR       reverse-chatgpt checkout (default ~/.local/citelab-libs/reverse-chatgpt)
+    CHATGPT_LIB_DIR       reverse-chatgpt checkout (default ~/.local/citonyx-libs/reverse-chatgpt)
     CHATGPT_TIME_BUDGET   seconds before the chatgpt channel stops launching new prompts (default 900)
 """
 from __future__ import annotations
@@ -67,7 +67,7 @@ QUERY_METHOD = "api"
 CHATGPT_PLATFORM = "chatgpt"
 CHATGPT_QUERY_METHOD = "reverse"
 CHATGPT_MODEL = "reverse-chatgpt"
-CHATGPT_LIB_DIR_DEFAULT = str(Path.home() / ".local/citelab-libs/reverse-chatgpt")
+CHATGPT_LIB_DIR_DEFAULT = str(Path.home() / ".local/citonyx-libs/reverse-chatgpt")
 SEARCH_SUFFIX_DEFAULT = "Cite your sources."
 
 # Bare-domain pattern the schema enforces for competitors (lowercase, no scheme/path).
@@ -534,13 +534,13 @@ def run_gemini(args):
     if not api_key:
         print(
             "ERROR: GEMINI_API_KEY not set. "
-            "Run: source ~/.config/citelab/secrets.env",
+            "Run: source ~/.config/citonyx/secrets.env",
             file=sys.stderr,
         )
         return 2
 
     n = int(_env("N", "3"))
-    target_domain = _env("TARGET_DOMAIN", "citelab-eks.pages.dev")
+    target_domain = _env("TARGET_DOMAIN", "citonyx.pages.dev")
     model = _env("MODEL", "gemini-2.5-flash")
     today = date.today().isoformat()
 
@@ -551,7 +551,7 @@ def run_gemini(args):
     out_file = RUNS_DIR / f"{today}.json"
 
     print(
-        f"CiteLab Gemini grounding runner | date={today} model={model} "
+        f"Citonyx Gemini grounding runner | date={today} model={model} "
         f"target={target_domain} prompts={len(prompts)} N={n}"
     )
 
@@ -650,13 +650,13 @@ def run_chatgpt(args):
         print(
             f"ERROR: cannot import reverse-chatgpt from {lib_dir}: {exc}\n"
             "Clone https://github.com/s5treak/reverse-chatgpt there and install "
-            "curl_cffi/beautifulsoup4/lxml into ~/.local/citelab-libs.",
+            "curl_cffi/beautifulsoup4/lxml into ~/.local/citonyx-libs.",
             file=sys.stderr,
         )
         return 2
 
     n = int(_env("N", "3"))
-    target_domain = _env("TARGET_DOMAIN", "citelab-eks.pages.dev")
+    target_domain = _env("TARGET_DOMAIN", "citonyx.pages.dev")
     suffix = _env("CHATGPT_SEARCH_SUFFIX", SEARCH_SUFFIX_DEFAULT)
     time_budget = float(_env("CHATGPT_TIME_BUDGET", "900"))
     today = date.today().isoformat()
@@ -666,7 +666,7 @@ def run_chatgpt(args):
     out_file = RUNS_DIR / f"{today}.json"
 
     print(
-        f"CiteLab anonymous-ChatGPT runner (search-forced) | date={today} "
+        f"Citonyx anonymous-ChatGPT runner (search-forced) | date={today} "
         f"model={CHATGPT_MODEL} target={target_domain} prompts={len(prompts)} "
         f"N={n} suffix={suffix!r}"
     )
@@ -772,7 +772,7 @@ def run_chatgpt(args):
 # ---- main -------------------------------------------------------------------
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="CiteLab measurement runner")
+    parser = argparse.ArgumentParser(description="Citonyx measurement runner")
     parser.add_argument(
         "--channel", choices=["gemini", "chatgpt"], default="gemini",
         help="measurement channel (default: gemini grounding API)",

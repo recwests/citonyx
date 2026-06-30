@@ -1,4 +1,4 @@
-# CiteLab
+# Citonyx
 
 A GEO (Generative Engine Optimization) testbed that measures whether AI answer engines actually cite it.
 
