@@ -24,9 +24,9 @@ AI search engines don't crawl and rank pages the way Google does — they synthe
 
 Traditional SEO optimizes for a ranked list of blue links. GEO optimizes for **citation in a generated answer**. If your content isn't structured for AI consumption, you're invisible in the fastest-growing search channel:
 
-- 25% of product discovery now happens via AI search (Pressonify, 2026)
-- AI referral visits grew 357% year-over-year to 1.13B monthly
-- ChatGPT alone holds 81% of the AI chatbot market
+- ~25% of product discovery now happens via AI search, per Pressonify (2026) — a vendor figure pending independent confirmation
+- AI referral visits grew an estimated 357% year-over-year to ~1.13B monthly (Pressonify, vendor-reported)
+- ChatGPT leads the AI chatbot market, with reported share ranging from ~65% (Erlin AI) to 81% (First Page Sage) depending on the source
 
 ## How GEO Differs from SEO
 

@@ -1,6 +1,6 @@
 ---
-title: Brand Mentions Are 3x Stronger Than Backlinks for AI Citations
-description: Ahrefs 2026 study of 75K brands found brand web mentions have 0.664 correlation with AI citations vs 0.218 for backlinks — earned media outperforms link building.
+title: Are Brand Mentions ~3x Stronger Than Backlinks for AI Citations?
+description: A 2026 Ahrefs analysis (via AuthorityTech) of 75K brands found brand web mentions had a 0.664 correlation with AI citations vs 0.218 for backlinks — vendor data, not a causal study.
 category: measurement
 tags:
   - brand mentions
@@ -20,16 +20,18 @@ related:
   - what-is-geo
 ---
 
-A 2026 Ahrefs study of 75,000 brands delivered a finding that upends conventional SEO wisdom: brand web mentions predict AI citation rates 3x more accurately than backlinks. For GEO practitioners, this changes where to invest effort.
+A 2026 Ahrefs analysis of 75,000 brands — reported via AuthorityTech rather than as a primary Ahrefs publication — surfaced a finding that challenges conventional SEO wisdom: brand web mentions reportedly predict AI citation rates about 3x more accurately than backlinks. The data is vendor-reported and correlational, not a peer-reviewed causal study, but for GEO practitioners it still points to where to invest effort.
 
 ## The Data
 
-| Signal             | Correlation with AI Citation |
-| ------------------ | ---------------------------- |
-| Brand web mentions | 0.664                        |
-| Backlinks          | 0.218                        |
+| Signal             | Reported Correlation with AI Citation |
+| ------------------ | ------------------------------------- |
+| Brand web mentions | 0.664                                 |
+| Backlinks          | 0.218                                 |
 
-Brand mentions — any mention of your brand name on an authoritative domain, with or without a hyperlink — are the single strongest predictor of whether an AI model will cite your content.
+_Source: Ahrefs, reported via AuthorityTech (2026), n≈75K brands. These are vendor-reported correlations, not the output of a controlled causal study — read them as directional signals rather than settled fact._
+
+Brand mentions — any mention of your brand name on an authoritative domain, with or without a hyperlink — emerge in this data as one of the strongest reported predictors of whether an AI model will cite your content.
 
 ## Why This Makes Sense
 

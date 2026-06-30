@@ -23,13 +23,13 @@ AI models don't rank pages by link popularity alone. When ChatGPT, Perplexity, o
 
 ## The Primary Signals (2026 Data)
 
-**Brand web mentions** are the strongest predictor of AI citation. A 2026 Ahrefs study of 75K brands found:
+**Brand web mentions** appear to be among the strongest predictors of AI citation. A 2026 Ahrefs analysis of 75K brands — reported via AuthorityTech rather than as a primary Ahrefs publication — found:
 
-- Brand web mentions → 0.664 correlation with AI citation rates
-- Traditional backlinks → 0.218 correlation
+- Brand web mentions → 0.664 reported correlation with AI citation rates
+- Traditional backlinks → 0.218 reported correlation
 - Mentions without hyperlinks can outperform backlinks for AI citations
 
-This confirms that **earned media matters more than owned link building** for AI visibility. When authoritative domains mention your brand — even without a link — LLMs interpret that as a trust signal.
+These are vendor-reported correlations rather than peer-reviewed causation, so treat them as directional. Still, they point to a consistent theme: **earned media may matter more than owned link building** for AI visibility. When authoritative domains mention your brand — even without a link — LLMs appear to interpret that as a trust signal.
 
 ## Structured Data as a Citation Signal
 
@@ -40,7 +40,7 @@ Schema.org markup directly improves citation probability because AI models parse
 - `BreadcrumbList` helps the model understand site structure
 - `Organization` schema with logo and contact info builds entity recognition
 
-Pages with complete Schema.org markup are cited 2-3x more often in AI responses than pages without, based on early GEO practitioner data.
+Pages with complete Schema.org markup may be cited an estimated 2-3x more often in AI responses than pages without, based on early GEO practitioner data rather than a controlled study.
 
 ## Topical Authority vs Page Authority
 
