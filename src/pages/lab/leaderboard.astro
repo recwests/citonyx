@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Schema from '~/components/Schema.astro';
 import { SITE } from 'astrowind:config';
-import { getLeaderboardData, formatRate, platformLabel } from '~/utils/leaderboard';
+import { getLeaderboardData, formatRate, formatRepeats, platformLabel } from '~/utils/leaderboard';
 
 export const prerender = true;
 
@@ -26,6 +26,17 @@ const lastUpdatedHuman = data.lastUpdated
   : 'n/a';
 
 const platformsHuman = data.platformsCovered.map(platformLabel).join(', ') || 'none yet';
+
+// Data-derived repeats statement (real distribution; protocol target stays >= 3).
+const repeatsHuman = formatRepeats(data.runsPerPrompt.min, data.runsPerPrompt.max);
+
+// Gate per-engine methodology bullets on the engines that actually have data.
+const coveredPlatforms = new Set(data.platformsCovered);
+const hasChatgpt = coveredPlatforms.has('chatgpt');
+const hasGemini = coveredPlatforms.has('gemini');
+const hasPerplexity = coveredPlatforms.has('perplexity');
+const plannedEngines = ['gemini', 'perplexity'].filter((p) => !coveredPlatforms.has(p));
+const plannedEnginesHuman = plannedEngines.map(platformLabel).join(' and ');
 
 // Answer-first capsule (real numbers; 0% is stated plainly).
 const capsule =
@@ -53,7 +64,7 @@ const cards = [
     sub: `${p.cited}/${p.total} runs`,
   })),
   { label: 'Test prompts', value: String(data.distinctPrompts), sub: 'fixed citation panel' },
-  { label: 'Total runs', value: String(data.totalRuns), sub: `N≥3 per prompt` },
+  { label: 'Total runs', value: String(data.totalRuns), sub: repeatsHuman },
   { label: 'Competitor domains', value: String(data.distinctCompetitorDomains), sub: 'distinct, cited by AI' },
   { label: 'Last updated', value: lastUpdatedHuman, sub: 'grows as runs accrue' },
 ];
@@ -171,20 +182,45 @@ const cards = [
           }) and record whether {SITE.name} appears in the answer as a link, quote, or brand mention.
         </li>
         <li>
-          <strong>Repeats.</strong> Each prompt/engine pair is run <strong>N&nbsp;&ge;&nbsp;3</strong> times to account for
-          model non-determinism; every individual run is stored as its own record.
+          <strong>Repeats.</strong> The protocol targets <strong>&ge;&nbsp;3</strong> runs per prompt/engine pair to account
+          for model non-determinism; the current snapshot has <strong>{repeatsHuman}</strong>. Every individual run is
+          stored as its own record.
         </li>
+        {
+          hasChatgpt && (
+            <li>
+              <strong>ChatGPT channel.</strong> Observed via an anonymous, search-forced backend channel (no signed-in
+              account, search explicitly triggered) so results reflect public, logged-out behavior.
+            </li>
+          )
+        }
+        {
+          hasGemini && (
+            <li>
+              <strong>Gemini channel.</strong> Queried through grounded API responses; the query method (api / reverse /
+              manual) is recorded per run because the same platform can answer differently per channel.
+            </li>
+          )
+        }
+        {
+          hasPerplexity && (
+            <li>
+              <strong>Perplexity channel.</strong> Queried through its Sonar API; the query method (api / reverse /
+              manual) is recorded per run because the same platform can answer differently per channel.
+            </li>
+          )
+        }
+        {
+          plannedEnginesHuman && (
+            <li>
+              <strong>Planned engines.</strong> {plannedEnginesHuman} are on the protocol but not yet measured — no runs
+              are included for them yet, so the figures above describe {platformsHuman} only.
+            </li>
+          )
+        }
         <li>
-          <strong>ChatGPT channel.</strong> Observed via an anonymous, search-forced backend channel (no signed-in account,
-          search explicitly triggered) so results reflect public, logged-out behavior.
-        </li>
-        <li>
-          <strong>Gemini.</strong> Queried through grounded API responses; Perplexity through its Sonar API. The query method
-          (api / reverse / manual) is recorded per run because the same platform can answer differently per channel.
-        </li>
-        <li>
-          <strong>No UI scraping.</strong> We do not scrape the ChatGPT or Perplexity web UIs beyond permitted/anonymous access.
-          Answers are not replayable, so we preserve short verbatim excerpts as evidence.
+          <strong>No UI scraping.</strong> We do not scrape answer-engine web UIs beyond permitted/anonymous access. Answers
+          are not replayable, so we preserve short verbatim excerpts as evidence.
         </li>
         <li>
           <strong>Fixed prompt set.</strong> The citation panel is a fixed set of {data.distinctPrompts} GEO-related prompts.

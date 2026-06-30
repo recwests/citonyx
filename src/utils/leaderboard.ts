@@ -50,6 +50,8 @@ export type LeaderboardData = {
   citedRuns: number;
   overallRate: number; // 0..1
   distinctPrompts: number;
+  /** Observed runs-per-prompt distribution over the current data (protocol target is >= 3). */
+  runsPerPrompt: { min: number; max: number };
   distinctCompetitorDomains: number;
   lastUpdated: string | null;
   platforms: PlatformStat[];
@@ -101,12 +103,13 @@ export function aggregate(records: RunRecord[]): LeaderboardData {
   // Competitor frequency
   const competitorMap = new Map<string, number>();
 
-  const promptIds = new Set<string>();
+  // Runs per prompt_id (drives the data-derived "repeats" statement).
+  const promptCounts = new Map<string, number>();
   const methods = new Set<string>();
   let lastUpdated: string | null = null;
 
   for (const r of records) {
-    promptIds.add(r.prompt_id);
+    promptCounts.set(r.prompt_id, (promptCounts.get(r.prompt_id) ?? 0) + 1);
     if (r.query_method) methods.add(r.query_method);
     if (r.date && (lastUpdated === null || r.date > lastUpdated)) lastUpdated = r.date;
 
@@ -147,11 +150,17 @@ export function aggregate(records: RunRecord[]): LeaderboardData {
       ),
     }));
 
+  const promptRunCounts = [...promptCounts.values()];
+  const runsPerPrompt = promptRunCounts.length
+    ? { min: Math.min(...promptRunCounts), max: Math.max(...promptRunCounts) }
+    : { min: 0, max: 0 };
+
   return {
     totalRuns,
     citedRuns,
     overallRate: rate(citedRuns, totalRuns),
-    distinctPrompts: promptIds.size,
+    distinctPrompts: promptCounts.size,
+    runsPerPrompt,
     distinctCompetitorDomains: competitorMap.size,
     lastUpdated,
     platforms,
@@ -183,6 +192,16 @@ export function platformLabel(platform: string): string {
 /** Format a 0..1 rate as a percentage string with one decimal. */
 export function formatRate(r: number): string {
   return `${(r * 100).toFixed(1)}%`;
+}
+
+/**
+ * Human label for the observed runs-per-prompt distribution, e.g. "2–3 runs per prompt"
+ * (min !== max) or "3 runs per prompt" (all equal). Reflects the real data, not the target.
+ */
+export function formatRepeats(min: number, max: number): string {
+  if (max <= 0) return 'no runs yet';
+  const n = min === max ? String(min) : `${min}–${max}`;
+  return `${n} runs per prompt`;
 }
 
 /** Serialize run records to CSV (header + rows). Array-valued and nullable fields are handled. */
