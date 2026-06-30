@@ -1,5 +1,5 @@
 /**
- * Cloudflare Pages Function — AI-bot / AI-referrer telemetry (CiteLab Sprint 1, T2).
+ * Cloudflare Pages Function — AI-bot / AI-referrer telemetry (Citonyx Sprint 1, T2).
  *
  * What it does: runs on EVERY request, sniffs the User-Agent for known AI crawlers
  * and the Referer for known AI answer engines, and emits one structured console line

@@ -1,6 +1,6 @@
 site:
-  name: CiteLab
-  site: 'https://citelab-eks.pages.dev'
+  name: Citonyx
+  site: 'https://citonyx.pages.dev'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: CiteLab — Generative Engine Optimization (GEO), Measured
-    template: '%s — CiteLab'
+    default: Citonyx — Generative Engine Optimization (GEO), Measured
+    template: '%s — Citonyx'
   description: 'Practical GEO (Generative Engine Optimization) practices for optimizing your content for AI search engines like ChatGPT, Perplexity, and Google AI Overviews.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: CiteLab
+    site_name: Citonyx
     images:
       - url: '~/assets/images/default.png'
         width: 1200
