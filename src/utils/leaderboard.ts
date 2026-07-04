@@ -26,6 +26,8 @@ export type RunRecord = {
   response_excerpt?: string | null;
   run_index: number;
   notes?: string;
+  calibration?: boolean | null;
+  suspect?: boolean | null;
 };
 
 export type PlatformStat = {
@@ -91,15 +93,24 @@ function rate(cited: number, total: number): number {
   return total > 0 ? cited / total : 0;
 }
 
+function noSearch_(notes: string | undefined): boolean {
+  if (!notes) return false;
+  return notes.split(';').some((t) => t.trim() === 'no_search');
+}
+
+function error_(notes: string | undefined): boolean {
+  if (!notes) return false;
+  return notes.split(';').some((t) => t.trim().startsWith('error'));
+}
+
 /** Aggregate run records into the leaderboard view model. Pure. */
 export function aggregate(records: RunRecord[]): LeaderboardData {
-  const totalRuns = records.length;
-  const citedRuns = records.filter((r) => r.cited).length;
+  const active = records.filter((r) => !r.calibration);
 
-  // Per-platform counts
-  const platformMap = new Map<string, { total: number; cited: number }>();
+  // Per-platform counts (total, cited, noSearch, error)
+  const platformMap = new Map<string, { total: number; cited: number; noSearch: number; error: number }>();
   // Per-date, per-platform counts
-  const dateMap = new Map<string, Map<string, { total: number; cited: number }>>();
+  const dateMap = new Map<string, Map<string, { total: number; cited: number; noSearch: number; error: number }>>();
   // Competitor frequency
   const competitorMap = new Map<string, number>();
 
@@ -107,21 +118,34 @@ export function aggregate(records: RunRecord[]): LeaderboardData {
   const promptCounts = new Map<string, number>();
   const methods = new Set<string>();
   let lastUpdated: string | null = null;
+  let overallCited = 0;
+  let overallDenom = 0;
 
-  for (const r of records) {
+  for (const r of active) {
     promptCounts.set(r.prompt_id, (promptCounts.get(r.prompt_id) ?? 0) + 1);
     if (r.query_method) methods.add(r.query_method);
     if (r.date && (lastUpdated === null || r.date > lastUpdated)) lastUpdated = r.date;
 
-    const p = platformMap.get(r.platform) ?? { total: 0, cited: 0 };
+    const ns = noSearch_(r.notes) ? 1 : 0;
+    const err = error_(r.notes) ? 1 : 0;
+    if (ns || err) continue;
+
+    overallDenom += 1;
+    if (r.cited) overallCited += 1;
+
+    const p = platformMap.get(r.platform) ?? { total: 0, cited: 0, noSearch: 0, error: 0 };
     p.total += 1;
     if (r.cited) p.cited += 1;
+    p.noSearch += ns;
+    p.error += err;
     platformMap.set(r.platform, p);
 
     const perDate = dateMap.get(r.date) ?? new Map();
-    const dp = perDate.get(r.platform) ?? { total: 0, cited: 0 };
+    const dp = perDate.get(r.platform) ?? { total: 0, cited: 0, noSearch: 0, error: 0 };
     dp.total += 1;
     if (r.cited) dp.cited += 1;
+    dp.noSearch += ns;
+    dp.error += err;
     perDate.set(r.platform, dp);
     dateMap.set(r.date, perDate);
 
@@ -156,9 +180,9 @@ export function aggregate(records: RunRecord[]): LeaderboardData {
     : { min: 0, max: 0 };
 
   return {
-    totalRuns,
-    citedRuns,
-    overallRate: rate(citedRuns, totalRuns),
+    totalRuns: active.length,
+    citedRuns: overallCited,
+    overallRate: rate(overallCited, overallDenom),
     distinctPrompts: promptCounts.size,
     runsPerPrompt,
     distinctCompetitorDomains: competitorMap.size,
@@ -175,6 +199,140 @@ export function aggregate(records: RunRecord[]): LeaderboardData {
 /** Convenience: read + aggregate in one call (build-time). */
 export function getLeaderboardData(): LeaderboardData {
   return aggregate(readRunRecords());
+}
+
+// ── f0-leaderboard: per-group aggregation (canon Runner §6) ──────────────
+
+export type AggregatedGroup = {
+  kind: 'target' | 'control';
+  platform: string;
+  model?: string;
+  n: number;
+  cited: number;
+  rate: number;
+  ciLow: number;
+  ciHigh: number;
+  noSearch: number;
+  error: number;
+  suspect: number;
+};
+
+export type AggregateStatsResult = {
+  groups: AggregatedGroup[];
+  lastRunDate: string | null;
+};
+
+function wilsonCI(k: number, n: number, z = 1.96): { low: number; high: number } {
+  if (n === 0) return { low: 0, high: 0 };
+  const p = k / n;
+  const z2 = z * z;
+  const denom = 1 + z2 / n;
+  const center = (p + z2 / (2 * n)) / denom;
+  const margin = (z * Math.sqrt((p * (1 - p) + z2 / (4 * n)) / n)) / denom;
+  return {
+    low: Math.max(0, center - margin),
+    high: Math.min(1, center + margin),
+  };
+}
+
+export function aggregateStats(records: RunRecord[], controlDomains: string[]): AggregateStatsResult {
+  type Acc = {
+    total: number;
+    cited: number;
+    noSearch: number;
+    error: number;
+    suspect: number;
+  };
+
+  const active = records.filter((r) => !r.calibration);
+  let lastRunDate: string | null = null;
+
+  const targetAcc = new Map<string, Acc>();
+  const controlAcc = new Map<string, Acc>();
+
+  for (const r of active) {
+    if (r.date && (lastRunDate === null || r.date > lastRunDate)) {
+      lastRunDate = r.date;
+    }
+
+    const ns = noSearch_(r.notes) ? 1 : 0;
+    const err = error_(r.notes) ? 1 : 0;
+    const sus = r.suspect ? 1 : 0;
+    const cit = r.cited ? 1 : 0;
+
+    if (r.platform && r.model) {
+      const tKey = `${r.platform}\0${r.model}`;
+      let t = targetAcc.get(tKey);
+      if (!t) {
+        t = { total: 0, cited: 0, noSearch: 0, error: 0, suspect: 0 };
+        targetAcc.set(tKey, t);
+      }
+      t.total += 1;
+      t.cited += cit;
+      t.noSearch += ns;
+      t.error += err;
+      t.suspect += sus;
+    }
+
+    const cKey = r.platform;
+    let c = controlAcc.get(cKey);
+    if (!c) {
+      c = { total: 0, cited: 0, noSearch: 0, error: 0, suspect: 0 };
+      controlAcc.set(cKey, c);
+    }
+    c.total += 1;
+    c.noSearch += ns;
+    c.error += err;
+    c.suspect += sus;
+
+    if (r.competitors && controlDomains.some((d) => r.competitors!.includes(d))) {
+      c.cited += 1;
+    }
+  }
+
+  const groups: AggregatedGroup[] = [];
+
+  for (const [tKey, acc] of targetAcc) {
+    const sepIdx = tKey.indexOf('\0');
+    const platform = tKey.slice(0, sepIdx);
+    const model = tKey.slice(sepIdx + 1);
+    const n = acc.total - acc.noSearch - acc.error;
+    const rate = n > 0 ? acc.cited / n : 0;
+    const ci = wilsonCI(acc.cited, n);
+    groups.push({
+      kind: 'target',
+      platform,
+      model,
+      n,
+      cited: acc.cited,
+      rate,
+      ciLow: ci.low,
+      ciHigh: ci.high,
+      noSearch: acc.noSearch,
+      error: acc.error,
+      suspect: acc.suspect,
+    });
+  }
+
+  for (const [platform, acc] of controlAcc) {
+    const n = acc.total - acc.noSearch - acc.error;
+    const rate = n > 0 ? acc.cited / n : 0;
+    const ci = wilsonCI(acc.cited, n);
+    groups.push({
+      kind: 'control',
+      platform,
+      n,
+      cited: acc.cited,
+      rate,
+      ciLow: ci.low,
+      ciHigh: ci.high,
+      noSearch: acc.noSearch,
+      error: acc.error,
+      suspect: acc.suspect,
+    });
+  }
+
+  return { groups, lastRunDate };
 }
 
 /** Human label for a platform enum value. */

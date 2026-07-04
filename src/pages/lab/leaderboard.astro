@@ -3,11 +3,14 @@ import Layout from '~/layouts/PageLayout.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Schema from '~/components/Schema.astro';
 import { SITE } from 'astrowind:config';
-import { getLeaderboardData, formatRate, formatRepeats, platformLabel } from '~/utils/leaderboard';
+import { getLeaderboardData, formatRate, formatRepeats, platformLabel, aggregateStats } from '~/utils/leaderboard';
 
 export const prerender = true;
 
 const data = getLeaderboardData();
+
+const CONTROL_DOMAINS = ['semrush.com', 'pressonify.com', 'searchviu.com'];
+const stats = aggregateStats(data.records, CONTROL_DOMAINS);
 
 const TOP_N = 25;
 const topCompetitors = data.topCompetitors.slice(0, TOP_N);
@@ -125,7 +128,7 @@ const cards = [
     </p>
     {
       topCompetitors.length > 0 ? (
-        <div class="overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-700 mb-12">
+        <div class="overflow-x-auto table-scroll rounded-lg border border-slate-200 dark:border-slate-700 mb-12">
           <table class="w-full text-left text-sm">
             <thead class="bg-slate-50 dark:bg-slate-800">
               <tr>
@@ -147,6 +150,59 @@ const cards = [
         </div>
       ) : (
         <p class="text-muted mb-12">No competitor domains recorded yet.</p>
+      )
+    }
+
+    <!-- Per-platform citation rates -->
+    <h2 class="text-2xl font-bold mb-2 text-heading">Per-Platform Citation Rates</h2>
+    <p class="text-sm text-muted mb-5 max-w-3xl">
+      Target and control group citation rates per platform and model. Data from <time datetime={stats.lastRunDate ?? ''}
+        >{stats.lastRunDate ?? 'n/a'}</time
+      >.
+    </p>
+    {
+      stats.groups.length > 0 ? (
+        <div class="overflow-x-auto table-scroll rounded-lg border border-slate-200 dark:border-slate-700 mb-12">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50 dark:bg-slate-800">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Group</th>
+                <th class="px-4 py-3 font-semibold">Platform</th>
+                <th class="px-4 py-3 font-semibold">Model</th>
+                <th class="px-4 py-3 font-semibold text-right">N</th>
+                <th class="px-4 py-3 font-semibold text-right">Cited</th>
+                <th class="px-4 py-3 font-semibold text-right">Rate</th>
+                <th class="px-4 py-3 font-semibold text-right">CI (95%)</th>
+                <th class="px-4 py-3 font-semibold text-right">No Search</th>
+                <th class="px-4 py-3 font-semibold text-right">Error</th>
+                <th class="px-4 py-3 font-semibold text-right">Suspect</th>
+              </tr>
+            </thead>
+            <tbody>
+              {stats.groups.map((g) => (
+                <tr class="border-t border-slate-100 dark:border-slate-700/60">
+                  <td class="px-4 py-2.5 font-medium">{g.kind === 'target' ? 'Target' : 'Control'}</td>
+                  <td class="px-4 py-2.5">{platformLabel(g.platform)}</td>
+                  <td class="px-4 py-2.5">{g.model ?? '—'}</td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">{g.n}</td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">{g.cited}</td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">{formatRate(g.rate)}</td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">
+                    [{formatRate(g.ciLow)}, {formatRate(g.ciHigh)}]
+                  </td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">{g.noSearch}</td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">{g.error}</td>
+                  <td class="px-4 py-2.5 text-right tabular-nums">{g.suspect}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p class="mt-2 text-xs text-muted italic">
+            <span class="font-semibold">⚠️ Suspect</span> — measurement quality gate triggered; interpret with caution
+          </p>
+        </div>
+      ) : (
+        <p class="text-muted mb-12">No measurement data yet.</p>
       )
     }
 

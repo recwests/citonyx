@@ -115,3 +115,60 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+/* ═══════════════════════════════════════════════════════
+   CSS Armor — P0 visual integrity (spec f0-css-armor)
+   Canon §10b: prevents content from breaking layout
+   ═══════════════════════════════════════════════════════ */
+
+/* 1. Text overflow protection: long words/URLs break instead of escaping bounds */
+@layer base {
+  body {
+    overflow-wrap: break-word;
+  }
+}
+
+/* 2. Media containment: img/video/iframe/embed never wider than container */
+@layer base {
+  img,
+  video,
+  iframe,
+  embed {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 3. Table horizontal scroll for comparison & leaderboard tables */
+@utility table-scroll {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* 4. Line-clamp for cards in indices & related blocks */
+@utility card-clamp-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@utility card-clamp-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+@utility card-clamp-4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+/* 5. Card height uniformity within flex/grid rows */
+@utility card-fill {
+  height: 100%;
+}

@@ -4,7 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import StatsBlock from '~/components/landing/StatsBlock.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Schema from '~/components/Schema.astro';
@@ -32,22 +32,11 @@ const metadata = {
 
     <Fragment slot="subtitle">
       Generative Engine Optimization (GEO) is the practice of making your content discoverable by AI search engines —
-      ChatGPT, Perplexity, Google AI Overviews, and more.
-      <span class="block mt-4 text-base text-muted">
-        AI search drove an estimated 1.13B monthly referral visits in 2026 — up 357% from 2024, according to Pressonify
-        (vendor-reported, pending independent confirmation). Is your content ready?
-      </span>
+      ChatGPT, Perplexity, Google AI Overviews, and more. Evidence-based, self-proving, transparent.
     </Fragment>
   </Hero>
 
-  <Stats
-    stats={[
-      { title: 'GEO Research Cycles', amount: '14+' },
-      { title: 'Lines of Research Notes', amount: '2,200+' },
-      { title: 'AI Referral Growth (Pressonify, vendor)', amount: '357%' },
-      { title: 'Higher Conversion vs Organic (Erlin AI)', amount: '9x' },
-    ]}
-  />
+  <StatsBlock />
 
   <Features
     id="features"
@@ -100,19 +89,22 @@ const metadata = {
     title="Data-Driven, Not Theory-Based"
     items={[
       {
-        title: '~1.13B monthly AI referral visits (vendor-reported)',
+        title: 'Live Citation Measurement',
         description:
-          'Pressonify reports AI search drove an estimated 1.13B monthly referral visits in 2026 — a 357% increase from 2024 — and projects AI-powered search to surpass traditional search traffic by 2028. These are vendor figures pending independent confirmation.',
+          'Every prompt is run against AI search engines through an anonymous, transparent backend. We record whether our content gets cited — raw data, not vendor claims.',
+        callToAction: { text: 'View Leaderboard', href: '/lab/leaderboard' },
       },
       {
-        title: 'Up to 9x higher conversion than organic',
+        title: 'Open Knowledge Base',
         description:
-          'Erlin AI, tracking 500+ brands, reports ChatGPT referrals convert at 15.9% vs a 1.76% organic baseline, with Perplexity at 10.5% and Claude at 5%. Single-vendor data, but it aligns with the broader 3-9x AI-vs-organic range seen across studies.',
+          'A growing collection of actionable GEO practices — each sourced, tagged by category and difficulty, cross-referenced with the measurement system.',
+        callToAction: { text: 'Browse Practices', href: '/learn' },
       },
       {
-        title: 'Brand mentions > backlinks for AI',
+        title: 'Full Data Transparency',
         description:
-          'A 2026 Ahrefs analysis (via AuthorityTech) of 75K brands found brand web mentions correlate 0.664 with AI citation vs 0.218 for backlinks. If it holds, this changes where to invest optimization effort.',
+          'Every measurement is published as raw JSON and CSV downloads. Per-platform breakdowns, Wilson confidence intervals, run-level evidence — verify the numbers yourself.',
+        callToAction: { text: 'Download Data', href: '/lab/leaderboard' },
       },
     ]}
   >

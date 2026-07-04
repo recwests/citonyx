@@ -18,7 +18,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
 ---
 
 <article
-  class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+  class="card-fill mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative md:h-64 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
     {
@@ -67,5 +67,5 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     }
   </h3>
 
-  <p class="text-muted dark:text-slate-400 text-lg">{post.excerpt}</p>
+  <p class="text-muted dark:text-slate-400 text-lg card-clamp-3">{post.excerpt}</p>
 </article>

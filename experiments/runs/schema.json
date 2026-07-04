@@ -27,8 +27,8 @@
     },
     "query_method": {
       "type": "string",
-      "enum": ["api", "manual", "reverse"],
-      "description": "How the answer was obtained. 'api' = official API (gemini grounding, perplexity sonar); 'reverse' = anonymous reverse-engineered endpoint (chatgpt backend-anon via s5treak/reverse-chatgpt, search force-triggered); 'manual' = observed by hand in the UI. The same platform can give different results via different methods, so this must be recorded explicitly."
+      "enum": ["api", "reverse", "cdp", "manual"],
+      "description": "How the answer was obtained. 'api' = official API (gemini grounding, perplexity sonar); 'reverse' = anonymous reverse-engineered endpoint (chatgpt backend-anon via s5treak/reverse-chatgpt, search force-triggered); 'cdp' = Chrome DevTools Protocol (browser automation fallback); 'manual' = observed by hand in the UI. The same platform can give different results via different methods, so this must be recorded explicitly."
     },
     "model": {
       "type": ["string", "null"],
@@ -72,6 +72,29 @@
     "notes": {
       "type": "string",
       "description": "Free-form observations (region, anomalies, etc.)."
+    },
+    "suspect": {
+      "type": "boolean",
+      "description": "Run-level quality flag. True when self-check detects a potential issue (parser failure, quality gate anomaly, etc.). Absent/false = normal."
+    },
+    "calibration": {
+      "type": "boolean",
+      "description": "Marks calibration-prompt records. Calibration records are excluded from leaderboard aggregation."
+    },
+    "citation_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Tone of the citation — 'cited' does not mean 'cited favourably'. V1 does not fill this; schema pre-allocates for future use.",
+      "properties": {
+        "sentiment": {
+          "type": "string",
+          "enum": ["positive", "neutral", "negative", "unclear"]
+        },
+        "snippet": {
+          "type": "string",
+          "description": "Verbatim snippet of the citation showing the tone."
+        }
+      }
     }
   }
 }

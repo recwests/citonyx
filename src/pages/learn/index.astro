@@ -64,7 +64,7 @@ const grouped = allPractices.reduce<Record<string, typeof allPractices>>((acc, e
                   class="block p-6 rounded-lg border border-slate-200 dark:border-slate-700 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-600 transition-all"
                 >
                   <h4 class="text-lg font-semibold mb-2">{entry.data.title}</h4>
-                  <p class="text-sm text-muted mb-4 line-clamp-3">{entry.data.description}</p>
+                  <p class="text-sm text-muted mb-4 card-clamp-3">{entry.data.description}</p>
                   <div class="flex flex-wrap gap-2 items-center">
                     <span class={`text-xs px-2 py-0.5 rounded font-medium ${difficultyColors[entry.data.difficulty]}`}>
                       {entry.data.difficulty}
