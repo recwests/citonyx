@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Schema from '~/components/Schema.astro';
 import { getCollection } from 'astro:content';
 import { SITE } from 'astrowind:config';
+import { entryUrl } from '~/utils/entry';
 
 export const prerender = true;
 
@@ -27,11 +28,10 @@ export async function getStaticPaths() {
     if (!grouped[pt]) grouped[pt] = [];
     grouped[pt].push(entry);
   }
-  return Object.entries(grouped)
-    .map(([topic, entries]) => ({
-      params: { topic },
-      props: { topic, entries },
-    }));
+  return Object.entries(grouped).map(([topic, entries]) => ({
+    params: { topic },
+    props: { topic, entries },
+  }));
 }
 
 const { topic, entries } = Astro.props as {
@@ -41,7 +41,7 @@ const { topic, entries } = Astro.props as {
 const allPractices = await getCollection('geoPractices');
 
 const topicLabel = PRACTICE_TYPE_LABELS[topic] || topic;
-const allEntries = entries || allPractices.filter(e => (e.data.hub || e.data.practice_type) === topic);
+const allEntries = entries || allPractices.filter((e) => (e.data.hub || e.data.practice_type) === topic);
 
 const confidenceColors: Record<string, string> = {
   verified: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
@@ -50,9 +50,14 @@ const confidenceColors: Record<string, string> = {
   deprecated: 'bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400',
 };
 const providerLabels: Record<string, string> = {
-  gemini: 'Gemini', chatgpt: 'ChatGPT', perplexity: 'Perplexity',
-  grok: 'Grok', tavily: 'Tavily', arxiv: 'arXiv',
-  github: 'GitHub', manual: 'Manual',
+  gemini: 'Gemini',
+  chatgpt: 'ChatGPT',
+  perplexity: 'Perplexity',
+  grok: 'Grok',
+  tavily: 'Tavily',
+  arxiv: 'arXiv',
+  github: 'GitHub',
+  manual: 'Manual',
 };
 
 function getSlug(id: string): string {
@@ -62,25 +67,27 @@ function getAnchor(id: string): string {
   return 'entry-' + getSlug(id);
 }
 ---
-<Layout metadata={{ title: `${topicLabel} GEO Practices`, description: `Collection of GEO practices about ${topicLabel}` }}>
-  <Schema type="BreadcrumbList" items={[
-    { name: 'Home', href: new URL('/', SITE.site).href },
-    { name: 'GEO Practices', href: new URL('/learn', SITE.site).href },
-    { name: topicLabel, href: new URL(`/learn/${topic}`, SITE.site).href },
-  ]} />
-  <Schema type="ItemList" items={allEntries.map(e => ({
-    name: e.data.title,
-    url: new URL('/learn/' + getSlug(e.id), SITE.site).href,
-  }))} />
+
+<Layout
+  metadata={{ title: `${topicLabel} GEO Practices`, description: `Collection of GEO practices about ${topicLabel}` }}
+>
+  <Schema
+    type="BreadcrumbList"
+    items={[
+      { name: 'Home', href: new URL('/', SITE.site).href },
+      { name: 'GEO Practices', href: new URL('/learn', SITE.site).href },
+      { name: topicLabel, href: new URL(`/learn/${topic}`, SITE.site).href },
+    ]}
+  />
+  <Schema
+    type="ItemList"
+    items={allEntries.map((e) => ({
+      name: e.data.title,
+      url: new URL(entryUrl(e).href, SITE.site).href,
+    }))}
+  />
 
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <!-- Answer capsule placeholder -->
-    <div class="mb-8 p-4 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded-lg">
-      <p class="text-sm text-blue-600 dark:text-blue-400 italic">
-        Answer capsule — будет заполнена при создании хаба (субагент + аппрув оператора)
-      </p>
-    </div>
-
     <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter mb-2">
       {topicLabel}
     </h1>
@@ -88,76 +95,110 @@ function getAnchor(id: string): string {
 
     <!-- Anchored sections -->
     <div class="space-y-10">
-      {allEntries.map((entry) => {
-        const slug = getSlug(entry.id);
-        const anchor = getAnchor(entry.id);
-        const sources = entry.data.source
-          ? [{ href: entry.data.source.url, label: entry.data.source.platform + (entry.data.source.author ? ` — ${entry.data.source.author}` : '') }]
-          : (entry.data.sources ?? []).map(s => {
-              const href = /^https?:\/\//i.test(s) ? s : `https://${s}`;
-              let label = s;
-              try { label = new URL(href).hostname.replace(/^www\./, ''); } catch {}
-              return { href, label };
-            });
-        return (
-          <section id={anchor} class="scroll-mt-20 pt-2 border-t border-gray-200 dark:border-slate-700 first:border-t-0 first:pt-0">
-            <!-- H2 question -->
-            <h2 class="font-bold font-heading text-2xl md:text-3xl leading-tighter tracking-tighter mt-6 mb-3">
-              <a href={`#${anchor}`} class="hover:text-primary no-underline">{entry.data.title}</a>
-            </h2>
-            <!-- Badges -->
-            <div class="flex flex-wrap gap-2 mb-4">
-              {entry.data.confidence && (
-                <span class={`text-xs px-2 py-0.5 rounded font-medium ${confidenceColors[entry.data.confidence] || ''}`}>
-                  {entry.data.confidence}
+      {
+        allEntries.map((entry) => {
+          const slug = getSlug(entry.id);
+          const anchor = getAnchor(entry.id);
+          const sources = entry.data.source
+            ? [
+                {
+                  href: entry.data.source.url,
+                  label:
+                    entry.data.source.platform + (entry.data.source.author ? ` — ${entry.data.source.author}` : ''),
+                },
+              ]
+            : (entry.data.sources ?? []).map((s) => {
+                const href = /^https?:\/\//i.test(s) ? s : `https://${s}`;
+                let label = s;
+                try {
+                  label = new URL(href).hostname.replace(/^www\./, '');
+                } catch {
+                  /* keep raw source string as label */
+                }
+                return { href, label };
+              });
+          return (
+            <section
+              id={anchor}
+              class="scroll-mt-20 pt-2 border-t border-gray-200 dark:border-slate-700 first:border-t-0 first:pt-0"
+            >
+              <h2 class="font-bold font-heading text-2xl md:text-3xl leading-tighter tracking-tighter mt-6 mb-3">
+                <a href={`#${anchor}`} class="hover:text-primary no-underline">
+                  {entry.data.title}
+                </a>
+              </h2>
+              <div class="flex flex-wrap gap-2 mb-4">
+                {entry.data.confidence && (
+                  <span
+                    class={`text-xs px-2 py-0.5 rounded font-medium ${confidenceColors[entry.data.confidence] || ''}`}
+                  >
+                    {entry.data.confidence}
+                  </span>
+                )}
+                {entry.data.provider && (
+                  <span class="text-xs px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200">
+                    {providerLabels[entry.data.provider] || entry.data.provider}
+                  </span>
+                )}
+                <span
+                  class={`text-xs px-2 py-0.5 rounded font-medium ${entry.data.difficulty === 'beginner' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : entry.data.difficulty === 'intermediate' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'}`}
+                >
+                  {entry.data.difficulty}
                 </span>
+              </div>
+              <p class="text-muted mb-3">{entry.data.description}</p>
+              {entry.data.manual && (
+                <a href={`/learn/${slug}`} class="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+                  Read full article &rarr;
+                </a>
               )}
-              {entry.data.provider && (
-                <span class="text-xs px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200">
-                  {providerLabels[entry.data.provider] || entry.data.provider}
-                </span>
+              {sources.length > 0 && (
+                <details class="text-sm text-muted mt-2">
+                  <summary class="cursor-pointer hover:text-primary">Sources</summary>
+                  <ul class="mt-2 space-y-1 pl-4">
+                    {sources.map((s) => (
+                      <li>
+                        <a
+                          href={s.href}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          class="text-blue-600 dark:text-blue-400 hover:underline break-all"
+                        >
+                          {s.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
               )}
-              <span class={`text-xs px-2 py-0.5 rounded font-medium ${entry.data.difficulty === 'beginner' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : entry.data.difficulty === 'intermediate' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'}`}>
-                {entry.data.difficulty}
-              </span>
-            </div>
-            <!-- Summary / description -->
-            <p class="text-muted mb-3">{entry.data.description}</p>
-            <!-- Read full article link (for pillar articles) -->
-            {entry.data.manual && (
-              <a href={`/learn/${slug}`} class="text-sm text-blue-600 dark:text-blue-400 hover:underline">
-                Read full article &rarr;
-              </a>
-            )}
-            <!-- Sources -->
-            {sources.length > 0 && (
-              <details class="text-sm text-muted mt-2">
-                <summary class="cursor-pointer hover:text-primary">Sources</summary>
-                <ul class="mt-2 space-y-1 pl-4">
-                  {sources.map(s => (
-                    <li><a href={s.href} target="_blank" rel="noopener noreferrer nofollow" class="text-blue-600 dark:text-blue-400 hover:underline break-all">{s.label}</a></li>
-                  ))}
-                </ul>
-              </details>
-            )}
-          </section>
-        );
-      })}
+            </section>
+          );
+        })
+      }
     </div>
 
     <!-- FAQ block -->
-    <Schema type="FAQPage" questions={allEntries.map(e => ({ question: e.data.title, answer: e.data.description }))} />
+    <Schema
+      type="FAQPage"
+      questions={allEntries.map((e) => ({ question: e.data.title, answer: e.data.description }))}
+    />
     <div class="mt-12 pt-6 border-t border-gray-200 dark:border-slate-700">
       <h2 class="font-bold font-heading text-2xl leading-tighter tracking-tighter mb-4">Frequently Asked Questions</h2>
       <div class="divide-y divide-gray-200 dark:divide-slate-700">
-        {allEntries.map((entry) => (
-          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="py-4">
-            <h3 itemprop="name" class="font-semibold text-lg">{entry.data.title}</h3>
-            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <div itemprop="text" class="text-muted mt-2">{entry.data.description}</div>
+        {
+          allEntries.map((entry) => (
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="py-4">
+              <h3 itemprop="name" class="font-semibold text-lg">
+                {entry.data.title}
+              </h3>
+              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text" class="text-muted mt-2">
+                  {entry.data.description}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        }
       </div>
     </div>
 

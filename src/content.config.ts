@@ -97,23 +97,11 @@ const geoPractices = defineCollection({
     source: z
       .object({
         url: z.string().url(),
-        platform: z.enum([
-          'twitter',
-          'youtube',
-          'reddit',
-          'gemini',
-          'chatgpt',
-          'perplexity',
-          'arxiv',
-          'github',
-          'web',
-        ]),
+        platform: z.enum(['twitter', 'youtube', 'reddit', 'gemini', 'chatgpt', 'perplexity', 'arxiv', 'github', 'web']),
         author: z.string().optional(),
       })
       .optional(),
-    provider: z
-      .enum(['gemini', 'chatgpt', 'perplexity', 'grok', 'tavily', 'arxiv', 'github', 'manual'])
-      .optional(),
+    provider: z.enum(['gemini', 'chatgpt', 'perplexity', 'grok', 'tavily', 'arxiv', 'github', 'manual']).optional(),
     confidence: z.enum(['verified', 'experimental', 'conflicting', 'deprecated']).optional(),
     conflicts_with: z.array(z.string()).optional(),
     hub: z.string().optional(),

@@ -7,9 +7,11 @@ category: GEO
 tags: [GEO, citonyx, weekly-digest]
 author: Citonyx
 ---
+
 Welcome to the Citonyx GEO blog.
 
 This is where we publish weekly digests of:
+
 - New GEO practices added to our knowledge base
 - Citation measurement results from the leaderboard
 - Case studies of applied GEO techniques

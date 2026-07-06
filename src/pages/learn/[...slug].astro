@@ -8,10 +8,12 @@ export const prerender = true;
 
 export async function getStaticPaths() {
   const allPractices = await getCollection('geoPractices');
-  return allPractices.filter((entry) => entry.data.manual === true).map((entry) => {
-    const slug = entry.id.replace(/^.*[/\\]/, '').replace(/\.[^.]+$/, '');
-    return { params: { slug }, props: { id: entry.id } };
-  });
+  return allPractices
+    .filter((entry) => entry.data.manual === true)
+    .map((entry) => {
+      const slug = entry.id.replace(/^.*[/\\]/, '').replace(/\.[^.]+$/, '');
+      return { params: { slug }, props: { id: entry.id } };
+    });
 }
 
 const { id } = Astro.props as { id: string };

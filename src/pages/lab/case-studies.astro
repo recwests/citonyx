@@ -7,64 +7,90 @@ import { SITE } from 'astrowind:config';
 export const prerender = true;
 
 const caseStudies = (await getCollection('geoPractices'))
-  .filter(e => e.data.practice_type === 'case-studies')
+  .filter((e) => e.data.practice_type === 'case-studies')
   .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
 
 const hasStudies = caseStudies.length > 0;
 ---
 
 <Layout metadata={{ title: 'Case Studies', description: 'Real GEO experiments: practice applied → citation measured' }}>
-  <Schema type="BreadcrumbList" items={[
-    { name: 'Home', href: new URL('/', SITE.site).href },
-    { name: 'Lab', href: new URL('/lab/leaderboard', SITE.site).href },
-    { name: 'Case Studies', href: new URL('/lab/case-studies', SITE.site).href },
-  ]} />
+  <Schema
+    type="BreadcrumbList"
+    items={[
+      { name: 'Home', href: new URL('/', SITE.site).href },
+      { name: 'Lab', href: new URL('/lab/leaderboard', SITE.site).href },
+      { name: 'Case Studies', href: new URL('/lab/case-studies', SITE.site).href },
+    ]}
+  />
 
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter mb-4">
-      Case Studies
-    </h1>
-    
-    {hasStudies ? (
-      <div class="space-y-6">
-        <p class="text-lg text-muted mb-6">{caseStudies.length} {caseStudies.length === 1 ? 'study' : 'studies'}</p>
-        {caseStudies.map(study => (
-          <article class="p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-            <h2 class="text-xl font-bold mb-2">{study.data.title}</h2>
-            <p class="text-muted mb-3">{study.data.description}</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">Case Study</span>
-              <span class="text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
-                {study.data.published.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
-              </span>
-            </div>
-          </article>
-        ))}
-      </div>
-    ) : (
-      <div class="p-8 rounded-lg border border-dashed border-slate-300 dark:border-slate-600 text-center">
-        <p class="text-xl text-muted mb-4">No case studies yet</p>
-        <p class="text-muted max-w-lg mx-auto">
-          Case studies appear here when we apply a GEO practice to this site, measure the citation change, 
-          and document the result. Until we have measurable citation data, this page documents our methodology 
-          so you can see exactly how we'll evaluate each experiment.
-        </p>
-        <div class="mt-6 text-left max-w-lg mx-auto space-y-3 text-sm text-muted">
-          <h3 class="font-semibold text-base">Methodology</h3>
-          <ol class="list-decimal pl-5 space-y-2">
-            <li>Select a GEO practice from our knowledge base</li>
-            <li>Apply it to this site (commit documented)</li>
-            <li>Run the measurement pipeline (<a href="/lab/leaderboard" class="text-blue-600 dark:text-blue-400 hover:underline">leaderboard</a>)</li>
-            <li>Compare citation rate before vs after</li>
-            <li>Publish the result as a case study</li>
-          </ol>
-          <p class="mt-4">
-            Data: <a href="/lab/citonyx-dataset.json" class="text-blue-600 dark:text-blue-400 hover:underline">JSON</a> · 
-            <a href="/lab/citonyx-dataset.csv" class="text-blue-600 dark:text-blue-400 hover:underline">CSV</a> · 
-            <a href="/lab/leaderboard" class="text-blue-600 dark:text-blue-400 hover:underline">Leaderboard</a>
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter mb-4">Case Studies</h1>
+
+    {
+      hasStudies ? (
+        <div class="space-y-6">
+          <p class="text-lg text-muted mb-6">
+            {caseStudies.length} {caseStudies.length === 1 ? 'study' : 'studies'}
           </p>
+          {caseStudies.map((study) => (
+            <article class="p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+              <h2 class="text-xl font-bold mb-2">{study.data.title}</h2>
+              <p class="text-muted mb-3">{study.data.description}</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-xs px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+                  Case Study
+                </span>
+                <span class="text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
+                  {study.data.published.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                  })}
+                </span>
+              </div>
+            </article>
+          ))}
         </div>
-      </div>
-    )}
+      ) : (
+        <div class="p-8 rounded-lg border border-dashed border-slate-300 dark:border-slate-600 text-center">
+          <p class="text-xl text-muted mb-4">No case studies yet</p>
+          <p class="text-muted max-w-lg mx-auto">
+            Case studies appear here when we apply a GEO practice to this site, measure the citation change, and
+            document the result. Until we have measurable citation data, this page documents our methodology so you can
+            see exactly how we'll evaluate each experiment.
+          </p>
+          <div class="mt-6 text-left max-w-lg mx-auto space-y-3 text-sm text-muted">
+            <h3 class="font-semibold text-base">Methodology</h3>
+            <ol class="list-decimal pl-5 space-y-2">
+              <li>Select a GEO practice from our knowledge base</li>
+              <li>Apply it to this site (commit documented)</li>
+              <li>
+                Run the measurement pipeline (
+                <a href="/lab/leaderboard" class="text-blue-600 dark:text-blue-400 hover:underline">
+                  leaderboard
+                </a>
+                )
+              </li>
+              <li>Compare citation rate before vs after</li>
+              <li>Publish the result as a case study</li>
+            </ol>
+            <p class="mt-4">
+              Data:{' '}
+              <a href="/lab/citonyx-dataset.json" class="text-blue-600 dark:text-blue-400 hover:underline">
+                JSON
+              </a>{' '}
+              ·
+              <a href="/lab/citonyx-dataset.csv" class="text-blue-600 dark:text-blue-400 hover:underline">
+                CSV
+              </a>{' '}
+              ·
+              <a href="/lab/leaderboard" class="text-blue-600 dark:text-blue-400 hover:underline">
+                Leaderboard
+              </a>
+            </p>
+          </div>
+        </div>
+      )
+    }
   </section>
 </Layout>

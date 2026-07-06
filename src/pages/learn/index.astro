@@ -62,7 +62,9 @@ const grouped = allPractices.reduce<Record<string, typeof allPractices>>((acc, e
             <a
               href={entries.length >= 5 ? `/learn/${topic}` : '/learn'}
               class="text-sm font-medium text-primary hover:underline"
-            >View all &rarr;</a>
+            >
+              View all &rarr;
+            </a>
           </div>
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {entries.map((entry) => {
