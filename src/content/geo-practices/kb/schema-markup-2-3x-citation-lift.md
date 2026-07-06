@@ -1,0 +1,24 @@
+---
+title: Schema Markup Produces 2.3x Citation Lift on AI Overviews
+description: Study of 1,000 AI Overviews found FAQPage, HowTo, Article, Product schema
+  shows 2.3x citation lift vs unmarked pages. Zero-cost technical fix.
+practice_type: schema-markup
+provider: manual
+confidence: verified
+source: {url: 'https://linkbuildingjournal.co.uk/how-google-ai-overviews-choose-cited-pages/',
+  platform: web, author: Perwez Alam}
+published: 2026-07-06
+updated: 2026-07-06
+locale: en
+tags: [GEO, AI-SEO, schema, structured-data, JSON-LD, AI-Overviews]
+difficulty: beginner
+related: [73-percent-websites-block-ai-crawlers]
+conflicts_with: []
+manual: false
+hub: schema-markup
+---
+## Summary
+Schema markup is the strongest single page-level predictor of AI Overview citation inclusion — 2.3x lift for FAQPage, HowTo, Article, and Product schema. This is a zero-cost technical fix with high citation-eligibility impact.
+
+## Details
+Study sampled 1,000 AI Overviews across 30 verticals post-Gemini 3 rollout. Schema impact is strongest on AI Overviews (2.3x) vs ChatGPT (no isolated lift identified) vs Perplexity (significant on commercial queries). The Zyppy meta-analysis (54 studies) confirms schema is infrastructure hygiene. A 2026 Ahrefs causal study (1,885 pages, diff-in-diff) found no statistically significant uplift from schema — treat as hygiene, not a guaranteed lever.

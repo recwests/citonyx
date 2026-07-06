@@ -71,7 +71,20 @@ const geoPractices = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().max(200),
-    category: z.enum(['basics', 'content', 'technical', 'measurement']),
+    practice_type: z
+      .enum([
+        'basics',
+        'content',
+        'technical',
+        'measurement',
+        'entity-seo',
+        'schema-markup',
+        'tools',
+        'case-studies',
+        'monetization',
+      ])
+      .optional(),
+    category: z.enum(['basics', 'content', 'technical', 'measurement']).optional(),
     tags: z.array(z.string()),
     difficulty: z.enum(['beginner', 'intermediate', 'advanced']),
     published: z.coerce.date(),
@@ -79,7 +92,32 @@ const geoPractices = defineCollection({
     locale: z.enum(['en', 'ru']).default('en'),
     canonicalUrl: z.string().url().optional(),
     isStale: z.boolean().default(false),
+    manual: z.boolean().optional(),
     sources: z.array(z.string()).optional(),
+    source: z
+      .object({
+        url: z.string().url(),
+        platform: z.enum([
+          'twitter',
+          'youtube',
+          'reddit',
+          'gemini',
+          'chatgpt',
+          'perplexity',
+          'arxiv',
+          'github',
+          'web',
+        ]),
+        author: z.string().optional(),
+      })
+      .optional(),
+    provider: z
+      .enum(['gemini', 'chatgpt', 'perplexity', 'grok', 'tavily', 'arxiv', 'github', 'manual'])
+      .optional(),
+    confidence: z.enum(['verified', 'experimental', 'conflicting', 'deprecated']).optional(),
+    conflicts_with: z.array(z.string()).optional(),
+    hub: z.string().optional(),
+    last_reviewed: z.coerce.date().optional(),
     related: z.array(z.string()).optional(),
   }),
 });

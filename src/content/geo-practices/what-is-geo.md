@@ -1,7 +1,7 @@
 ---
 title: What Is Generative Engine Optimization (GEO)?
 description: GEO is the practice of optimizing content to be cited by AI search engines like ChatGPT, Perplexity, and Google AI Overviews — distinct from traditional SEO.
-category: basics
+practice_type: basics
 tags:
   - GEO
   - AI search
@@ -11,6 +11,7 @@ published: 2026-06-28
 updated: 2026-06-28
 locale: en
 isStale: false
+manual: true
 sources:
   - https://seopress.com
   - https://seo.com

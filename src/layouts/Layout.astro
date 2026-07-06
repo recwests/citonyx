@@ -59,5 +59,13 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
+
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/pagefind/pagefind-ui.js" type="module" is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        new PagefindUI({ element: '#search', showSubResults: true });
+      });
+    </script>
+    <div id="search" class="max-w-2xl mx-auto px-4 my-4"></div>
   </body>
 </html>

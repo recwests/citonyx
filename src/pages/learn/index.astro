@@ -5,16 +5,22 @@ import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Schema from '~/components/Schema.astro';
 import { getCollection } from 'astro:content';
 import { SITE } from 'astrowind:config';
+import { entryUrl } from '~/utils/entry';
 
 export const prerender = true;
 
 const allPractices = await getCollection('geoPractices');
 
-const categoryLabels: Record<string, string> = {
+const PRACTICE_TYPE_LABELS: Record<string, string> = {
   basics: 'Basics',
   content: 'Content Strategy',
-  technical: 'Technical',
+  technical: 'Technical GEO',
   measurement: 'Measurement & Analytics',
+  'entity-seo': 'Entity SEO',
+  'schema-markup': 'Schema & Structured Data',
+  tools: 'Tools & Platforms',
+  'case-studies': 'Case Studies',
+  monetization: 'Monetization',
 };
 
 const difficultyColors: Record<string, string> = {
@@ -23,14 +29,11 @@ const difficultyColors: Record<string, string> = {
   advanced: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
 };
 
-function getSlug(id: string): string {
-  return id.replace(/^.*[/\\]/, '').replace(/\.[^.]+$/, '');
-}
-
 const grouped = allPractices.reduce<Record<string, typeof allPractices>>((acc, entry) => {
-  const cat = entry.data.category;
-  if (!acc[cat]) acc[cat] = [];
-  acc[cat].push(entry);
+  const pt = entry.data.practice_type;
+  if (!pt) return acc;
+  if (!acc[pt]) acc[pt] = [];
+  acc[pt].push(entry);
   return acc;
 }, {});
 ---
@@ -47,20 +50,26 @@ const grouped = allPractices.reduce<Record<string, typeof allPractices>>((acc, e
       type="ItemList"
       items={allPractices.map((entry) => ({
         name: entry.data.title,
-        url: new URL('/learn/' + getSlug(entry.id), SITE.site).href,
+        url: new URL(entryUrl(entry).href, SITE.site).href,
       }))}
     />
 
     {
-      Object.entries(grouped).map(([category, entries]) => (
+      Object.entries(grouped).map(([topic, entries]) => (
         <div class="mb-12">
-          <h3 class="text-2xl font-bold mb-6 capitalize">{categoryLabels[category] || category}</h3>
+          <div class="flex items-baseline justify-between mb-6">
+            <h3 class="text-2xl font-bold">{PRACTICE_TYPE_LABELS[topic] || topic}</h3>
+            <a
+              href={entries.length >= 5 ? `/learn/${topic}` : '/learn'}
+              class="text-sm font-medium text-primary hover:underline"
+            >View all &rarr;</a>
+          </div>
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {entries.map((entry) => {
-              const slug = getSlug(entry.id);
+              const { href } = entryUrl(entry);
               return (
                 <a
-                  href={`/learn/${slug}`}
+                  href={href}
                   class="block p-6 rounded-lg border border-slate-200 dark:border-slate-700 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-600 transition-all"
                 >
                   <h4 class="text-lg font-semibold mb-2">{entry.data.title}</h4>

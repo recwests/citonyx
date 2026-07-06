@@ -1,7 +1,7 @@
 ---
 title: Are Brand Mentions ~3x Stronger Than Backlinks for AI Citations?
 description: A 2026 Ahrefs analysis (via AuthorityTech) of 75K brands found brand web mentions had a 0.664 correlation with AI citations vs 0.218 for backlinks — vendor data, not a causal study.
-category: measurement
+practice_type: measurement
 tags:
   - brand mentions
   - backlinks
@@ -12,6 +12,7 @@ published: 2026-06-28
 updated: 2026-06-28
 locale: en
 isStale: false
+manual: true
 sources:
   - https://ahrefs.com
   - https://authoritytech.com

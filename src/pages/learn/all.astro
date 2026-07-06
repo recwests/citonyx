@@ -1,0 +1,138 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Schema from '~/components/Schema.astro';
+import { getCollection } from 'astro:content';
+import { SITE } from 'astrowind:config';
+import { entryUrl } from '~/utils/entry';
+
+export const prerender = true;
+
+const allPractices = await getCollection('geoPractices');
+
+const practiceTypeLabels: Record<string, string> = {
+  basics: 'Basics', content: 'Content Strategy', technical: 'Technical GEO',
+  measurement: 'Measurement & Analytics', 'entity-seo': 'Entity SEO',
+  'schema-markup': 'Schema & Structured Data', tools: 'Tools & Platforms',
+  'case-studies': 'Case Studies', monetization: 'Monetization',
+};
+
+const confidenceColors: Record<string, string> = {
+  verified: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
+  experimental: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
+  conflicting: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
+  deprecated: 'bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400',
+};
+
+function getSlug(id: string): string {
+  return id.replace(/^.*[/\\]/, '').replace(/\.[^.]+$/, '');
+}
+
+const sorted = [...allPractices].sort(
+  (a, b) => b.data.published.getTime() - a.data.published.getTime()
+);
+
+const groups: Record<string, typeof sorted> = {};
+for (const entry of sorted) {
+  const key = entry.data.confidence || 'unrated';
+  if (!groups[key]) groups[key] = [];
+  groups[key].push(entry);
+}
+
+const groupOrder = ['verified', 'experimental', 'conflicting', 'deprecated', 'unrated'];
+const groupLabels: Record<string, string> = {
+  verified: 'Verified Practices',
+  experimental: 'Experimental',
+  conflicting: 'Conflicting Data',
+  deprecated: 'Deprecated',
+  unrated: 'Unrated',
+};
+---
+
+<Layout metadata={{ title: 'All GEO Practices', description: 'Complete index of all GEO practices on Citonyx' }}>
+  <WidgetWrapper>
+    <Headline title="All GEO Practices" subtitle={`${allPractices.length} practices total`} tagline="Index" />
+
+    <Schema type="BreadcrumbList" items={[
+      { name: 'Home', href: new URL('/', SITE.site).href },
+      { name: 'GEO Practices', href: new URL('/learn', SITE.site).href },
+      { name: 'All Practices', href: new URL('/learn/all', SITE.site).href },
+    ]} />
+    <Schema type="ItemList" items={sorted.map(e => ({
+      name: e.data.title,
+      url: new URL(entryUrl(e).href, SITE.site).href,
+    }))} />
+
+    {groupOrder.map(key => {
+      const entries = groups[key];
+      if (!entries || entries.length === 0) return null;
+      return (
+        <div class="mb-10">
+          <h2 class="text-2xl font-bold mb-4">{groupLabels[key]}</h2>
+          <p class="text-sm text-muted mb-4">{entries.length} {entries.length === 1 ? 'practice' : 'practices'}</p>
+          <div class="space-y-3">
+            {entries.map(entry => {
+              const slug = getSlug(entry.id);
+              const { href } = entryUrl(entry);
+              if (entry.data.manual) {
+                return (
+                  <a href={href} class="block p-4 rounded-lg border border-slate-200 dark:border-slate-700 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-600 transition-all">
+                    <div class="flex items-start justify-between gap-4">
+                      <div>
+                        <h3 class="font-semibold">{entry.data.title}</h3>
+                        <p class="text-sm text-muted mt-1">{entry.data.description}</p>
+                      </div>
+                      <div class="flex flex-wrap gap-2 shrink-0">
+                        {entry.data.practice_type && (
+                          <span class="text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
+                            {practiceTypeLabels[entry.data.practice_type] || entry.data.practice_type}
+                          </span>
+                        )}
+                        {entry.data.confidence && (
+                          <span class={`text-xs px-2 py-0.5 rounded font-medium ${confidenceColors[entry.data.confidence] || ''}`}>
+                            {entry.data.confidence}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <p class="text-xs text-muted mt-2">{entry.data.published.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
+                  </a>
+                );
+              }
+              return (
+                <section id={`entry-${slug}`} class="block p-4 rounded-lg border border-slate-200 dark:border-slate-700">
+                  <h3 class="text-xl font-semibold">{entry.data.title}</h3>
+                  <p class="text-sm text-muted mt-2">{entry.data.description}</p>
+                  <div class="flex flex-wrap gap-2 mt-3">
+                    {entry.data.confidence && (
+                      <span class={`text-xs px-2 py-0.5 rounded font-medium ${confidenceColors[entry.data.confidence] || ''}`}>
+                        {entry.data.confidence}
+                      </span>
+                    )}
+                    {entry.data.provider && (
+                      <span class="text-xs px-2 py-0.5 rounded bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">
+                        {entry.data.provider}
+                      </span>
+                    )}
+                    {entry.data.practice_type && (
+                      <span class="text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
+                        {practiceTypeLabels[entry.data.practice_type] || entry.data.practice_type}
+                      </span>
+                    )}
+                    {entry.data.source?.url && (
+                      <a href={entry.data.source.url} target="_blank" class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 hover:underline">
+                        Source
+                      </a>
+                    )}
+                  </div>
+                  <p class="text-xs text-muted mt-2">{entry.data.published.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
+                </section>
+              );
+            })}
+          </div>
+        </div>
+      );
+    })}
+  </WidgetWrapper>
+</Layout>

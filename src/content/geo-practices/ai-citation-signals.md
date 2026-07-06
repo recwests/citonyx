@@ -1,7 +1,7 @@
 ---
 title: AI Citation Signals — What Makes LLMs Trust Your Content
 description: AI search engines select citation sources based on brand mentions, structured data, and topical authority — not traditional backlinks alone.
-category: basics
+practice_type: basics
 tags:
   - citation
   - AI trust
@@ -11,6 +11,7 @@ published: 2026-06-28
 updated: 2026-06-28
 locale: en
 isStale: false
+manual: true
 sources:
   - https://ahrefs.com
   - https://seopress.com

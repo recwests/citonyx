@@ -33,30 +33,30 @@ i18n:
 
 apps:
   blog:
-    isEnabled: false
+    isEnabled: true
     postsPerPage: 6
 
     post:
-      isEnabled: false
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      isEnabled: true
+      permalink: '/%slug%'
       robots:
         index: true
 
     list:
-      isEnabled: false
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      isEnabled: true
+      pathname: 'blog'
       robots:
         index: true
 
     category:
       isEnabled: false
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'category'
       robots:
         index: true
 
     tag:
       isEnabled: false
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'tag'
       robots:
         index: false
 
