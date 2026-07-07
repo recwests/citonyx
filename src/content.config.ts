@@ -98,7 +98,8 @@ const geoPractices = defineCollection({
       .object({
         url: z.string().url(),
         platform: z.enum(['twitter', 'youtube', 'reddit', 'gemini', 'chatgpt', 'perplexity', 'arxiv', 'github', 'web']),
-        author: z.string().optional(),
+        // nullish: machine-generated KB entries may carry `author: null`; bridge strips it, this is the backstop
+        author: z.string().nullish(),
       })
       .optional(),
     provider: z.enum(['gemini', 'chatgpt', 'perplexity', 'grok', 'tavily', 'arxiv', 'github', 'manual']).optional(),
