@@ -1,6 +1,6 @@
 site:
   name: Citonyx
-  site: 'https://citonyx.pages.dev'
+  site: 'https://citonyx.com'
   base: '/'
   trailingSlash: false
 
