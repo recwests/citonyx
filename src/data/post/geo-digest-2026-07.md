@@ -6,7 +6,11 @@ description: There is no single "AI citation" game — there are five, each draw
 category: GEO
 tags: [GEO, digest, state-of-geo]
 author: Citonyx
+metadata:
+  canonical: https://citonyx.com/state-of-geo
 ---
+
+_This is the July 2026 snapshot of the State of GEO. The continuously-updated live version lives at [/state-of-geo](/state-of-geo)._
 
 There is no single "AI citation" game. There are five, each drawing from a different slice of the web — and across 53 curated findings this quarter they share only [11% of cited domains](https://citonyx.com/learn/measurement#entry-11-percent-ai-citation-overlap).
 
