@@ -7,7 +7,10 @@ const {
   subtitle = await Astro.slots.render('subtitle'),
   tagline,
   classes = {},
+  as = 'h2',
 } = Astro.props;
+
+const Tag = as;
 
 const {
   container: containerClass = 'max-w-3xl',
@@ -23,7 +26,7 @@ const {
         <p class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase" set:html={tagline} />
       )}
       {title && (
-        <h2
+        <Tag
           class={twMerge('font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl', titleClass)}
           set:html={title}
         />
