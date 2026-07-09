@@ -18,6 +18,10 @@ export const headerData = {
       href: getPermalink('/learn'),
     },
     {
+      text: 'State of GEO',
+      href: getPermalink('/state-of-geo'),
+    },
+    {
       text: 'llms.txt',
       href: getAsset('/llms.txt'),
     },
@@ -33,7 +37,7 @@ export const footerData = {
         { text: 'What is GEO', href: getPermalink('/learn/what-is-geo') },
         { text: 'AI Citation Signals', href: getPermalink('/learn/ai-citation-signals') },
         { text: 'Brand Mentions vs Backlinks', href: getPermalink('/learn/brand-mentions-vs-backlinks') },
-        { text: 'All Practices', href: getPermalink('/learn') },
+        { text: 'All Practices', href: getPermalink('/learn/all') },
       ],
     },
     {
