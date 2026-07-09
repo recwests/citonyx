@@ -172,3 +172,10 @@
 @utility card-fill {
   height: 100%;
 }
+
+/* 6. Scroll margin for anchor targets to clear sticky header (~72px) */
+@layer base {
+  main [id] {
+    scroll-margin-top: 72px;
+  }
+}
