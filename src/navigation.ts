@@ -14,7 +14,7 @@ export const headerData = {
       href: getPermalink('/lab/leaderboard'),
     },
     {
-      text: 'GEO Practices',
+      text: 'Practices',
       href: getPermalink('/learn'),
     },
     {
@@ -50,7 +50,10 @@ export const footerData = {
     },
     {
       title: 'Resources',
-      links: [{ text: 'llms.txt', href: getAsset('/llms.txt') }],
+      links: [
+        { text: 'Blog', href: getPermalink('/blog') },
+        { text: 'llms.txt', href: getAsset('/llms.txt') },
+      ],
     },
   ],
   secondaryLinks: [
