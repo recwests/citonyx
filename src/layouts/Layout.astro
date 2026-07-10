@@ -10,6 +10,8 @@ import ApplyColorMode from '~/components/common/ApplyColorMode.astro';
 import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification from '~/components/common/SiteVerification.astro';
 import Analytics from '~/components/common/Analytics.astro';
+import ConsentInit from '~/components/common/ConsentInit.astro';
+import ConsentBanner from '~/components/common/ConsentBanner.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 import Schema from '~/components/Schema.astro';
 
@@ -37,6 +39,7 @@ const { language, textDirection } = I18N;
     <ApplyColorMode />
     <Metadata {...metadata} />
     <SiteVerification />
+    <ConsentInit />
     <Analytics />
 
     <link rel="preconnect" href="https://images.unsplash.com" />
@@ -57,6 +60,8 @@ const { language, textDirection } = I18N;
 
   <body class="antialiased text-default bg-page tracking-tight">
     <slot />
+
+    <ConsentBanner />
 
     <BasicScripts />
 

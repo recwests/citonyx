@@ -1,0 +1,30 @@
+---
+---
+
+<div
+  id="cc-banner"
+  class="hidden fixed bottom-0 inset-x-0 z-50 bg-slate-900 text-slate-100 px-4 py-3 text-sm flex flex-wrap items-center justify-center gap-3"
+>
+  <span>We use analytics cookies to improve the site. No ads, no tracking across sites.</span>
+  <button id="cc-accept" class="rounded bg-blue-600 hover:bg-blue-700 px-3 py-1 font-semibold">Accept</button>
+  <button id="cc-decline" class="rounded border border-slate-500 hover:border-slate-300 px-3 py-1">Decline</button>
+</div>
+<script is:inline data-astro-rerun>
+  (function () {
+    var k = 'citonyx-consent';
+    var b = document.getElementById('cc-banner');
+    if (!b || localStorage.getItem(k)) return;
+    b.classList.remove('hidden');
+    document.getElementById('cc-accept').onclick = function () {
+      localStorage.setItem(k, 'granted');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(['consent', 'update', { analytics_storage: 'granted' }]);
+      if (window.gtag) window.gtag('consent', 'update', { analytics_storage: 'granted' });
+      b.remove();
+    };
+    document.getElementById('cc-decline').onclick = function () {
+      localStorage.setItem(k, 'denied');
+      b.remove();
+    };
+  })();
+</script>
