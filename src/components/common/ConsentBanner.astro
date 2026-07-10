@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <div
@@ -11,8 +12,8 @@
 </div>
 <script is:inline data-astro-rerun>
   (function () {
-    var k = 'citonyx-consent';
-    var b = document.getElementById('cc-banner');
+    const k = 'citonyx-consent';
+    const b = document.getElementById('cc-banner');
     if (!b || localStorage.getItem(k)) return;
     b.classList.remove('hidden');
     document.getElementById('cc-accept').onclick = function () {
