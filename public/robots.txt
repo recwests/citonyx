@@ -20,3 +20,7 @@ Allow: /
 Disallow:
 
 Sitemap: https://citonyx.com/sitemap-index.xml
+
+# Content Signals — explicit AI content usage preferences (all allowed)
+# See https://contentsignals.org/
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
