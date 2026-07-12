@@ -140,7 +140,8 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       </div>
       <div id="learn-difficulty" class="mt-3 text-xs text-muted">
         Difficulty:
-        <button type="button" data-diff="all" class="learn-diff-btn font-semibold text-primary">All</button> ·
+        <button type="button" data-diff="all" class="learn-diff-btn bg-primary text-white rounded-full px-2">All</button
+        > ·
         <button type="button" data-diff="beginner" class="learn-diff-btn">Beginner</button> ·
         <button type="button" data-diff="intermediate" class="learn-diff-btn">Intermediate</button> ·
         <button type="button" data-diff="advanced" class="learn-diff-btn">Advanced</button>
@@ -423,9 +424,9 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       if (!btn) return;
       difficulty = btn.dataset.diff || 'all';
       diffEl.querySelectorAll('.learn-diff-btn').forEach((b) => {
-        b.classList.toggle('font-semibold', b === btn);
-        b.classList.toggle('text-primary', b === btn);
+        b.classList.remove('font-semibold', 'text-primary', 'bg-primary', 'text-white', 'rounded-full', 'px-2');
       });
+      btn.classList.add('bg-primary', 'text-white', 'rounded-full', 'px-2');
       void apply();
     });
 
@@ -454,7 +455,7 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       const allHidden = extras[0]?.classList.contains('hidden');
       extras.forEach((el) => el.classList.toggle('hidden'));
       if (allHidden) {
-        moreBtn.textContent = `Less ▴`;
+        moreBtn.textContent = `Show less ▴`;
       } else {
         moreBtn.textContent = `All tags (${extras.length}) ▾`;
       }
@@ -469,10 +470,10 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
         b.classList.remove('bg-primary', 'text-white');
       });
       diffEl?.querySelectorAll('.learn-diff-btn').forEach((b) => {
-        b.classList.remove('font-semibold', 'text-primary');
+        b.classList.remove('font-semibold', 'text-primary', 'bg-primary', 'text-white', 'rounded-full', 'px-2');
       });
       const allBtn = diffEl?.querySelector('[data-diff="all"]');
-      allBtn?.classList.add('font-semibold', 'text-primary');
+      allBtn?.classList.add('bg-primary', 'text-white', 'rounded-full', 'px-2');
       sortMode = 'relevance';
       sortEl?.querySelectorAll('.learn-sort-btn').forEach((b) => {
         b.classList.remove('font-semibold', 'text-primary');
