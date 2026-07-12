@@ -37,16 +37,37 @@ const grouped = allPractices.reduce<Record<string, typeof allPractices>>((acc, e
   return acc;
 }, {});
 
+const TAG_LABELS: Record<string, string> = {
+  'ai-overviews': 'AI Overviews',
+  chatgpt: 'ChatGPT',
+  roi: 'ROI',
+  b2b: 'B2B',
+  eeat: 'E-E-A-T',
+  'llms-txt': 'llms.txt',
+  'robots-txt': 'robots.txt',
+  'technical-seo': 'Technical SEO',
+  'entity-seo': 'Entity SEO',
+  'digital-pr': 'Digital PR',
+  youtube: 'YouTube',
+  'local-geo': 'Local GEO',
+  'vertical-geo': 'Vertical GEO',
+  'multi-model': 'Multi-model',
+  seo: 'SEO',
+};
+const humanTag = (slug: string): string =>
+  TAG_LABELS[slug] ??
+  slug
+    .split('-')
+    .map((w) => w[0].toUpperCase() + w.slice(1))
+    .join(' ');
+
 const tagCounts = new Map<string, number>();
 for (const entry of allPractices) {
   for (const tag of entry.data.tags ?? []) {
     tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
   }
 }
-const topTags = [...tagCounts.entries()]
-  .sort((a, b) => b[1] - a[1])
-  .slice(0, 12)
-  .map(([tag]) => tag);
+const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) => b[1] - a[1]);
 ---
 
 <Layout metadata={{ title: 'GEO Practices' }}>
@@ -79,17 +100,35 @@ const topTags = [...tagCounts.entries()]
       </div>
       <div id="learn-tags" class="mt-4 flex flex-wrap gap-2">
         {
-          topTags.map((tag) => (
+          allTags.map(([tag], i) => (
             <button
               type="button"
-              class="learn-tag text-xs px-3 py-1.5 rounded-full border border-slate-300 dark:border-slate-600 hover:border-primary transition-colors"
+              class={`learn-tag text-xs px-3 py-1.5 rounded-full border border-slate-300 dark:border-slate-600 hover:border-primary transition-colors${i >= 12 ? ' learn-tag-extra hidden' : ''}`}
               data-tag={tag}
             >
-              {tag}
+              {humanTag(tag)}
             </button>
           ))
         }
       </div>
+      {
+        allTags.length > 12 && (
+          <button
+            type="button"
+            id="learn-tags-more"
+            class="text-xs px-3 py-1.5 rounded-full text-primary hover:underline"
+          >
+            All tags ({allTags.length - 12}) ▾
+          </button>
+        )
+      }
+      <button
+        type="button"
+        id="learn-reset"
+        class="hidden text-xs px-3 py-1.5 rounded-full border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950"
+      >
+        × Clear filters
+      </button>
       <nav id="learn-toc" aria-label="Sections" class="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
         {
           Object.entries(grouped).map(([topic, entries]) => (
@@ -100,6 +139,11 @@ const topTags = [...tagCounts.entries()]
         }
       </nav>
       <p id="learn-count" class="mt-3 text-sm text-muted hidden"></p>
+      <div id="learn-sort" class="mt-2 hidden text-xs text-muted">
+        Sort:
+        <button type="button" data-sort="relevance" class="learn-sort-btn font-semibold text-primary">Relevance</button> ·
+        <button type="button" data-sort="newest" class="learn-sort-btn">Newest</button>
+      </div>
     </div>
     <div id="learn-results" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 hidden"></div>
     <button
@@ -159,12 +203,50 @@ const topTags = [...tagCounts.entries()]
 <script>
   import Fuse from 'fuse.js';
 
+  const PRACTICE_LABELS: Record<string, string> = {
+    basics: 'Basics',
+    content: 'Content Strategy',
+    technical: 'Technical GEO',
+    measurement: 'Measurement & Analytics',
+    'entity-seo': 'Entity SEO',
+    'schema-markup': 'Schema & Structured Data',
+    tools: 'Tools & Platforms',
+    'case-studies': 'Case Studies',
+    monetization: 'Monetization',
+  };
+  const TAG_LABELS: Record<string, string> = {
+    'ai-overviews': 'AI Overviews',
+    chatgpt: 'ChatGPT',
+    roi: 'ROI',
+    b2b: 'B2B',
+    eeat: 'E-E-A-T',
+    'llms-txt': 'llms.txt',
+    'robots-txt': 'robots.txt',
+    'technical-seo': 'Technical SEO',
+    'entity-seo': 'Entity SEO',
+    'digital-pr': 'Digital PR',
+    youtube: 'YouTube',
+    'local-geo': 'Local GEO',
+    'vertical-geo': 'Vertical GEO',
+    'multi-model': 'Multi-model',
+    seo: 'SEO',
+  };
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const humanTag = (slug: string): string =>
+    TAG_LABELS[slug] ??
+    slug
+      .split('-')
+      .map((w) => w[0].toUpperCase() + w.slice(1))
+      .join(' ');
+
   type Practice = {
     slug: string;
     title: string;
     description: string;
     tags: string[];
     difficulty: string;
+    practice_type: string;
+    updated: string;
     url: string | null;
   };
 
@@ -175,12 +257,15 @@ const topTags = [...tagCounts.entries()]
     const countEl = document.getElementById('learn-count');
     const tagsWrap = document.getElementById('learn-tags');
     const toc = document.getElementById('learn-toc');
+    const sortEl = document.getElementById('learn-sort');
+    const resetEl = document.getElementById('learn-reset');
     if (!input || !results || !groups || !countEl || !tagsWrap || input.dataset.ready) return;
     input.dataset.ready = '1';
 
     let fuse: Fuse<Practice> | null = null;
     let all: Practice[] = [];
     let activeTag = '';
+    let sortMode: 'relevance' | 'newest' = 'relevance';
 
     async function ensureData() {
       if (fuse) return;
@@ -203,6 +288,9 @@ const topTags = [...tagCounts.entries()]
       a.href = p.url as string;
       a.className =
         'block p-6 rounded-lg border border-slate-200 dark:border-slate-700 hover:shadow-md hover:border-slate-300 dark:hover:border-slate-600 transition-all';
+      const cat = document.createElement('div');
+      cat.className = 'text-xs uppercase tracking-wide text-primary mb-1';
+      cat.textContent = PRACTICE_LABELS[p.practice_type] ?? '';
       const h = document.createElement('h4');
       h.className = 'text-lg font-semibold mb-2';
       h.textContent = p.title;
@@ -212,7 +300,7 @@ const topTags = [...tagCounts.entries()]
       const t = document.createElement('div');
       t.className = 'flex flex-wrap gap-2 items-center text-xs text-muted';
       t.textContent = [p.difficulty, ...(p.tags || []).slice(0, 3)].filter(Boolean).join(' · ');
-      a.append(h, d, t);
+      a.append(cat, h, d, t);
       return a.outerHTML;
     }
 
@@ -221,19 +309,43 @@ const topTags = [...tagCounts.entries()]
       if (!q && !activeTag) {
         results!.classList.add('hidden');
         countEl!.classList.add('hidden');
+        sortEl?.classList.add('hidden');
         groups!.classList.remove('hidden');
         toc?.classList.remove('hidden');
+        sortMode = 'relevance';
         return;
       }
       await ensureData();
       let items = q && fuse ? fuse.search(q).map((r) => r.item) : all;
       if (activeTag) items = items.filter((p) => (p.tags || []).includes(activeTag));
-      results!.innerHTML = items.map(card).join('');
-      countEl!.textContent = items.length
-        ? `${items.length} practice${items.length === 1 ? '' : 's'} found`
-        : 'Nothing found — try another query or tag';
+      if (sortMode === 'newest') {
+        items = [...items].sort((a, b) => (b.updated || '').localeCompare(a.updated || ''));
+      }
+      if (items.length === 0) {
+        const emptyDiv = document.createElement('div');
+        emptyDiv.className = 'col-span-full py-12 text-center';
+        const p = document.createElement('p');
+        p.className = 'text-lg font-semibold';
+        p.appendChild(document.createTextNode('Nothing found for "'));
+        const qs = document.createElement('q');
+        qs.textContent = q;
+        p.appendChild(qs);
+        p.appendChild(document.createTextNode('"'));
+        const hint = document.createElement('p');
+        hint.className = 'text-sm text-muted mt-1';
+        hint.textContent = 'Try different keywords or clear filters';
+        emptyDiv.append(p, hint);
+        results!.innerHTML = '';
+        results!.append(emptyDiv);
+        countEl!.classList.add('hidden');
+      } else {
+        results!.innerHTML = items.map(card).join('');
+        countEl!.textContent = `${items.length} practice${items.length === 1 ? '' : 's'} found`;
+        countEl!.classList.remove('hidden');
+      }
       results!.classList.remove('hidden');
-      countEl!.classList.remove('hidden');
+      sortEl?.classList.toggle('hidden', !q);
+      resetEl?.classList.toggle('hidden', !(q || activeTag));
       groups!.classList.add('hidden');
       toc?.classList.add('hidden');
     }
@@ -258,6 +370,45 @@ const topTags = [...tagCounts.entries()]
       });
       topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
+
+    sortEl?.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.learn-sort-btn') as HTMLButtonElement | null;
+      if (!btn) return;
+      sortMode = btn.dataset.sort as 'relevance' | 'newest';
+      sortEl!.querySelectorAll('.learn-sort-btn').forEach((b) => {
+        b.classList.toggle('font-semibold', b === btn);
+        b.classList.toggle('text-primary', b === btn);
+      });
+      void apply();
+    });
+
+    const moreBtn = document.getElementById('learn-tags-more');
+    moreBtn?.addEventListener('click', () => {
+      const extras = document.querySelectorAll('.learn-tag-extra');
+      const allHidden = extras[0]?.classList.contains('hidden');
+      extras.forEach((el) => el.classList.toggle('hidden'));
+      if (allHidden) {
+        moreBtn.textContent = `Less ▴`;
+      } else {
+        moreBtn.textContent = `All tags (${extras.length}) ▾`;
+      }
+    });
+
+    const resetBtn = document.getElementById('learn-reset');
+    resetBtn?.addEventListener('click', () => {
+      input!.value = '';
+      activeTag = '';
+      tagsWrap.querySelectorAll('button.learn-tag').forEach((b) => {
+        b.classList.remove('bg-primary', 'text-white');
+      });
+      sortMode = 'relevance';
+      sortEl?.querySelectorAll('.learn-sort-btn').forEach((b) => {
+        b.classList.remove('font-semibold', 'text-primary');
+      });
+      const relBtn = sortEl?.querySelector('[data-sort="relevance"]');
+      relBtn?.classList.add('font-semibold', 'text-primary');
+      void apply();
+    });
   }
 
   init();
