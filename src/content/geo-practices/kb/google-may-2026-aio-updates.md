@@ -10,7 +10,7 @@ source: {url: 'https://www.seo-kreativ.de/en/blog/google-ai-overviews-updates-20
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, Google-AI-Overviews, AIO-updates, click-data]
+tags: [ai-overviews, attribution]
 difficulty: beginner
 related: []
 conflicts_with: []

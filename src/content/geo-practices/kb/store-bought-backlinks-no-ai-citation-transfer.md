@@ -12,8 +12,7 @@ source: {url: 'https://thedigitalbloom.com/learn/geo-traffic-optimization-report
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, backlinks, brand-mentions, citation-architecture, earned-media,
-  authority-signals]
+tags: [digital-pr, citation-behavior, authority]
 difficulty: intermediate
 related: [brand-mentions-3x-stronger-than-backlinks]
 conflicts_with: []

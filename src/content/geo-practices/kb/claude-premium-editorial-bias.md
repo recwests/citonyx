@@ -11,7 +11,7 @@ source: {url: 'https://quickseo.ai/blog/ai-citation-patterns', platform: web}
 published: 2026-05-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, Claude, Brave-Search, editorial, premium-sources, freshness]
+tags: [claude, authority, freshness]
 difficulty: advanced
 related: [chatgpt-first-party-site-68-percent-citations, gemini-schema-responsive-52-percent-owned]
 conflicts_with: []

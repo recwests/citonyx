@@ -11,7 +11,7 @@ source: {url: 'https://neuraplus-ai.github.io/blog/schema-markup-for-ai-search.h
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, schema-markup, faqpage, speakable, entity-graph, json-ld]
+tags: [knowledge-graph]
 difficulty: intermediate
 related: [schema-markup-2-3x-citation-lift, attribute-rich-schema-20pp-citation-lift]
 conflicts_with: []

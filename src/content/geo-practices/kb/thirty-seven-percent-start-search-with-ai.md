@@ -10,7 +10,7 @@ source: {url: 'https://eightohtwo.com/blog/2026-ai-search-behavior-study-ai-now-
 published: 2026-02-04
 updated: 2026-07-10
 locale: en
-tags: [consumer behavior, search habits, AI adoption, user study, discovery]
+tags: [market-data]
 difficulty: beginner
 related: [chatgpt-900-million-weekly-users-2026]
 conflicts_with: []

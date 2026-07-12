@@ -11,7 +11,7 @@ source: {url: 'https://github.com/danishashko/ai-citation-patterns', platform: w
 published: 2026-05-16
 updated: 2026-07-11
 locale: en
-tags: [freshness, content-age, citation-patterns, measurement, github-study]
+tags: [freshness, citation-behavior, measurement, research]
 difficulty: intermediate
 related: [content-freshness-13-week-shelf-life, content-freshness-25-percent-advantage]
 conflicts_with: []

@@ -11,8 +11,7 @@ source: {url: 'https://amicited.com/research/review-velocity-vs-rating-2026', pl
 published: 2026-01-10
 updated: 2026-07-10
 locale: en
-tags: [review velocity, star rating, review platforms, citation correlation, social
-    proof]
+tags: [social-proof, citation-behavior]
 difficulty: intermediate
 related: [review-depth-strongest-geo-predictor]
 conflicts_with: []

@@ -11,7 +11,7 @@ source: {url: 'https://tygartmedia.com/geo-case-studies-2026/', platform: web, a
 published: 2026-07-09
 updated: 2026-07-11
 locale: en
-tags: [hubspot, answer-format, content-structure, heading-hierarchy, aeo, template]
+tags: [content-structure]
 difficulty: beginner
 related: [answer-first-content-architecture, document-structure-17-percent-citation-lift]
 conflicts_with: []

@@ -11,7 +11,7 @@ source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends',
 published: 2026-05-15
 updated: 2026-07-08
 locale: en
-tags: [GEO, AI-SEO, third-party, digital-pr, reddit, wikipedia, review-platforms]
+tags: [digital-pr, reddit, wikipedia, social-proof]
 difficulty: intermediate
 related: [brand-mentions-3x-stronger-than-backlinks, perplexity-46-percent-reddit-sources,
   chatgpt-wikipedia-29-percent-dependency]

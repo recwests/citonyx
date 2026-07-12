@@ -11,7 +11,7 @@ source: {url: 'https://betteraisearch.com/tactics/schema-markup-ai-search', plat
 published: 2026-04-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, content-structure, headings, passage-optimization, extractability]
+tags: [content-structure]
 difficulty: intermediate
 related: [content-freshness-25-percent-advantage, data-rich-content-19-stats-5x-citations]
 conflicts_with: []

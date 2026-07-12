@@ -10,7 +10,7 @@ source: {url: 'https://www.radiantelephant.com/geo-tactics-what-works-evidence-b
 published: 2026-04-14
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, freshness, content-updates, semrush, citation]
+tags: [freshness, semrush, citation-behavior]
 difficulty: beginner
 related: [content-freshness-25-percent-advantage, google-ai-overviews-author-name-bio-required]
 conflicts_with: []

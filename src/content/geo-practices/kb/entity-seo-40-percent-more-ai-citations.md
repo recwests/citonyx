@@ -11,8 +11,7 @@ source: {url: 'https://rankeo.io/blog/entity-seo-optimization', platform: web, a
 published: 2026-04-03
 updated: 2026-07-10
 locale: en
-tags: [entity SEO, knowledge graph, entity salience, schema, LLM citation, entity
-    optimization]
+tags: [knowledge-graph, schema-markup, citation-behavior]
 difficulty: advanced
 related: [entity-mass-architecture-aio-citation, brand-entity-mentions-surpass-domain-rating]
 conflicts_with: []

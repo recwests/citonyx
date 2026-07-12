@@ -10,7 +10,7 @@ source: {url: 'https://otterly.ai/blog/the-ai-citations-report-2026', platform: 
 published: 2026-02-01
 updated: 2026-07-08
 locale: en
-tags: [GEO, AI-SEO, google-ai-overviews, chatgpt, perplexity, brand-citations, platform-differences]
+tags: [ai-overviews, chatgpt, perplexity, digital-pr, multi-model]
 difficulty: beginner
 related: [platform-specific-citation-conversion-rates, 11-percent-ai-citation-overlap]
 conflicts_with: []

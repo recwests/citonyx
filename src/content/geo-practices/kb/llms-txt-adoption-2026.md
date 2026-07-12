@@ -11,7 +11,7 @@ source: {url: 'https://presenc.ai/research/state-of-llms-txt-2026', platform: we
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, llms-txt, technical-seo, ai-crawlers, robots-txt]
+tags: [llms-txt, technical-seo, robots-txt]
 difficulty: intermediate
 related: [llms-txt-ai-discovery-files-competitive, cloudflare-three-tier-crawler-classification]
 conflicts_with: []

@@ -11,7 +11,7 @@ source: {url: 'https://zaturn.ai/blog/geo', platform: web, author: Zaturn / Goog
 published: 2026-06-25
 updated: 2026-07-06
 locale: en
-tags: [GEO, Google, Search-Console, measurement, AI-Overviews]
+tags: [google, attribution, ai-overviews]
 difficulty: beginner
 related: [gsc-ai-mode-segmentation, google-ai-overviews-48-percent-ctr-drop-61]
 conflicts_with: []

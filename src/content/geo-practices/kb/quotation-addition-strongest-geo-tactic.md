@@ -11,7 +11,7 @@ source: {url: 'https://arxiv.org/abs/2311.09735', platform: arxiv, author: Aggar
 published: 2024-08-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, quotation-addition, Princeton-paper, GEO-methods, expert-quotes]
+tags: [content-strategy]
 difficulty: intermediate
 related: [data-rich-content-19-stats-5x-citations, google-ai-overviews-author-name-bio-required]
 conflicts_with: []

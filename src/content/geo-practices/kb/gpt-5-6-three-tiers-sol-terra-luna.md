@@ -11,7 +11,7 @@ source: {url: 'https://winbuzzer.com/2026/07/09/openai-says-gpt-56-rolls-out-wit
 published: 2026-07-09
 updated: 2026-07-11
 locale: en
-tags: [gpt-5.6, sol, terra, luna, openai, grok-4.5, model-updates]
+tags: [chatgpt, grok, multi-model]
 difficulty: beginner
 related: [gpt-5-4-vendor-citations-74-percent, gpt-5-citation-hallucination-halved]
 conflicts_with: []

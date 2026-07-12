@@ -10,7 +10,7 @@ source: {url: 'https://ahrefs.com/blog/ai-overview-brand-correlation/', platform
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, brand-mentions, backlinks, citation-signals]
+tags: [digital-pr, citation-factors]
 difficulty: intermediate
 related: []
 conflicts_with: []

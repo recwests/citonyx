@@ -10,7 +10,7 @@ source: {url: 'https://www.arfadia.com/blog/ai-search-geo-statistics-2026-source
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, credibility-paradox, trust, sentiment, brand-perception, measurement]
+tags: [trust-signals, social-proof]
 difficulty: intermediate
 related: []
 conflicts_with: []

@@ -12,7 +12,7 @@ source: {url: 'https://authoritytech.io/curated/your-case-studies-arent-getting-
 published: 2026-03-17
 updated: 2026-07-10
 locale: en
-tags: [B2B, buyer behavior, case studies, GEO-16, Forrester, reformat]
+tags: [b2b, market-data, case-study, measurement, content-structure]
 difficulty: intermediate
 related: [own-site-citations-only-12-percent-b2b]
 conflicts_with: []

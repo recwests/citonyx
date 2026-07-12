@@ -11,7 +11,7 @@ source: {url: 'https://www.conductor.com/academy/aeo-geo-benchmarks-report/', pl
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [benchmark, referral-traffic, conductor, traffic-share, industry-data]
+tags: [referral-traffic, market-data]
 difficulty: beginner
 related: [ai-attribution-gap-54x-undercount, ai-search-converts-4-4x-better-than-organic,
   chatgpt-900-million-weekly-users-2026]

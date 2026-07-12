@@ -11,7 +11,7 @@ source: {url: 'https://brandofy.ai/blog/brand-visibility-on-llms-2025-benchmark'
 published: 2026-05-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, reviews, G2, Capterra, brand-visibility, social-proof, B2B-SaaS]
+tags: [social-proof, digital-pr, b2b]
 difficulty: beginner
 related: [b2b-saas-dominates-ai-citations-34-percent, 87-percent-citation-rate-reviews-pr]
 conflicts_with: []

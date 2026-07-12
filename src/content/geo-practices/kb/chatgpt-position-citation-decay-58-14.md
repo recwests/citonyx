@@ -9,7 +9,7 @@ source: {url: 'https://www.airops.com', platform: web, author: AirOps}
 published: 2026-06-15
 updated: 2026-07-08
 locale: en
-tags: [GEO, ChatGPT, citation-rate, position-decay, retrieval]
+tags: [chatgpt, citation-rate, citation-decay, citation-factors]
 difficulty: intermediate
 related: [llm-citations-44-percent-front-loaded, platform-specific-citation-conversion-rates]
 conflicts_with: []

@@ -12,8 +12,7 @@ source: {url: 'https://authoritytech.io/blog/google-io-2026-ai-search-changes-se
 published: 2026-05-19
 updated: 2026-07-11
 locale: en
-tags: [google-io-2026, ai-mode, default-search, generative-ui, information-agents,
-  personal-intelligence]
+tags: [ai-overviews, default-search, information-agents, personal-intelligence]
 difficulty: beginner
 related: [ai-overviews-86-percent-us-searches, google-may-2026-aio-updates]
 conflicts_with: []

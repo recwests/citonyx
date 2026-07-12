@@ -10,7 +10,7 @@ source: {url: 'https://previsible.ai', platform: web, author: Previsible}
 published: 2026-06-01
 updated: 2026-07-08
 locale: en
-tags: [GEO, Claude, Gemini, visibility, growth, Previsible, cross-platform]
+tags: [claude, gemini, multi-model]
 difficulty: intermediate
 related: [claude-premium-editorial-bias, 11-percent-ai-citation-overlap]
 conflicts_with: []

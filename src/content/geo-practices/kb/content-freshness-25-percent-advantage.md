@@ -10,7 +10,7 @@ source: {url: 'https://www.digitalapplied.com/blog/ai-search-citation-ranking-fa
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, freshness, content-age, citation-factors, ChatGPT]
+tags: [freshness, citation-factors, chatgpt]
 difficulty: beginner
 related: []
 conflicts_with: []

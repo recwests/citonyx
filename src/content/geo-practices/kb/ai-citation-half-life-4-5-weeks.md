@@ -10,7 +10,7 @@ source: {url: 'https://lumengeo.co/blog/ai-search-statistics-2026', platform: we
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, citation-decay, continuity, measurement, drift]
+tags: [citation-decay]
 difficulty: intermediate
 related: [content-freshness-25-percent-advantage]
 conflicts_with: []

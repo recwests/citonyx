@@ -10,7 +10,7 @@ source: {url: 'https://www.pulsesparkai.com/blog/ai-search-citation-data-2026', 
 published: 2026-04-03
 updated: 2026-07-10
 locale: en
-tags: [Perplexity, ChatGPT, Claude, citation rate, platform comparison, query types]
+tags: [perplexity, chatgpt, claude, citation-rate, multi-model, query-types]
 difficulty: intermediate
 related: [platform-specific-citation-conversion-rates, 11-percent-ai-citation-overlap]
 conflicts_with: []

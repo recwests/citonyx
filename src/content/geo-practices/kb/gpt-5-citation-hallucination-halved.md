@@ -10,7 +10,7 @@ source: {url: 'https://arxiv.org/abs/2603.03299', platform: arxiv, author: Naser
 published: 2026-02-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, citation-hallucination, GPT-5, Claude, research-quality, multi-model]
+tags: [citation-hallucination, chatgpt, claude, multi-model]
 difficulty: advanced
 related: []
 conflicts_with: []

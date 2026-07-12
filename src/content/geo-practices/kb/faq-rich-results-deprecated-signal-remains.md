@@ -11,7 +11,7 @@ source: {url: 'https://searchengineland.com/google-to-no-longer-support-faq-rich
 published: 2026-05-07
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, FAQ-rich-results, deprecation, schema, AI-citation, Google-update]
+tags: [citation-behavior, google]
 difficulty: intermediate
 related: [schema-markup-2-3x-citation-lift, schema-markup-near-zero-independent-effect]
 conflicts_with: []

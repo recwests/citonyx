@@ -12,7 +12,7 @@ source: {url: 'https://www.omnibound.ai/blog/generative-engine-optimization-stat
 published: 2026-05-07
 updated: 2026-07-11
 locale: en
-tags: [market-size, enterprise, tools, measurement, investment, GEO-market]
+tags: [market-data, b2b, measurement, roi]
 difficulty: beginner
 related: [citation-reach-rate-33-percent-seo-tools-gap, gsc-ai-mode-segmentation]
 conflicts_with: []

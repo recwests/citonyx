@@ -12,8 +12,7 @@ source: {url: 'https://usemagna.com/blog/research/ai-citation-report-2026', plat
 published: 2026-05-09
 updated: 2026-07-10
 locale: en
-tags: [Wikipedia, citation patterns, community platforms, entity authority, Magna
-    AI]
+tags: [wikipedia, citation-behavior, reddit, entity-seo]
 difficulty: intermediate
 related: [wikipedia-citation-growth-55-percent, community-platforms-52-percent-citations]
 conflicts_with: []

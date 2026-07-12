@@ -12,7 +12,7 @@ source: {url: 'https://www.researchgate.net/publication/407287604_Generative_Eng
 published: 2026-06-21
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, brand-stature, visibility, citation-analysis, scale]
+tags: [authority, citation-behavior]
 difficulty: advanced
 related: [brand-mentions-3x-stronger-than-backlinks, brand-entity-mentions-surpass-domain-rating]
 conflicts_with: []

@@ -11,7 +11,7 @@ source: {url: 'https://thedigitalbloom.com/learn/geo-traffic-optimization-report
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, listicles, google-update, algorithm-enforcement, content-risk]
+tags: [content-structure, google, content-risk]
 difficulty: intermediate
 related: [topic-targeting-replaces-keyword-targeting]
 conflicts_with: []

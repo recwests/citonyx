@@ -10,7 +10,7 @@ source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends',
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [chatgpt, gemini, deepseek, grok, market-share, platform-shift]
+tags: [chatgpt, gemini, deepseek, grok, market-data, multi-model]
 difficulty: beginner
 related: [gemini-3-collapsed-top-10-overlap, chatgpt-900-million-weekly-users-2026,
   gemini-750-million-monthly-users]

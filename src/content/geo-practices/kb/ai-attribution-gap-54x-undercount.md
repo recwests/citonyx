@@ -12,7 +12,7 @@ source: {url: 'https://gumlet.com/blog/ai-attribution-gap-2026', platform: web, 
 published: 2026-05-20
 updated: 2026-07-10
 locale: en
-tags: [attribution, GA gap, conversion tracking, measurement, undercount, ROI]
+tags: [attribution, roi]
 difficulty: beginner
 related: [citation-reach-rate-33-percent-seo-tools-gap, ai-search-converts-4-4x-better-than-organic]
 conflicts_with: []

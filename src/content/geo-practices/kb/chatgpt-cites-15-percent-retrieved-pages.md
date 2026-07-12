@@ -11,7 +11,7 @@ source: {url: 'https://authoritytech.io/blog/ai-search-ranking-factors-citation-
 published: 2026-05-30
 updated: 2026-07-11
 locale: en
-tags: [retrieval-rate, citation-rate, two-stage-process, ranking-factors, zyppy]
+tags: [citation-factors, citation-rate, zyppy]
 difficulty: intermediate
 related: [prompt-content-alignment-dominant-citation-predictor, zyppy-evidence-weighted-citation-factors]
 conflicts_with: []

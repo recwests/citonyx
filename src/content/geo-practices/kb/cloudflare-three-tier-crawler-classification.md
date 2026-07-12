@@ -10,7 +10,7 @@ source: {url: 'https://blog.cloudflare.com/content-independence-day-ai-options/'
 published: 2026-07-01
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, cloudflare, crawlers, robots-txt, ai-training, policy, security]
+tags: [technical-seo, robots-txt, llms-txt]
 difficulty: intermediate
 related: [73-percent-websites-block-ai-crawlers, ai-crawler-economics-gptbot-1255-1]
 conflicts_with: []

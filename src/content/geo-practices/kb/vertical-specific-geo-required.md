@@ -12,8 +12,7 @@ source: {url: 'https://marketbridge.com/article/generic-geo-vs-industry-specific
 published: 2026-06-02
 updated: 2026-07-11
 locale: en
-tags: [vertical-geo, industry-specific, research, trust-signals, b2b, healthcare,
-  saas]
+tags: [vertical-geo, research, trust-signals, b2b]
 difficulty: advanced
 related: [b2b-geo-budget-guide-35-60k, healthcare-geo-traffic-collapse-46-percent]
 conflicts_with: []

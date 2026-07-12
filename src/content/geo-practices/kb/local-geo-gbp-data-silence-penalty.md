@@ -9,7 +9,7 @@ source: {url: 'https://support.google.com/business/answer/3037951', platform: we
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [local-geo, gbp, google-business-profile, data-verification, silence-penalty]
+tags: [local-geo, trust-signals]
 difficulty: intermediate
 related: [wikidata-qid-entity-seo-signal-40-percent, brand-entity-mentions-surpass-domain-rating]
 conflicts_with: []

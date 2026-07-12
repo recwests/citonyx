@@ -11,7 +11,7 @@ source: {url: 'https://digitalapplied.com/blog/citation-reach-rate-2026', platfo
 published: 2026-06-10
 updated: 2026-07-10
 locale: en
-tags: [citation reach, monitoring, SEO tools gap, measurement, CRR]
+tags: [citation-rate, seo-tools-gap]
 difficulty: intermediate
 related: [ai-attribution-gap-54x-undercount]
 conflicts_with: []

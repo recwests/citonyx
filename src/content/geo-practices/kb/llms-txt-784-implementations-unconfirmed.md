@@ -12,7 +12,7 @@ source: {url: 'https://presenc.ai/research/state-of-llms-txt-2026', platform: we
 published: 2026-04-19
 updated: 2026-07-11
 locale: en
-tags: [llms-txt, adoption, MCP, standards, discovery-files]
+tags: [llms-txt, market-data]
 difficulty: advanced
 related: [llms-txt-adoption-2026, llms-txt-ai-discovery-files-competitive]
 conflicts_with: []

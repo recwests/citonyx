@@ -10,7 +10,7 @@ source: {url: 'https://www.overthetopseo.com/geo-case-study-ai-search-citations/
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, case-study, SaaS, review-platforms, PR, comparison-content]
+tags: [case-study, b2b, social-proof, digital-pr, content-structure]
 difficulty: advanced
 related: [88-percent-ai-recommendation-pr-consensus, b2b-manufacturing-50-percent-citation-rate]
 conflicts_with: []

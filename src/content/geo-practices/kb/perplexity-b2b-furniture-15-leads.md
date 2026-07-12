@@ -11,7 +11,7 @@ source: {url: 'https://mersel.ai', platform: web, author: Mersel}
 published: 2026-04-20
 updated: 2026-07-08
 locale: en
-tags: [GEO, Perplexity, B2B, leads, case-study, citation-first]
+tags: [perplexity, b2b, roi, case-study]
 difficulty: intermediate
 related: [perplexity-46-percent-reddit-sources, perplexity-freshness-premium-45-points,
   b2b-geo-budget-guide-35-60k]

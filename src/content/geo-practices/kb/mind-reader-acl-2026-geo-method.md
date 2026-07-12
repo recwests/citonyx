@@ -10,7 +10,7 @@ source: {url: 'https://aclanthology.org/2026.acl-long.1894.pdf', platform: web, 
 published: 2026-05-15
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, academic, content-optimization, query-augmentation, ACL]
+tags: [research, content-strategy]
 difficulty: advanced
 related: [topic-targeting-replaces-keyword-targeting]
 conflicts_with: []

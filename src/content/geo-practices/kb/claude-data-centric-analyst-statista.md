@@ -10,7 +10,7 @@ source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-jun
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, claude, citation-preferences, data-sources, statista, per-model-strategy]
+tags: [claude, citation-behavior, multi-model]
 difficulty: intermediate
 related: [claude-premium-editorial-bias, platform-specific-citation-conversion-rates]
 conflicts_with: []

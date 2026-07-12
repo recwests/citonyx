@@ -11,7 +11,7 @@ source: {url: 'https://arxiv.org/abs/2602.18455', platform: web, author: NJIT/NT
 published: 2026-05-13
 updated: 2026-07-10
 locale: en
-tags: [AI Overviews, traffic loss, causal study, Wikipedia, publisher impact, arxiv]
+tags: [ai-overviews, referral-traffic, research, wikipedia]
 difficulty: intermediate
 related: [ai-overviews-48-percent-us-queries-8x-growth]
 conflicts_with: []

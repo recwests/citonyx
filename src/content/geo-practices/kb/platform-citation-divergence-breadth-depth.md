@@ -11,7 +11,7 @@ source: {url: 'https://arxiv.org/abs/2604.25707', platform: web, author: 'Zhang,
 published: 2026-04-01
 updated: 2026-07-11
 locale: en
-tags: [citation-behavior, perplexity, chatgpt, research, platform-differences, arxiv]
+tags: [citation-behavior, perplexity, chatgpt, research, multi-model]
 difficulty: intermediate
 related: [11-percent-ai-citation-overlap, platform-specific-citation-conversion-rates]
 conflicts_with: []

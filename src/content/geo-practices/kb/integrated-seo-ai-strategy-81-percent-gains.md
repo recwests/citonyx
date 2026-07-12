@@ -11,7 +11,7 @@ source: {url: 'https://semrush.com/blog/integrated-seo-ai-strategy-2026', platfo
 published: 2026-06-08
 updated: 2026-07-10
 locale: en
-tags: [integrated strategy, SEO, GEO, budget allocation, Semrush, organizational]
+tags: [case-study, roi, semrush, b2b]
 difficulty: beginner
 related: [brand-entity-mentions-surpass-domain-rating]
 conflicts_with: []

@@ -10,7 +10,7 @@ source: {url: 'https://turboaudit.ai/generative-engine-optimization', platform: 
 published: 2026-05-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, CTR, cited-brand-premium, ROI, paid-search, organic-CTR]
+tags: [referral-traffic, citation-rate, roi]
 difficulty: beginner
 related: [ai-search-converts-4-4x-better-than-organic, brand-mentions-3x-stronger-than-backlinks]
 conflicts_with: []

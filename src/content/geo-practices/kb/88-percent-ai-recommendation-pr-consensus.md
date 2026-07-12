@@ -10,7 +10,7 @@ source: {url: 'https://www.gen-optima.com/case-studies/amico-lighting-ai-recomme
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, case-study, PR-consensus, ecommerce, cross-platform]
+tags: [case-study, measurement, ecommerce, multi-model]
 difficulty: intermediate
 related: [87-percent-citation-rate-reviews-pr, brand-mentions-3x-stronger-than-backlinks]
 conflicts_with: []

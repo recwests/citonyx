@@ -10,7 +10,7 @@ source: {url: 'https://pixelmojo.ai', platform: web, author: Pixel Mojo}
 published: 2026-05-10
 updated: 2026-07-08
 locale: en
-tags: [GEO, B2B, SaaS, CITABLE, trials, case-study, AI-referral]
+tags: [b2b, roi, case-study, referral-traffic]
 difficulty: advanced
 related: [b2b-saas-dominates-ai-citations-34-percent, fulton-35x-ai-revenue-case-study]
 conflicts_with: []

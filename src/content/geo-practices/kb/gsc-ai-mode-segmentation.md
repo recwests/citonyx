@@ -10,7 +10,7 @@ source: {url: 'https://www.seo-kreativ.de/en/blog/google-ai-overviews-updates-20
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, GSC, Search-Console, measurement]
+tags: [attribution, measurement]
 difficulty: intermediate
 related: [google-may-2026-aio-updates]
 conflicts_with: []

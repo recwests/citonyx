@@ -10,7 +10,7 @@ source: {url: 'https://www.omnibound.ai/blog/google-ai-overviews-statistics', pl
 published: 2026-06-25
 updated: 2026-07-10
 locale: en
-tags: [AI Overviews, Google, adoption, coverage, market data, omnibound]
+tags: [ai-overviews, google, market-data]
 difficulty: beginner
 related: [ai-overviews-86-percent-us-searches, google-ai-overviews-48-percent-ctr-drop-61]
 conflicts_with: []

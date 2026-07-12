@@ -12,7 +12,7 @@ source: {url: 'https://blog.doceree.com/how-to-block-ai-crawlers-pais', platform
 published: 2026-03-30
 updated: 2026-07-11
 locale: en
-tags: [healthcare, vertical, traffic-decline, ymy, ai-overviews, content-protection]
+tags: [vertical-geo, referral-traffic, ai-overviews, robots-txt]
 difficulty: intermediate
 related: [ai-overviews-86-percent-us-searches, ai-overviews-48-percent-ctr-drop-61]
 conflicts_with: []

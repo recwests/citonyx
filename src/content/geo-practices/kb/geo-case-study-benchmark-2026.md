@@ -11,7 +11,7 @@ source: {url: 'https://presenc.ai/research/geo-case-studies-benchmark-2026', pla
 published: 2026-04-23
 updated: 2026-07-06
 locale: en
-tags: [GEO, case-studies, benchmark, growth, visibility]
+tags: [case-study, measurement]
 difficulty: beginner
 related: [fulton-35x-ai-revenue-case-study, snack-brand-75-percent-citation-rate,
   87-percent-citation-rate-reviews-pr]

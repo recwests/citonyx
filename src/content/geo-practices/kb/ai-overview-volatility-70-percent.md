@@ -12,7 +12,7 @@ source: {url: 'https://medium.com/@serpstat_ua/google-ai-overviews-changed-searc
 published: 2026-01-05
 updated: 2026-07-11
 locale: en
-tags: [ai-overviews, volatility, serpstat, organic-overlap, measurement, stability]
+tags: [ai-overviews, citation-decay, citation-behavior]
 difficulty: intermediate
 related: [brand-stature-ladder-73-44-11-percent, seo-floor-top-3-pages-34x-cited]
 conflicts_with: []

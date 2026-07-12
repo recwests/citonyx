@@ -12,7 +12,7 @@ source: {url: 'https://aiplusautomation.com/research/the-seo-floor', platform: w
 published: 2026-04-25
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, citation-analysis, schema-markup, seo-floor]
+tags: [citation-behavior, schema-markup, citation-factors]
 difficulty: advanced
 related: [brand-entity-mentions-surpass-domain-rating, attribute-rich-schema-20pp-citation-lift]
 conflicts_with: []

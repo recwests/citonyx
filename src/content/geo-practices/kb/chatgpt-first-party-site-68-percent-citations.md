@@ -12,7 +12,7 @@ source: {url: 'https://foglift.io/research/ai-citation-content-types-by-engine-2
 published: 2026-07-05
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, citation-types, platform-comparison, first-party, youtube]
+tags: [citation-behavior, multi-model, original-research, youtube]
 difficulty: intermediate
 related: [platform-specific-citation-conversion-rates, 11-percent-ai-citation-overlap]
 conflicts_with: []

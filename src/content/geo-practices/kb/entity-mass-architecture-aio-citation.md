@@ -11,7 +11,7 @@ source: {url: 'https://authoritytech.io/curated/ai-overviews-paid-ctr-entity-mas
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, entity-mass, entity-seo, ai-overviews, knowledge-graph, sameas]
+tags: [ai-overviews, knowledge-graph, wikidata]
 difficulty: advanced
 related: [brand-entity-mentions-surpass-domain-rating, wikidata-qid-entity-seo-signal-40-percent]
 conflicts_with: []

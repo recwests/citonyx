@@ -12,7 +12,7 @@ source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends',
 published: 2026-05-15
 updated: 2026-07-08
 locale: en
-tags: [GEO, AI-SEO, monitoring, error-detection, brand-safety, citation-accuracy]
+tags: [citation-hallucination, trust-signals]
 difficulty: intermediate
 related: [ai-citation-half-life-4-5-weeks, content-freshness-25-percent-advantage]
 conflicts_with: []

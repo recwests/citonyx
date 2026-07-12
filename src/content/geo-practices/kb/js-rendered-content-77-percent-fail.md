@@ -10,7 +10,7 @@ source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends',
 published: 2026-05-15
 updated: 2026-07-08
 locale: en
-tags: [GEO, AI-SEO, technical-seo, javascript, crawlability, rendering]
+tags: [technical-seo]
 difficulty: intermediate
 related: [73-percent-websites-block-ai-crawlers, llms-txt-ai-discovery-files-competitive]
 conflicts_with: []

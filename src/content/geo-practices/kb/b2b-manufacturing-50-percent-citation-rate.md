@@ -11,7 +11,7 @@ source: {url: 'https://medium.com/@ericleeforwork/how-we-got-a-40-year-old-gear-
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, case-study, B2B, manufacturing, technical-authority]
+tags: [case-study, b2b, vertical-geo, authority]
 difficulty: intermediate
 related: [87-percent-citation-rate-reviews-pr, 88-percent-ai-recommendation-pr-consensus]
 conflicts_with: []

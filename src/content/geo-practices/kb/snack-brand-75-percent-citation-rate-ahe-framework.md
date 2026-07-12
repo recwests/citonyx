@@ -10,7 +10,7 @@ source: {url: 'https://jetdigitalpro.com/ai-search-optimization-snack-brand-case
 published: 2026-04-27
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, case-study, ahe-framework, snack-brand, citation-rate]
+tags: [case-study, measurement, vertical-geo, citation-rate]
 difficulty: intermediate
 related: [fulton-35x-ai-revenue-case-study, 87-percent-citation-rate-reviews-pr]
 conflicts_with: []

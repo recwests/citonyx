@@ -9,7 +9,7 @@ source: {url: 'https://www.seo.com/blog/geo-trends', platform: web, author: Macy
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, topic-targeting, content-structure]
+tags: [vertical-geo, content-structure]
 difficulty: beginner
 related: []
 conflicts_with: []

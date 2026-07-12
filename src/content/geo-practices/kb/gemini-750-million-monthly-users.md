@@ -10,7 +10,7 @@ source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends',
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [gemini, users, scale, adoption, google]
+tags: [gemini, market-data, google]
 difficulty: beginner
 related: [chatgpt-900-million-weekly-users-2026, chatgpt-traffic-share-64-percent-gemini-rises,
   gemini-3-collapsed-top-10-overlap]

@@ -10,7 +10,7 @@ source: {url: 'https://linkbuildingjournal.co.uk/how-google-ai-overviews-choose-
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, fan-out, Gemini-3, topical-authority, AI-Overviews]
+tags: [google, gemini, authority, ai-overviews]
 difficulty: intermediate
 related: [google-may-2026-aio-updates]
 conflicts_with: []

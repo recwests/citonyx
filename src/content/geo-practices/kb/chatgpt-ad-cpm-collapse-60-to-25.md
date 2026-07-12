@@ -10,7 +10,7 @@ source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [chatgpt, ads, cpm, monetization, performance-pricing]
+tags: [chatgpt, ads, roi]
 difficulty: beginner
 related: [perplexity-abandons-ads-subscription, chatgpt-900-million-weekly-users-2026]
 conflicts_with: []

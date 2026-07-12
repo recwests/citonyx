@@ -10,7 +10,7 @@ source: {url: 'https://www.exaindex.com/blog/ecommerce-geo-case-study', platform
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, case-study, ecommerce, entity-seo, trust-signals, ai-visibility-index]
+tags: [case-study, ecommerce, entity-seo, trust-signals, measurement]
 difficulty: intermediate
 related: [entity-mass-architecture-aio-citation]
 conflicts_with: []

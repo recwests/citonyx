@@ -10,7 +10,7 @@ source: {url: 'https://xpandmedia.io/state-of-geo-2026', platform: web, author: 
 published: 2026-04-01
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, benchmark, by-sector, chatgpt, perplexity, gemini]
+tags: [vertical-geo, chatgpt, perplexity, gemini]
 difficulty: intermediate
 related: [platform-specific-citation-conversion-rates, 11-percent-ai-citation-overlap]
 conflicts_with: []

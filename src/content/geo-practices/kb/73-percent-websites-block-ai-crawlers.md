@@ -10,7 +10,7 @@ source: {url: 'https://otterly.ai/blog/the-ai-citations-report-2026', platform: 
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, crawlability, robots.txt, technical-SEO]
+tags: [technical-seo, robots-txt]
 difficulty: intermediate
 related: [schema-markup-2-3x-citation-lift]
 conflicts_with: []

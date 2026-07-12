@@ -10,7 +10,7 @@ source: {url: 'https://gainframe.app/blog/generative-engine-optimization-case-st
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, playbook, IndexNow, structured-data, ChatGPT]
+tags: [case-study, technical-seo, schema-markup, chatgpt]
 difficulty: beginner
 related: [schema-markup-2-3x-citation-lift]
 conflicts_with: []

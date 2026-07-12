@@ -11,7 +11,7 @@ source: {url: 'https://authoritytech.io/blog/chatgpt-vs-perplexity-vs-google-ai-
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, perplexity, conversion, b2b, sign-ups, referral-traffic, roi]
+tags: [perplexity, roi, b2b, referral-traffic]
 difficulty: intermediate
 related: [ai-search-converts-4-4x-better-than-organic, platform-specific-citation-conversion-rates]
 conflicts_with: []

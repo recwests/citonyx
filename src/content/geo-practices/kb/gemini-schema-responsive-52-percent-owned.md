@@ -10,7 +10,7 @@ source: {url: 'https://quickseo.ai/blog/ai-citation-patterns', platform: web}
 published: 2026-05-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, Gemini, AI-Overviews, citation-overlap, schema, Google-ecosystem]
+tags: [gemini, ai-overviews, citation-behavior, google]
 difficulty: advanced
 related: [schema-markup-2-3x-citation-lift, gemini-3-collapsed-top-10-overlap, gsc-ai-mode-segmentation]
 conflicts_with: []

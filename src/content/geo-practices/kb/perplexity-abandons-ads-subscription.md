@@ -11,7 +11,7 @@ source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [perplexity, claude, anthropic, ads, subscription, monetization]
+tags: [perplexity, claude, ads, subscription]
 difficulty: beginner
 related: [chatgpt-ad-cpm-collapse-60-to-25, perplexity-b2b-furniture-15-leads]
 conflicts_with: []

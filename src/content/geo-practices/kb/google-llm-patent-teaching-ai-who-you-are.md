@@ -12,7 +12,7 @@ source: {url: 'https://searchengineland.com/google-llm-patent-seo-teaching-ai-48
 published: 2026-06-22
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, google-patent, entity-seo, llm, recommendation]
+tags: [google, recommendation]
 difficulty: advanced
 related: [entity-seo-branded-mentions-3x, brand-entity-mentions-surpass-domain-rating]
 conflicts_with: []

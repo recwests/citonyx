@@ -11,7 +11,7 @@ source: {url: 'https://www.marketingforllms.com/blog/fulton-700-percent-ai-searc
 published: 2026-06-02
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, case-study, revenue, ecommerce, aeo]
+tags: [case-study, roi, ecommerce]
 difficulty: intermediate
 related: [87-percent-citation-rate-reviews-pr, snack-brand-75-percent-citation-rate]
 conflicts_with: []

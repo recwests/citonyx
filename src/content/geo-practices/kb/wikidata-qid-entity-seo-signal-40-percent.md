@@ -11,7 +11,7 @@ source: {url: 'https://linkbuildingjournal.co.uk/entity-seo-2026/', platform: we
 published: 2026-06-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, Wikidata, entity-SEO, sameAs, knowledge-graph, QID]
+tags: [wikidata, knowledge-graph]
 difficulty: advanced
 related: [brand-entity-mentions-surpass-domain-rating, google-llm-patent-teaching-ai-who-you-are]
 conflicts_with: []

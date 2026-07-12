@@ -10,7 +10,7 @@ source: {url: 'https://www.pressforge.co.uk/blog/2026/06/16/how-we-built-a-remov
 published: 2026-06-16
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, llms-txt, ai-discovery-files, structured-data, case-study, technical]
+tags: [llms-txt, schema-markup, case-study, technical-seo]
 difficulty: intermediate
 related: [73-percent-websites-block-ai-crawlers, schema-markup-2-3x-citation-lift]
 conflicts_with: []

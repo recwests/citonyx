@@ -10,7 +10,7 @@ source: {url: 'https://www.arfadia.com/blog/ai-search-geo-statistics-2026-source
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, google, schema-markup, llms-txt, technical-seo, myth-busting]
+tags: [google, schema-markup, llms-txt, technical-seo, citation-hallucination]
 difficulty: beginner
 related: [schema-markup-2-3x-citation-lift]
 conflicts_with: [schema-markup-2-3x-citation-lift]

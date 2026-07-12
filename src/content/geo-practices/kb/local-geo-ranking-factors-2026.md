@@ -10,7 +10,7 @@ source: {url: 'https://www.soci.ai/resources/facts-framework-local-geo', platfor
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [local-geo, ranking-factors, proximity, reviews, citations]
+tags: [local-geo, citation-factors, social-proof, citation-behavior]
 difficulty: intermediate
 related: [review-depth-strongest-geo-predictor, local-geo-150-review-threshold, local-geo-facts-framework]
 conflicts_with: []

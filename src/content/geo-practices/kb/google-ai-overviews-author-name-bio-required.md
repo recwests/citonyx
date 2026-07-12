@@ -10,7 +10,7 @@ source: {url: 'https://www.dg10.agency/blog/google-ai-overviews-2026', platform:
 published: 2026-05-29
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, google, ai-overviews, author-requirements, freshness, E-E-A-T]
+tags: [google, ai-overviews, eeat, freshness]
 difficulty: intermediate
 related: [content-freshness-25-percent-advantage, google-may-2026-aio-updates]
 conflicts_with: []

@@ -10,7 +10,7 @@ source: {url: 'https://foundationinc.co/lab/vol-298/', platform: web, author: Wr
 published: 2026-06-25
 updated: 2026-07-11
 locale: en
-tags: [citation-durability, volatility, persistence, measurement, one-hit-wonder]
+tags: [citation-decay]
 difficulty: intermediate
 related: [ai-citation-half-life-4-5-weeks, content-freshness-13-week-shelf-life]
 conflicts_with: []

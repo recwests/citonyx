@@ -11,7 +11,7 @@ source: {url: 'https://ziptie.dev/blog/how-different-ai-platforms-cite', platfor
 published: 2026-03-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, Perplexity, freshness, content-strategy, GEO-case-study, referral-traffic]
+tags: [perplexity, freshness, content-strategy, case-study, referral-traffic]
 difficulty: intermediate
 related: [content-freshness-13-week-shelf-life, content-freshness-25-percent-advantage,
   ai-citation-half-life-4-5-weeks]

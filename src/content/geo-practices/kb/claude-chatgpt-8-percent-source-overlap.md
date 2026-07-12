@@ -11,7 +11,7 @@ source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [claude, chatgpt, source-overlap, platform-divergence, cross-platform]
+tags: [claude, chatgpt, citation-behavior, multi-model]
 difficulty: intermediate
 related: [platform-citation-divergence-breadth-depth, gemini-3-collapsed-top-10-overlap,
   11-percent-ai-citation-overlap]

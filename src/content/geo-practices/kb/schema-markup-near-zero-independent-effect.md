@@ -12,7 +12,7 @@ source: {url: 'https://ahrefs.com/blog/schema-ai-citations/', platform: web, aut
 published: 2026-05-15
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, schema, JSON-LD, Ahrefs, controlled-study, citation-myths]
+tags: [ahrefs, research, citation-hallucination]
 difficulty: advanced
 related: [schema-markup-2-3x-citation-lift, faq-rich-results-deprecated-signal-remains]
 conflicts_with: [schema-markup-2-3x-citation-lift]

@@ -10,7 +10,7 @@ source: {url: 'https://authoritytech.io/curated/ai-citation-11-percent-platform-
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, cross-platform, citation-overlap]
+tags: [multi-model, citation-behavior]
 difficulty: intermediate
 related: [platform-specific-citation-conversion-rates]
 conflicts_with: []

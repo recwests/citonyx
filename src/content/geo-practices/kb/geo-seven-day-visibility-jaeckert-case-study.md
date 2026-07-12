@@ -10,7 +10,7 @@ source: {url: 'https://jaeckert-odaniel.com/en/geo-case-study-46-7-ai-visibility
 published: 2026-04-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, case-study, rapid-results, freshness, underdog]
+tags: [case-study, roi, freshness, vertical-geo]
 difficulty: intermediate
 related: [content-freshness-13-week-shelf-life, content-freshness-25-percent-advantage]
 conflicts_with: []

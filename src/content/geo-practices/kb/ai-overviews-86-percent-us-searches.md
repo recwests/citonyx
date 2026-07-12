@@ -11,7 +11,7 @@ source: {url: 'https://peec.ai', platform: web, author: Tomek Rudzki}
 published: 2026-04-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, AI-Overviews, Google, commercial-intent, reach, zero-click]
+tags: [ai-overviews, google, roi, referral-traffic]
 difficulty: beginner
 related: [google-ai-overviews-48-percent-ctr-drop-61, google-may-2026-aio-updates]
 conflicts_with: []

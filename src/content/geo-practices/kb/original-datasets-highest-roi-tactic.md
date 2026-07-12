@@ -10,7 +10,7 @@ source: {url: 'https://www.airops.com', platform: web, author: AirOps / ChatGPT 
 published: 2026-07-01
 updated: 2026-07-08
 locale: en
-tags: [GEO, ROI, datasets, original-research, data, strategy]
+tags: [roi, original-research]
 difficulty: beginner
 related: [data-rich-content-19-stats-5x-citations, content-freshness-13-week-shelf-life]
 conflicts_with: []

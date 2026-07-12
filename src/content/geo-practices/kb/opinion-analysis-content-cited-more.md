@@ -11,7 +11,7 @@ source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [content-strategy, opinion, analysis, citation, editorial]
+tags: [content-strategy, citation-behavior]
 difficulty: intermediate
 related: [original-datasets-highest-roi-tactic, data-rich-content-19-stats-5x-citations,
   answer-first-content-architecture]

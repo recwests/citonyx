@@ -10,7 +10,7 @@ source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends',
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [source-diversity, third-party, compounding, digital-pr, reddit, youtube, reviews]
+tags: [citation-behavior, digital-pr, citation-decay, reddit, youtube, social-proof]
 difficulty: intermediate
 related: [third-party-sources-68-percent-citations, community-platforms-52-percent-citations,
   brand-mentions-3x-stronger-than-backlinks]

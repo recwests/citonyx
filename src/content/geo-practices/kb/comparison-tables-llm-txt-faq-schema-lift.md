@@ -11,7 +11,7 @@ source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends',
 published: 2026-05-15
 updated: 2026-07-08
 locale: en
-tags: [GEO, AI-SEO, structured-data, comparison-tables, llm-txt, faq-schema, schema-markup]
+tags: [content-structure, llms-txt]
 difficulty: intermediate
 related: [schema-markup-2-3x-citation-lift, llms-txt-ai-discovery-files-competitive,
   multi-format-content-2-3x-citations]

@@ -10,7 +10,7 @@ source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-jun
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, youtube, video-seo, citation-sources, meltwater]
+tags: [youtube, citation-behavior]
 difficulty: intermediate
 related: [multi-format-content-2-3x-citations]
 conflicts_with: []

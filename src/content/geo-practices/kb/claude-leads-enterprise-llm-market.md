@@ -11,7 +11,7 @@ source: {url: 'https://metronyxai.com/ai-search-market-share-2026/', platform: w
 published: 2026-04-20
 updated: 2026-07-11
 locale: en
-tags: [claude, anthropic, enterprise, market-share, conversion, coding]
+tags: [claude, b2b, market-data, roi, vertical-geo]
 difficulty: intermediate
 related: [claude-data-centric-analyst-statista, claude-premium-editorial-bias]
 conflicts_with: []

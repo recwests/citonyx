@@ -10,7 +10,7 @@ source: {url: 'https://linkbuildingjournal.co.uk/how-google-ai-overviews-choose-
 published: 2026-07-06
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, schema, structured-data, JSON-LD, AI-Overviews]
+tags: [ai-overviews]
 difficulty: beginner
 related: [73-percent-websites-block-ai-crawlers, schema-markup-near-zero-independent-effect]
 conflicts_with: [schema-markup-near-zero-independent-effect]

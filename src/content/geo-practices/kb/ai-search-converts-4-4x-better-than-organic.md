@@ -11,7 +11,7 @@ source: {url: 'https://www.convertmate.io/research/geo-benchmark-2026', platform
 published: 2026-03-29
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, conversion-rate, benchmark, ai-overviews]
+tags: [roi, ai-overviews]
 difficulty: beginner
 related: [content-freshness-25-percent-advantage, 38-percent-ai-citations-from-top-10]
 conflicts_with: []

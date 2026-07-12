@@ -9,7 +9,7 @@ source: {url: 'https://www.position.digital/blog/ai-seo-statistics/', platform: 
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [chatgpt, citation-factors, writing-style, entity-density, statistics]
+tags: [chatgpt, citation-factors, content-strategy, entity-seo, original-research]
 difficulty: intermediate
 related: [prompt-content-alignment-dominant-citation-predictor, cited-sentences-median-10-words]
 conflicts_with: []

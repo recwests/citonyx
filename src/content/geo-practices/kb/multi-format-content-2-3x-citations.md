@@ -11,7 +11,7 @@ source: {url: 'https://www.dg10.agency/blog/google-ai-overviews-2026', platform:
 published: 2026-05-29
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, content-format, multi-format, citations, ai-overviews]
+tags: [content-structure, citation-behavior, ai-overviews]
 difficulty: intermediate
 related: [google-ai-overviews-author-name-bio-required, data-rich-content-19-stats-5x-citations]
 conflicts_with: []

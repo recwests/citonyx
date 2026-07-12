@@ -10,7 +10,7 @@ source: {url: 'https://caseyrb.com/blog/state-of-llms-txt-adoption', platform: w
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [llms-txt, ai-labs, dogfood, adoption-pattern, documentation]
+tags: [llms-txt, ai-labs, case-study, market-data, research]
 difficulty: beginner
 related: [llms-txt-adoption-2026, llms-txt-ai-discovery-files-competitive, llms-txt-784-implementations-unconfirmed]
 conflicts_with: []

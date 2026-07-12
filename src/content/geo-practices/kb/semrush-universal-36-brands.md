@@ -11,8 +11,7 @@ source: {url: 'https://semrush.com/news/463141', platform: web, author: Semrush}
 published: 2026-06-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, Semrush, AI-visibility-index, brand-visibility, Universal-36,
-  industry-benchmarks]
+tags: [semrush, digital-pr]
 difficulty: beginner
 related: [b2b-saas-dominates-ai-citations-34-percent, brand-stature-ladder-73-44-11-percent]
 conflicts_with: []

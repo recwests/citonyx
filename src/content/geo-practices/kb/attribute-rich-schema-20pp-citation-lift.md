@@ -10,7 +10,7 @@ source: {url: 'https://fieldnotes.growthmarshal.io/your-generic-schema-is-useles
 published: 2026-02-22
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, schema-markup, structured-data, citations, json-ld]
+tags: [citation-behavior]
 difficulty: intermediate
 related: [schema-markup-2-3x-citation-lift, faq-schema-9-geo-transferability]
 conflicts_with: [schema-markup-2-3x-citation-lift]

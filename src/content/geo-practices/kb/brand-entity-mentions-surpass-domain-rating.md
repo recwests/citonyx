@@ -12,7 +12,7 @@ source: {url: 'https://aioclicks.com/seo-vs-geo-what-a-2026-research-study-revea
 published: 2026-03-01
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, entity-seo, brand-entity, divergence-index, authority]
+tags: [multi-model, authority]
 difficulty: advanced
 related: [brand-mentions-3x-stronger-than-backlinks]
 conflicts_with: []

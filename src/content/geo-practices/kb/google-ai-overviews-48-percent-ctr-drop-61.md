@@ -12,7 +12,7 @@ source: {url: 'https://www.radiantelephant.com/geo-tactics-what-works-evidence-b
 published: 2026-02-15
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-Overviews, CTR, penetration, brightedge, seer]
+tags: [ai-overviews, referral-traffic, market-data]
 difficulty: beginner
 related: [google-ai-overviews-author-name-bio-required, google-may-2026-aio-updates]
 conflicts_with: []

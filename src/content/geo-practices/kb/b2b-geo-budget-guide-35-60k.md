@@ -10,7 +10,7 @@ source: {url: 'https://geoperf.com/en/guide/geo-generative-engine-optimization',
 published: 2026-05-08
 updated: 2026-07-06
 locale: en
-tags: [GEO, budget, ROI, B2B, tools, wikipedia]
+tags: [roi, b2b, wikipedia]
 difficulty: beginner
 related: [b2b-saas-dominates-ai-citations-34-percent]
 conflicts_with: []

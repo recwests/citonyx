@@ -9,7 +9,7 @@ source: {url: 'https://rankmasters.ai', platform: web, author: Rank Masters}
 published: 2026-05-20
 updated: 2026-07-08
 locale: en
-tags: [GEO, case-study, ChatGPT, semantic-seo, referral-traffic, modular-content]
+tags: [case-study, chatgpt, content-strategy, referral-traffic, content-structure]
 difficulty: intermediate
 related: [fulton-35x-ai-revenue-case-study, gainframe-playbook-31-percent-chatgpt]
 conflicts_with: []

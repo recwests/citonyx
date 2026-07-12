@@ -10,7 +10,7 @@ source: {url: 'https://otterly.ai/blog/the-ai-citations-report-2026', platform: 
 published: 2026-02-01
 updated: 2026-07-08
 locale: en
-tags: [GEO, AI-SEO, reddit, quora, community, user-generated-content]
+tags: [reddit]
 difficulty: beginner
 related: [perplexity-46-percent-reddit-sources, third-party-sources-68-percent-citations,
   chatgpt-wikipedia-29-percent-dependency]

@@ -11,7 +11,7 @@ source: {url: 'https://authoritytech.io/blog/ai-citation-trust-signals-llm-sourc
 published: 2026-07-01
 updated: 2026-07-11
 locale: en
-tags: [author-signal, named-authors, eeat, trust-signals, entity-authority]
+tags: [eeat, trust-signals, entity-seo]
 difficulty: beginner
 related: [google-ai-overviews-author-name-bio-required, digital-pr-evidence-gap-25-percent-6-percent]
 conflicts_with: []

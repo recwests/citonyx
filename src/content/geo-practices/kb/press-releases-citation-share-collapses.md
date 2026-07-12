@@ -10,7 +10,7 @@ source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-jun
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, press-releases, earned-media, citation-sources, declining-tactics]
+tags: [digital-pr, citation-behavior]
 difficulty: beginner
 related: [brand-mentions-3x-stronger-than-backlinks, third-party-sources-68-percent-citations]
 conflicts_with: []

@@ -10,7 +10,7 @@ source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [pew, click-through-rate, zero-click, user-behavior, ai-summary]
+tags: [referral-traffic, market-data]
 difficulty: beginner
 related: [google-ai-overviews-48-percent-ctr-drop-61, ai-overviews-86-percent-us-searches]
 conflicts_with: []

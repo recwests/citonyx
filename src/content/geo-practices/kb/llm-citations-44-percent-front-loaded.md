@@ -11,7 +11,7 @@ source: {url: 'https://www.convertmate.io/research/geo-benchmark-2026', platform
 published: 2026-03-29
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, content-structure, front-loading, citation-optimization]
+tags: [content-structure, citation-factors]
 difficulty: intermediate
 related: [topic-targeting-replaces-keyword-targeting]
 conflicts_with: []

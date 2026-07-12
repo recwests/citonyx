@@ -11,7 +11,7 @@ source: {url: 'https://github.com/danishashko/ai-citation-patterns', platform: w
 published: 2026-05-16
 updated: 2026-07-11
 locale: en
-tags: [sentence-length, positional-bias, content-structure, readability, citation-patterns]
+tags: [content-strategy, citation-factors, content-structure, citation-behavior]
 difficulty: advanced
 related: [document-structure-17-percent-citation-lift, prompt-content-alignment-dominant-citation-predictor]
 conflicts_with: []

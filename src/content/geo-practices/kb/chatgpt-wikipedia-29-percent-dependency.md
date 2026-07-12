@@ -11,7 +11,7 @@ source: {url: 'https://quickseo.ai/blog/ai-citation-patterns', platform: web}
 published: 2026-05-01
 updated: 2026-07-07
 locale: en
-tags: [GEO, AI-SEO, Wikipedia, ChatGPT, citation-sources, brand-authority]
+tags: [wikipedia, chatgpt, citation-behavior, authority]
 difficulty: beginner
 related: [chatgpt-first-party-site-68-percent-citations, brand-entity-mentions-surpass-domain-rating]
 conflicts_with: []

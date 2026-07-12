@@ -10,7 +10,7 @@ source: {url: 'https://signal.zyppy.com/p/ai-citation-ranking-factors', platform
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, citation-factors, meta-analysis, evidence-weighted, ranking-signals]
+tags: [citation-factors]
 difficulty: advanced
 related: [schema-markup-2-3x-citation-lift]
 conflicts_with: []

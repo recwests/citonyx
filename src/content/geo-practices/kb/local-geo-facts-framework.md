@@ -11,7 +11,7 @@ source: {url: 'https://www.soci.ai/resources/facts-framework-local-geo', platfor
 published: 2026-07-11
 updated: 2026-07-11
 locale: en
-tags: [local-geo, facts-framework, freshness, authority, consistency, trust, semantic-relevance]
+tags: [local-geo, content-strategy, freshness, authority, consistency, trust-signals]
 difficulty: intermediate
 related: [local-geo-ranking-factors-2026, local-geo-gbp-data-silence-penalty, local-geo-150-review-threshold]
 conflicts_with: []

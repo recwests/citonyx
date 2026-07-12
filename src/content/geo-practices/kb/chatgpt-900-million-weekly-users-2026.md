@@ -11,7 +11,7 @@ source: {url: 'https://aithinkerlab.com/generative-engine-optimization-2026/', p
 published: 2026-07-04
 updated: 2026-07-10
 locale: en
-tags: [ChatGPT, adoption, market size, traffic, AI search, platform growth]
+tags: [chatgpt, market-data, referral-traffic]
 difficulty: beginner
 related: [thirty-seven-percent-start-search-with-ai]
 conflicts_with: []

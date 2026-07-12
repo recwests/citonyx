@@ -11,7 +11,7 @@ source: {url: 'https://www.radiantelephant.com/geo-tactics-what-works-evidence-b
 published: 2026-04-14
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, data-density, statistics, citations, content-quality]
+tags: [content-strategy, original-research, citation-behavior]
 difficulty: intermediate
 related: [content-freshness-25-percent-advantage, llm-citations-44-percent-front-loaded]
 conflicts_with: []

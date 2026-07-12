@@ -10,7 +10,7 @@ source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-jun
 published: 2026-07-09
 updated: 2026-07-09
 locale: en
-tags: [GEO, AI-SEO, wikipedia, trust-signals, citation-growth, authority]
+tags: [wikipedia, trust-signals, citation-rate, authority]
 difficulty: intermediate
 related: [chatgpt-wikipedia-29-percent-dependency]
 conflicts_with: []

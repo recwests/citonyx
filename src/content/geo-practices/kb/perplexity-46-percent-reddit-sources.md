@@ -11,7 +11,7 @@ source: {url: 'https://lumengeo.co/blog/ai-search-statistics-2026', platform: we
 published: 2026-07-06
 updated: 2026-07-06
 locale: en
-tags: [GEO, AI-SEO, Perplexity, Reddit, niche-sites, real-time-RAG]
+tags: [perplexity, reddit, vertical-geo, freshness]
 difficulty: intermediate
 related: [platform-specific-citation-conversion-rates]
 conflicts_with: []

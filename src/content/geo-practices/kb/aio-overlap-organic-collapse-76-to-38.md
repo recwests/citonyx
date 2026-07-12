@@ -10,7 +10,7 @@ source: {url: 'https://ahrefs.com/blog/ai-overviews-study/', platform: web, auth
 published: 2026-03-15
 updated: 2026-07-08
 locale: en
-tags: [GEO, AI-Overviews, organic-overlap, ahrefs, citation-separation]
+tags: [ai-overviews, citation-behavior, ahrefs]
 difficulty: beginner
 related: [google-ai-overviews-48-percent-ctr-drop-61, seo-floor-top-3-pages-34x-cited]
 conflicts_with: []

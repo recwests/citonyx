@@ -12,8 +12,7 @@ source: {url: 'https://discoveredlabs.com/blog/prompt-content-alignment-2026', p
 published: 2026-01-20
 updated: 2026-07-10
 locale: en
-tags: [prompt alignment, content strategy, citation predictor, regression analysis,
-  answer-first]
+tags: [citation-factors, content-strategy, research, content-structure]
 difficulty: advanced
 related: [answer-first-content-architecture]
 conflicts_with: []

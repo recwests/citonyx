@@ -10,7 +10,7 @@ source: {url: 'https://www.reddit.com/r/SEO/comments/1j9z7bc/geo_tactics_what_ac
 published: 2026-06-20
 updated: 2026-07-08
 locale: en
-tags: [GEO, content, answer-first, architecture, citation, practice]
+tags: [content-structure, citation-behavior]
 difficulty: beginner
 related: [quotation-addition-strongest-geo-tactic, data-rich-content-19-stats-5x-citations,
   document-structure-17-percent-citation-lift]

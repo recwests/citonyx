@@ -12,8 +12,7 @@ source: {url: 'https://bevisibleiq.com/research/gpt-5-4-citation-patterns', plat
 published: 2026-03-25
 updated: 2026-07-10
 locale: en
-tags: [GPT-5.4, model comparison, first-party, vendor citations, citation trends,
-  owned content]
+tags: [chatgpt, multi-model, original-research, digital-pr, citation-rate]
 difficulty: advanced
 related: [chatgpt-first-party-site-68-percent-citations]
 conflicts_with: []

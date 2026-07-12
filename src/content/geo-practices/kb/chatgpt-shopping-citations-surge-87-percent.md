@@ -12,7 +12,7 @@ source: {url: 'https://kime.ai/blog/chatgpt-shopping-impact-on-brands', platform
 published: 2026-05-11
 updated: 2026-07-11
 locale: en
-tags: [chatgpt-shopping, ecommerce, referral-traffic, conversion, product-discovery]
+tags: [chatgpt, ecommerce, referral-traffic, roi]
 difficulty: intermediate
 related: [ecommerce-geo-case-study-340-percent, ai-search-converts-4-4x-better-than-organic]
 conflicts_with: []
