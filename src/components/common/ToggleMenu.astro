@@ -6,7 +6,8 @@ export interface Props {
 
 const {
   label = 'Toggle Menu',
-  class: className = 'flex flex-col h-12 w-12 rounded justify-center items-center cursor-pointer group',
+  class:
+    className = 'flex flex-col h-12 w-12 rounded-lg justify-center items-center cursor-pointer group border border-slate-400/50 dark:border-slate-500/60 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm',
 } = Astro.props;
 ---
 
@@ -15,15 +16,15 @@ const {
   <slot>
     <span
       aria-hidden="true"
-      class="h-0.5 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:rotate-45 group-[.expanded]:translate-y-2.5"
+      class="h-[3px] w-6 my-1 rounded-full bg-slate-900 dark:bg-slate-100 transition ease transform duration-200 group-[.expanded]:rotate-45 group-[.expanded]:translate-y-2.5"
     ></span>
     <span
       aria-hidden="true"
-      class="h-0.5 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:opacity-0"
+      class="h-[3px] w-6 my-1 rounded-full bg-slate-900 dark:bg-slate-100 transition ease transform duration-200 group-[.expanded]:opacity-0"
     ></span>
     <span
       aria-hidden="true"
-      class="h-0.5 w-6 my-1 rounded-full bg-black dark:bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:-rotate-45 group-[.expanded]:-translate-y-2.5"
+      class="h-[3px] w-6 my-1 rounded-full bg-slate-900 dark:bg-slate-100 transition ease transform duration-200 group-[.expanded]:-rotate-45 group-[.expanded]:-translate-y-2.5"
     ></span>
   </slot>
 </button>
