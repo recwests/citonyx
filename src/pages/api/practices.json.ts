@@ -23,7 +23,6 @@ export const GET: APIRoute = async () => {
         updated: data.updated.toISOString(),
         locale: data.locale,
         confidence: data.confidence ?? null,
-        provider: data.provider ?? null,
         source: data.source
           ? { url: data.source.url, platform: data.source.platform, author: data.source.author ?? null }
           : null,
