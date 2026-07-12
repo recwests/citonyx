@@ -183,6 +183,9 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
                       >
                         {entry.data.difficulty}
                       </span>
+                      <span class="text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                        {entry.data.manual ? 'Article' : 'Note'}
+                      </span>
                       {entry.data.tags.slice(0, 3).map((tag) => (
                         <span class="text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
                           #{tag}
@@ -299,7 +302,13 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       d.textContent = p.description;
       const t = document.createElement('div');
       t.className = 'flex flex-wrap gap-2 items-center text-xs text-muted';
-      t.textContent = [p.difficulty, ...(p.tags || []).slice(0, 3)].filter(Boolean).join(' · ');
+      const pill = document.createElement('span');
+      pill.className = 'text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300';
+      pill.textContent = (p.url || '').includes('#entry-') ? 'Note' : 'Article';
+      t.append(
+        pill,
+        document.createTextNode(' · ' + [p.difficulty, ...(p.tags || []).slice(0, 3)].filter(Boolean).join(' · '))
+      );
       a.append(cat, h, d, t);
       return a.outerHTML;
     }

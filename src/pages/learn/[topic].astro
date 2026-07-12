@@ -42,6 +42,7 @@ const allPractices = await getCollection('geoPractices');
 
 const topicLabel = PRACTICE_TYPE_LABELS[topic] || topic;
 const allEntries = entries || allPractices.filter((e) => (e.data.hub || e.data.practice_type) === topic);
+const slugToEntry = new Map(allPractices.map((e) => [getSlug(e.id), e]));
 
 const confidenceColors: Record<string, string> = {
   verified: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
@@ -49,17 +50,6 @@ const confidenceColors: Record<string, string> = {
   conflicting: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
   deprecated: 'bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400',
 };
-const providerLabels: Record<string, string> = {
-  gemini: 'Gemini',
-  chatgpt: 'ChatGPT',
-  perplexity: 'Perplexity',
-  grok: 'Grok',
-  tavily: 'Tavily',
-  arxiv: 'arXiv',
-  github: 'GitHub',
-  manual: 'Manual',
-};
-
 function getSlug(id: string): string {
   return id.replace(/^.*[/\\]/, '').replace(/\.[^.]+$/, '');
 }
@@ -122,6 +112,9 @@ function getAnchor(id: string): string {
                 }
                 return { href, label };
               });
+          const relatedResolved = (entry.data.related ?? [])
+            .map((slug) => slugToEntry.get(slug))
+            .filter((e) => e != null);
           return (
             <section
               id={anchor}
@@ -138,11 +131,6 @@ function getAnchor(id: string): string {
                     class={`text-xs px-2 py-0.5 rounded font-medium ${confidenceColors[entry.data.confidence] || ''}`}
                   >
                     {entry.data.confidence}
-                  </span>
-                )}
-                {entry.data.provider && (
-                  <span class="text-xs px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200">
-                    {providerLabels[entry.data.provider] || entry.data.provider}
                   </span>
                 )}
                 <span
@@ -175,6 +163,16 @@ function getAnchor(id: string): string {
                     ))}
                   </ul>
                 </details>
+              )}
+              {relatedResolved.length > 0 && (
+                <div class="mt-3 text-sm">
+                  <span class="text-muted">Related practices:</span>
+                  {relatedResolved.map((r) => (
+                    <a href={entryUrl(r).href} class="text-primary hover:underline ml-2">
+                      {r.data.title}
+                    </a>
+                  ))}
+                </div>
               )}
             </section>
           );
@@ -218,3 +216,20 @@ function getAnchor(id: string): string {
     </nav>
   </section>
 </Layout>
+
+<script>
+  function init() {
+    const hash = location.hash;
+    if (!hash.startsWith('#entry-')) return;
+    const section = document.getElementById(hash.slice(1));
+    if (!section || section.dataset.lifted) return;
+    const container = section.closest('.space-y-10');
+    if (!container) return;
+    container.prepend(section);
+    section.classList.add('ring-2', 'ring-primary', 'rounded-xl', 'p-4');
+    section.dataset.lifted = 'true';
+    section.scrollIntoView();
+  }
+  init();
+  document.addEventListener('astro:page-load', init);
+</script>
