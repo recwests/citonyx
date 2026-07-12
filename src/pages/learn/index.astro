@@ -122,28 +122,45 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
           </button>
         )
       }
-      <button
-        type="button"
-        id="learn-reset"
-        class="hidden text-xs px-3 py-1.5 rounded-full border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950"
-      >
-        × Clear filters
-      </button>
-      <nav id="learn-toc" aria-label="Sections" class="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
-        {
-          Object.entries(grouped).map(([topic, entries]) => (
-            <a href={`#topic-${topic}`} class="text-primary hover:underline whitespace-nowrap">
-              {PRACTICE_TYPE_LABELS[topic] || topic} <span class="text-muted">({entries.length})</span>
-            </a>
-          ))
-        }
-      </nav>
-      <p id="learn-count" class="mt-3 text-sm text-muted hidden"></p>
-      <div id="learn-sort" class="mt-2 hidden text-xs text-muted">
-        Sort:
-        <button type="button" data-sort="relevance" class="learn-sort-btn font-semibold text-primary">Relevance</button> ·
-        <button type="button" data-sort="newest" class="learn-sort-btn">Newest</button>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3">
+        <p id="learn-count" class="text-sm text-muted hidden"></p>
+        <div id="learn-sort" class="hidden text-xs text-muted">
+          Sort:
+          <button type="button" data-sort="relevance" class="learn-sort-btn font-semibold text-primary"
+            >Relevance</button
+          > ·
+          <button type="button" data-sort="newest" class="learn-sort-btn">Newest</button>
+        </div>
+        <button
+          type="button"
+          id="learn-reset"
+          class="hidden text-xs px-3 py-1.5 rounded-full border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950"
+          >× Clear filters</button
+        >
       </div>
+      <div id="learn-difficulty" class="mt-3 text-xs text-muted">
+        Difficulty:
+        <button type="button" data-diff="all" class="learn-diff-btn font-semibold text-primary">All</button> ·
+        <button type="button" data-diff="beginner" class="learn-diff-btn">Beginner</button> ·
+        <button type="button" data-diff="intermediate" class="learn-diff-btn">Intermediate</button> ·
+        <button type="button" data-diff="advanced" class="learn-diff-btn">Advanced</button>
+      </div>
+      <nav id="learn-toc" aria-label="Sections" class="mt-6">
+        <p class="text-xs uppercase tracking-wide text-muted mb-2">Browse by category</p>
+        <div class="flex flex-wrap gap-2">
+          {
+            Object.entries(grouped).map(([topic, entries]) => (
+              <a
+                href={`#topic-${topic}`}
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border-2 border-primary/40 font-medium text-sm hover:bg-primary hover:text-white transition-colors"
+              >
+                {PRACTICE_TYPE_LABELS[topic] || topic}
+                <span class="text-xs opacity-70">({entries.length})</span>
+              </a>
+            ))
+          }
+        </div>
+      </nav>
     </div>
     <div id="learn-results" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 hidden"></div>
     <button
@@ -185,6 +202,9 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
                       </span>
                       <span class="text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
                         {entry.data.manual ? 'Article' : 'Note'}
+                      </span>
+                      <span class="text-xs text-muted">
+                        Upd {entry.data.updated.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                       </span>
                       {entry.data.tags.slice(0, 3).map((tag) => (
                         <span class="text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
@@ -242,6 +262,12 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       .map((w) => w[0].toUpperCase() + w.slice(1))
       .join(' ');
 
+  const difficultyColors: Record<string, string> = {
+    beginner: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
+    intermediate: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
+    advanced: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
+  };
+
   type Practice = {
     slug: string;
     title: string;
@@ -262,13 +288,15 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
     const toc = document.getElementById('learn-toc');
     const sortEl = document.getElementById('learn-sort');
     const resetEl = document.getElementById('learn-reset');
+    const diffEl = document.getElementById('learn-difficulty');
     if (!input || !results || !groups || !countEl || !tagsWrap || input.dataset.ready) return;
     input.dataset.ready = '1';
 
     let fuse: Fuse<Practice> | null = null;
     let all: Practice[] = [];
-    let activeTag = '';
+    const activeTags = new Set<string>();
     let sortMode: 'relevance' | 'newest' = 'relevance';
+    let difficulty: string = 'all';
 
     async function ensureData() {
       if (fuse) return;
@@ -301,21 +329,37 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       d.className = 'text-sm text-muted mb-4 card-clamp-3';
       d.textContent = p.description;
       const t = document.createElement('div');
-      t.className = 'flex flex-wrap gap-2 items-center text-xs text-muted';
-      const pill = document.createElement('span');
-      pill.className = 'text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300';
-      pill.textContent = (p.url || '').includes('#entry-') ? 'Note' : 'Article';
-      t.append(
-        pill,
-        document.createTextNode(' · ' + [p.difficulty, ...(p.tags || []).slice(0, 3)].filter(Boolean).join(' · '))
-      );
+      t.className = 'flex flex-wrap gap-2 items-center';
+      const diffSpan = document.createElement('span');
+      diffSpan.className = `text-xs px-2 py-0.5 rounded font-medium ${difficultyColors[p.difficulty] || ''}`;
+      diffSpan.textContent = p.difficulty;
+      const typeSpan = document.createElement('span');
+      typeSpan.className =
+        'text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300';
+      typeSpan.textContent = (p.url || '').includes('#entry-') ? 'Note' : 'Article';
+      const dateSpan = document.createElement('span');
+      dateSpan.className = 'text-xs text-muted';
+      if (p.updated) {
+        const dd = new Date(p.updated);
+        dateSpan.textContent = `Upd ${dd.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}`;
+      }
+      t.append(diffSpan, typeSpan, dateSpan);
+      (p.tags || []).slice(0, 3).forEach((tag) => {
+        const tagSpan = document.createElement('span');
+        tagSpan.className =
+          'text-xs px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400';
+        tagSpan.textContent = `#${tag}`;
+        t.append(tagSpan);
+      });
       a.append(cat, h, d, t);
       return a.outerHTML;
     }
 
     async function apply() {
       const q = input!.value.trim();
-      if (!q && !activeTag) {
+      resetEl?.classList.toggle('hidden', !(q || activeTags.size > 0 || difficulty !== 'all'));
+
+      if (!q && activeTags.size === 0 && difficulty === 'all') {
         results!.classList.add('hidden');
         countEl!.classList.add('hidden');
         sortEl?.classList.add('hidden');
@@ -326,7 +370,8 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       }
       await ensureData();
       let items = q && fuse ? fuse.search(q).map((r) => r.item) : all;
-      if (activeTag) items = items.filter((p) => (p.tags || []).includes(activeTag));
+      if (activeTags.size > 0) items = items.filter((p) => [...activeTags].every((t) => (p.tags || []).includes(t)));
+      if (difficulty !== 'all') items = items.filter((p) => p.difficulty === difficulty);
       if (sortMode === 'newest') {
         items = [...items].sort((a, b) => (b.updated || '').localeCompare(a.updated || ''));
       }
@@ -353,8 +398,7 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
         countEl!.classList.remove('hidden');
       }
       results!.classList.remove('hidden');
-      sortEl?.classList.toggle('hidden', !q);
-      resetEl?.classList.toggle('hidden', !(q || activeTag));
+      sortEl?.classList.toggle('hidden', !(q || activeTags.size > 0 || difficulty !== 'all'));
       groups!.classList.add('hidden');
       toc?.classList.add('hidden');
     }
@@ -364,10 +408,23 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       const btn = (e.target as HTMLElement).closest('button.learn-tag') as HTMLButtonElement | null;
       if (!btn) return;
       const tag = btn.dataset.tag || '';
-      activeTag = activeTag === tag ? '' : tag;
+      if (activeTags.has(tag)) activeTags.delete(tag);
+      else activeTags.add(tag);
       tagsWrap.querySelectorAll('button.learn-tag').forEach((b) => {
-        b.classList.toggle('bg-primary', b === btn && !!activeTag);
-        b.classList.toggle('text-white', b === btn && !!activeTag);
+        const t = (b as HTMLElement).dataset.tag || '';
+        b.classList.toggle('bg-primary', activeTags.has(t));
+        b.classList.toggle('text-white', activeTags.has(t));
+      });
+      void apply();
+    });
+
+    diffEl?.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.learn-diff-btn') as HTMLButtonElement | null;
+      if (!btn) return;
+      difficulty = btn.dataset.diff || 'all';
+      diffEl.querySelectorAll('.learn-diff-btn').forEach((b) => {
+        b.classList.toggle('font-semibold', b === btn);
+        b.classList.toggle('text-primary', b === btn);
       });
       void apply();
     });
@@ -406,10 +463,16 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
     const resetBtn = document.getElementById('learn-reset');
     resetBtn?.addEventListener('click', () => {
       input!.value = '';
-      activeTag = '';
+      activeTags.clear();
+      difficulty = 'all';
       tagsWrap.querySelectorAll('button.learn-tag').forEach((b) => {
         b.classList.remove('bg-primary', 'text-white');
       });
+      diffEl?.querySelectorAll('.learn-diff-btn').forEach((b) => {
+        b.classList.remove('font-semibold', 'text-primary');
+      });
+      const allBtn = diffEl?.querySelector('[data-diff="all"]');
+      allBtn?.classList.add('font-semibold', 'text-primary');
       sortMode = 'relevance';
       sortEl?.querySelectorAll('.learn-sort-btn').forEach((b) => {
         b.classList.remove('font-semibold', 'text-primary');
