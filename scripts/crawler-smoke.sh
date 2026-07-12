@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-NOTIFY="${NOTIFY:-/home/ilya/vault/gtd/scripts/notify.sh}"
+NOTIFY="${NOTIFY:-true}"
 
 URLS=(
   "https://citonyx.com/"
