@@ -5,7 +5,6 @@ description: 'Peec AI: 500K business-intent prompts across 6 markets. AIO on 86.
   of US searches (up from 56.9% YoY). AIO now reaches 2.5B monthly users vs ~800M
   ChatGPT.'
 practice_type: basics
-provider: tavily
 confidence: verified
 source: {url: 'https://peec.ai', platform: web, author: Tomek Rudzki}
 published: 2026-04-01

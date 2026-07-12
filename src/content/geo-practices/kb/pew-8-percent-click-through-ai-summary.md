@@ -3,7 +3,6 @@ title: 'Pew Study: Only 8% Click Through When AI Summary Appears — Zero-Click 
 description: When AI summary is present, only 8% of users click any result vs 15%
   without. Being inside the summary equals existence; absence equals invisibility.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-ai-search-shifts',
   platform: web}

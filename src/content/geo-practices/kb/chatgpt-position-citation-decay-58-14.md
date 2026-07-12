@@ -3,7 +3,6 @@ title: ChatGPT Citations Follow Steep Position Decay — 58% Pos 1 vs 14% Pos 10
 description: 'AirOps analyzed 16,851 queries: top retrieval result cited ~58% of time,
   position 10 only ~14%. Narrow focused pages beat broad ultimate guides.'
 practice_type: measurement
-provider: chatgpt
 confidence: verified
 source: {url: 'https://www.airops.com', platform: web, author: AirOps}
 published: 2026-06-15

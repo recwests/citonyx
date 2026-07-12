@@ -5,7 +5,6 @@ description: 'Magna AI report: Wikipedia ~47% citation density in factual answer
   Reddit+Quora grew to 24% (up 8pts). Community platforms are the biggest 2025→2026
   shift.'
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://usemagna.com/blog/research/ai-citation-report-2026', platform: web,
   author: August Tange}

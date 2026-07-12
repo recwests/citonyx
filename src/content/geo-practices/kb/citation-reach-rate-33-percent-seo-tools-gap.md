@@ -4,7 +4,6 @@ title: 60% of AI-Cited URLs Invisible to SEO Dashboards — Citation Reach Rate 
 description: 'Digital Applied Jun 2026: Citation Reach Rate (CRR) averages 33%. 60%
   of AI-cited URLs never appear in Google Search Console or standard SEO rank trackers.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://digitalapplied.com/blog/citation-reach-rate-2026', platform: web,
   author: Digital Applied}

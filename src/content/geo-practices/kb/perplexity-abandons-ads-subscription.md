@@ -4,7 +4,6 @@ description: Perplexity pulled all advertising in 2026, staking business entirel
   on subscriptions. Claude stays ad-free. Platform monetization strategies diverging
   sharply.
 practice_type: monetization
-provider: tavily
 confidence: verified
 source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-ai-search-shifts',
   platform: web}

@@ -4,7 +4,6 @@ title: Comparison Tables +34%, llm.txt +32%, FAQ Schema +28% Coverage Lift in 14
 description: 'Erlin controlled test across 500+ brands: per-format structured data
   lifts AI coverage by 28-34% within 14-21 days. Each missing element costs 6-8%.'
 practice_type: schema-markup
-provider: manual
 confidence: verified
 source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web,
   author: Pragadeesh Natarajan}

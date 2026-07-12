@@ -4,7 +4,6 @@ description: 'Erlin data: brands with 1 source type achieve 18% average AI cover
   Two = 35%, three = 58%, five or more = 78%. Digital PR, reviews, YouTube, Reddit
   now core GEO.'
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web}
 published: 2026-07-11

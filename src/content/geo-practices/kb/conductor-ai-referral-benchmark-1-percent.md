@@ -5,7 +5,6 @@ description: '13,770 domains, 3.3B sessions, 17M AI responses, 100M citations: A
   referral = 1.08% of web traffic. ChatGPT drives 87.4% of AI referrals. IT highest
   at 2.8%.'
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.conductor.com/academy/aeo-geo-benchmarks-report/', platform: web}
 published: 2026-07-11

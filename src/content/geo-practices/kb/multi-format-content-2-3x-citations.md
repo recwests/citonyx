@@ -4,7 +4,6 @@ title: Multi-Format Content Earns 2.3x More AI Citations — Guides + Comparison
 description: 10,000 AI Overview results analyzed. Single-format underperforms. Guides
   35%, comparisons 28%, how-to 22% of citations. Combined-format content at 2.3x rate.
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://www.dg10.agency/blog/google-ai-overviews-2026', platform: web,
   author: DG10 Agency}

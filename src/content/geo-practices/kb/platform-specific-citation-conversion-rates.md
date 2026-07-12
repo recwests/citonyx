@@ -4,7 +4,6 @@ title: 'Platform-Specific Citation Profiles: Claude 16.8% vs ChatGPT 14.2% vs Pe
 description: AI traffic converts at 14.2% average vs Google 2.8%. Each platform has
   distinct citation profiles requiring separate approaches.
 practice_type: measurement
-provider: perplexity
 confidence: verified
 source: {url: 'https://authoritytech.io/curated/ai-citation-11-percent-platform-overlap-per-engine-audit-2026',
   platform: web, author: Christian Lehman}

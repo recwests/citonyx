@@ -5,7 +5,6 @@ description: 'Digital PR accounts for 25% of all LLM citations but only 6% of pr
   use it. Stacker/Scrunch study: 239% median AI citation lift from third-party news
   syndication.'
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://thedigitalbloom.com/learn/geo-traffic-optimization-report-2026/',
   platform: web, author: Vlad Kuriatnyk}

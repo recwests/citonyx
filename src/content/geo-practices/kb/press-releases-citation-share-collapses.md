@@ -3,7 +3,6 @@ title: Press Releases Collapse to 0.2% of AI Citations — Earned Media 188x Mor
 description: 'Meltwater May 2026: press release citation share fell from 0.4% to 0.2%
   MoM. Earned editorial remains at 37.6%, making it 188x more valuable for AI visibility.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-june-2026',
   platform: web, author: Nathaniel Pallen}

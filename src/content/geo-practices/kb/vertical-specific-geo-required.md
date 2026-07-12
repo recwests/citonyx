@@ -5,7 +5,6 @@ description: 'Marketbridge 17,000-citation study proves AI engines apply differe
   trust signals per vertical. What works in SaaS fails in healthcare. SaaS: comparison
   pages. Healthcare: medical authorities.'
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://marketbridge.com/article/generic-geo-vs-industry-specific-strategy-ai-search/',
   platform: web, author: Marketbridge}

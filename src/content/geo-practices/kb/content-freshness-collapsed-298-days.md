@@ -4,7 +4,6 @@ description: 'GitHub AI citation patterns study of 153K citations: median cited 
   age dropped from 2.2 years to 298 days. AI engines cite content 25.7% fresher than
   Google organic.'
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://github.com/danishashko/ai-citation-patterns', platform: web,
   author: Danish Ashko}

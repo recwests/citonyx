@@ -5,7 +5,6 @@ description: 'Discovered Labs Jan 2026 regression analysis: prompt-content align
   shows β=+0.37 — strongest single predictor of AI citation. Content that directly
   answers likely user prompts gets cited most.'
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://discoveredlabs.com/blog/prompt-content-alignment-2026', platform: web,
   author: Discovered Labs}

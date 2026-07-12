@@ -4,7 +4,6 @@ description: AI local search results show a 150+ review threshold for consistent
   Businesses below this count are rarely surfaced in AI-generated local responses
   regardless of proximity.
 practice_type: entity-seo
-provider: perplexity
 confidence: experimental
 source: {url: 'https://www.soci.ai/resources/facts-framework-local-geo', platform: web}
 published: 2026-07-11

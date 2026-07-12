@@ -5,7 +5,6 @@ description: Google patent suggests LLMs assess entity understanding when select
   sources. AI Overviews cite self-serving listicles but recommend competitors 69%
   of the time.
 practice_type: entity-seo
-provider: tavily
 confidence: experimental
 source: {url: 'https://searchengineland.com/google-llm-patent-seo-teaching-ai-480625',
   platform: web, author: Rich Sanger / Search Engine Land}

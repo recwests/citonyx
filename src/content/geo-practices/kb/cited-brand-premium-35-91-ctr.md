@@ -4,7 +4,6 @@ title: Cited Brands See +35% Organic CTR and +91% Paid CTR — The Cited-Brand P
 description: AI citation compounds across all channels. Cited brands see +35% organic
   CTR, +91% paid CTR. AI-referred visitors convert 4.4x higher than traditional search.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://turboaudit.ai/generative-engine-optimization', platform: web}
 published: 2026-05-01

@@ -4,7 +4,6 @@ description: 'NeuraPulse testing across 200+ domains: comprehensive schema yield
   3.2x AI citation lift. FAQPage triggers in 89% of Q&A queries. Speakable powers
   60% of voice answers.'
 practice_type: schema-markup
-provider: manual
 confidence: experimental
 source: {url: 'https://neuraplus-ai.github.io/blog/schema-markup-for-ai-search.html',
   platform: web, author: Prashant Lalwani}

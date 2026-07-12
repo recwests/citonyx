@@ -3,7 +3,6 @@ title: Perplexity Cites at 2x the Rate of ChatGPT and Claude — 17.7% vs 8.8%
 description: 'PulseSpark AI 7-week automated study: Perplexity 17.7% citation rate
   vs ChatGPT 8.8% and Claude 9.1%. Brand queries trigger 100% citations; generic 0%.'
 practice_type: case-studies
-provider: manual
 confidence: experimental
 source: {url: 'https://www.pulsesparkai.com/blog/ai-search-citation-data-2026', platform: web,
   author: PulseSpark AI}

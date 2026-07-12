@@ -5,7 +5,6 @@ description: Healthcare publishers losing 34-46% organic traffic. 63-85% of heal
   queries answered directly in AI overviews. 69% of all Google searches now end without
   click.
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://blog.doceree.com/how-to-block-ai-crawlers-pais', platform: web,
   author: Doceree}

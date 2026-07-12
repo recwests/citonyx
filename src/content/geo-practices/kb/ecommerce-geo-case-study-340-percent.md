@@ -3,7 +3,6 @@ title: 'eCommerce GEO Case Study: +340% AI Visibility in 8 Weeks (Home Fitness)'
 description: Mid-sized home fitness e-commerce brand increased AVI from 18 to 79 (+340%)
   and recommendation rate from 4% to 68% in 8 weeks via entity and trust overhaul.
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://www.exaindex.com/blog/ecommerce-geo-case-study', platform: web,
   author: eXAIndex Team}

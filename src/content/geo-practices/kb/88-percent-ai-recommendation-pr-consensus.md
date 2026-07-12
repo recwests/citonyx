@@ -3,7 +3,6 @@ title: 88.6% AI Recommendation Rate via Cross-Platform PR Consensus
 description: Industrial lighting brand achieved 88.6% AI recommendation rate. Brand
   site contributed only 4.5% of citations — PR reprints drove 59.8%.
 practice_type: case-studies
-provider: manual
 confidence: experimental
 source: {url: 'https://www.gen-optima.com/case-studies/amico-lighting-ai-recommendation-case-study/',
   platform: web, author: GenOptima}

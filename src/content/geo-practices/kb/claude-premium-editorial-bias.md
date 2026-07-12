@@ -5,7 +5,6 @@ description: Claude uses Brave Search (86.7% citation overlap). Cites NYT, Atlan
   New Yorker at 2x rate. Longest freshness window — 3x more likely than ChatGPT to
   cite 2-4 week old content.
 practice_type: entity-seo
-provider: tavily
 confidence: verified
 source: {url: 'https://quickseo.ai/blog/ai-citation-patterns', platform: web}
 published: 2026-05-01

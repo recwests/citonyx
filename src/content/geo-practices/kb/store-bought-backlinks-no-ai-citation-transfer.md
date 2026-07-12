@@ -5,7 +5,6 @@ description: Brand mentions correlate 0.664 with AI citation vs 0.218 for backli
   Store-bought backlinks and aggressive link building show near-zero effect on AI
   citations.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://thedigitalbloom.com/learn/geo-traffic-optimization-report-2026/',
   platform: web, author: Vlad Kuriatnyk}

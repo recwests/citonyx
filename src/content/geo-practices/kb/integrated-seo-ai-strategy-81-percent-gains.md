@@ -4,7 +4,6 @@ description: 'Semrush Jun 2026 survey: 81% of brands with integrated SEO+GEO str
   report measurable gains vs 36% for siloed approaches. 60% reallocating budget from
   SEO to AI search.'
 practice_type: basics
-provider: manual
 confidence: verified
 source: {url: 'https://semrush.com/blog/integrated-seo-ai-strategy-2026', platform: web,
   author: Semrush}

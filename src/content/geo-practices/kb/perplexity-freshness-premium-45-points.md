@@ -5,7 +5,6 @@ description: Perplexity responds to new content in 5-7 days vs 3-5 weeks for Cha
   Content updated within 30 days earns 3.2x citation multiplier. Fastest ROI of any
   engine.
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://ziptie.dev/blog/how-different-ai-platforms-cite', platform: web}
 published: 2026-03-01

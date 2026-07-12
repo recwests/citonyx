@@ -3,7 +3,6 @@ title: 87% AI Citation Rate Achieved via Reviews + PR + Comparison Content
 description: 'B2B SaaS went 12% to 87% in 4 months: G2 reviews (43 to 287), 14 PR
   placements, comparison hubs, schema, and Reddit community strategy.'
 practice_type: case-studies
-provider: manual
 confidence: experimental
 source: {url: 'https://www.overthetopseo.com/geo-case-study-ai-search-citations/',
   platform: web, author: Guy Sheetrit}

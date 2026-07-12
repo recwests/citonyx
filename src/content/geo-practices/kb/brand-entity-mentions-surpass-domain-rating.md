@@ -5,7 +5,6 @@ description: SEO-to-GEO Divergence Index study. Authority persists across paradi
   but shifts from link-graph to brand/entity salience. Evidence-bearing content emerges
   as key GEO signal.
 practice_type: entity-seo
-provider: tavily
 confidence: verified
 source: {url: 'https://aioclicks.com/seo-vs-geo-what-a-2026-research-study-reveals/',
   platform: web, author: Dmitry Kargaev (SSRN)}

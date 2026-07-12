@@ -5,7 +5,6 @@ description: 'US GEO market $365.4M in 2026. 86% of enterprise SEO teams integra
   AI, 82% plan further investment. New measurement tools: Semrush One, GEO Metrics,
   xSeek, Superlines.'
 practice_type: tools
-provider: manual
 confidence: verified
 source: {url: 'https://www.omnibound.ai/blog/generative-engine-optimization-statistics',
   platform: web, author: Omnibound}

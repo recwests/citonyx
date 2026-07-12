@@ -5,7 +5,6 @@ description: 'Forrester Jan 2026: B2B buyers name generative AI first research s
   GEO-16 framework: page quality score predicts citation at odds ratio 4.2 across
   1,700+ citations.'
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://authoritytech.io/curated/your-case-studies-arent-getting-cited-by-ai-search',
   platform: web, author: Christian Lehman}

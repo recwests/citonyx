@@ -3,7 +3,6 @@ title: Zyppy Evidence-Weighted AI Citation Ranking Factors — 23 Factors Scored
 description: First meta-analysis scoring 23 AI citation factors by evidence strength
   across 54 experiments. URL Accessibility
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://signal.zyppy.com/p/ai-citation-ranking-factors', platform: web,
   author: Cyrus Shepard}

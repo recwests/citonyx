@@ -3,7 +3,6 @@ title: 'Credibility Paradox: AI Visibility Does Not Equal Trust (Burson/Profound
 description: Burson and Profound June 2026 study of 85 companies (55K+ believability
   forecasts) found being cited in AI answers does not guarantee being believed.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://www.arfadia.com/blog/ai-search-geo-statistics-2026-sourced-updated',
   platform: web, author: Tessar Napitupulu}

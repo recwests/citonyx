@@ -4,7 +4,6 @@ title: Claude AI Visibility Grew 64x Over Tracking Period, Passed Perplexity —
 description: 'Previsible AI Traffic Study (Nov 2024–May 2026): Claude grew 64x in
   visibility, overtaking Perplexity. Gemini grew 3.2x steadily. ChatGPT remained dominant.'
 practice_type: measurement
-provider: gemini
 confidence: verified
 source: {url: 'https://previsible.ai', platform: web, author: Previsible}
 published: 2026-06-01

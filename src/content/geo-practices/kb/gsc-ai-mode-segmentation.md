@@ -3,7 +3,6 @@ title: GSC Now Segments AI Mode and AI Overviews Traffic — Use as Diagnostic L
 description: Google Search Console added dedicated AI Search tracking under Search
   Appearance. Brands cited in AIOs get +120% more organic clicks per impression.
 practice_type: tools
-provider: chatgpt
 confidence: verified
 source: {url: 'https://www.seo-kreativ.de/en/blog/google-ai-overviews-updates-2026-en',
   platform: web, author: Christian Ott}

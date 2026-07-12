@@ -4,7 +4,6 @@ title: 'Case Study: Fulton Grew AI Search Revenue 35x YoY — Product Listicles 
 description: Zero to $18,164/month in 12 months. 700% revenue increase in first 6
   weeks. Google organic traffic doubled as side effect without traditional SEO.
 practice_type: case-studies
-provider: tavily
 confidence: verified
 source: {url: 'https://www.marketingforllms.com/blog/fulton-700-percent-ai-search-revenue-growth-case-study',
   platform: web, author: Marketing for LLMs / XLR8 AI}

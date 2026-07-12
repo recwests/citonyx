@@ -4,7 +4,6 @@ description: 'Metronyx AI synthesis: Anthropic holds 32% enterprise LLM market s
   vs OpenAI 27%. Claude dominates coding at 54%. Claude users convert at 16.8% vs
   ChatGPT 14.2%.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://metronyxai.com/ai-search-market-share-2026/', platform: web,
   author: Metronyx AI}

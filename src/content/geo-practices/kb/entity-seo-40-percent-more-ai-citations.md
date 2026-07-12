@@ -4,7 +4,6 @@ description: 'Rankeo analysis: 40% more AI citations for entity-optimized sites.
   Knowledge Graph holds 500B+ facts. Entity salience is the primary LLM citation selection
   mechanism.'
 practice_type: entity-seo
-provider: manual
 confidence: verified
 source: {url: 'https://rankeo.io/blog/entity-seo-optimization', platform: web, author: Jonathan
     Jean-Philippe}

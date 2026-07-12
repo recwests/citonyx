@@ -4,7 +4,6 @@ description: 'Geo-citation-lab, 21,143 citations: Perplexity cites 13.8 sources 
   query (breadth), ChatGPT 7-8 (depth). 80% of Perplexity-cited content not in Google
   top 10.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://arxiv.org/abs/2604.25707', platform: web, author: 'Zhang, He,
     Yao'}

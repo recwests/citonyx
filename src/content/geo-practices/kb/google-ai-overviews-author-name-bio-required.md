@@ -3,7 +3,6 @@ title: Google AI Overviews Now Require Author Name and Bio for Citation Eligibil
 description: Content with author attribution is 4x more likely to be cited. Freshness
   window cut from 365 to 180 days. Multi-source model uses 3-8 sources per answer.
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://www.dg10.agency/blog/google-ai-overviews-2026', platform: web,
   author: DG10 Agency}

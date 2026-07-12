@@ -3,7 +3,6 @@ title: Cloudflare Three-Tier AI Crawler Classification — Search, Agent, Traini
 description: From Sep 15, 2026, Cloudflare blocks multi-purpose crawlers by default
   on ad-supported pages. Publishers can granularly allow/block each tier.
 practice_type: technical
-provider: tavily
 confidence: verified
 source: {url: 'https://blog.cloudflare.com/content-independence-day-ai-options/',
   platform: web, author: Cloudflare}

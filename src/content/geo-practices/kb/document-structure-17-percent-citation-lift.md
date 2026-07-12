@@ -5,7 +5,6 @@ description: 'arXiv study: macro-structure (heading architecture, schema, metada
   drives 44.9% of citation improvement. Passage-level extraction (200-400 tokens)
   is the AI citation unit.'
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://betteraisearch.com/tactics/schema-markup-ai-search', platform: web}
 published: 2026-04-01

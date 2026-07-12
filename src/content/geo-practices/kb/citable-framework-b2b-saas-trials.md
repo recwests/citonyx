@@ -4,7 +4,6 @@ description: 'B2B SaaS company implemented CITABLE framework: extractable conten
   + prompt mapping + fact-dense pages. Jumped from ~500 to 3,500+ monthly AI-referred
   trials.'
 practice_type: case-studies
-provider: grok
 confidence: experimental
 source: {url: 'https://pixelmojo.ai', platform: web, author: Pixel Mojo}
 published: 2026-05-10

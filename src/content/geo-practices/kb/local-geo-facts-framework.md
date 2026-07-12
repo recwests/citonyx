@@ -5,7 +5,6 @@ description: 'SOCi''s FACTS framework: Freshness (recent GBP updates), Authority
   volume and response rate), Consistency (NAP alignment), Trust (verified profile),
   Semantic Relevance (category alignment).'
 practice_type: entity-seo
-provider: perplexity
 confidence: experimental
 source: {url: 'https://www.soci.ai/resources/facts-framework-local-geo', platform: web}
 published: 2026-07-11

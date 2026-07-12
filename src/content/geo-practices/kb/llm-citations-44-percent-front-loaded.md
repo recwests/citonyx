@@ -4,7 +4,6 @@ title: 44.2% of LLM Citations Come From First 30% of Text — Content Front-Load
 description: Pages with claim-rich introductions get cited 2.1x more. 44.2% from intro,
   31.1% middle, 24.7% conclusion. Growth Memo + ConvertMate 2026.
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://www.convertmate.io/research/geo-benchmark-2026', platform: web,
   author: ConvertMate / Growth Memo}

@@ -4,7 +4,6 @@ description: 'March 2026: only 37.9% of pages cited in AI Overviews also rank in
   top 10. Down from 76% in August 2025. AI citations are now a separate optimization
   target.'
 practice_type: measurement
-provider: gemini
 confidence: verified
 source: {url: 'https://ahrefs.com/blog/ai-overviews-study/', platform: web, author: Ahrefs}
 published: 2026-03-15

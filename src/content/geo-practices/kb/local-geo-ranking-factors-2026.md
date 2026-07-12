@@ -4,7 +4,6 @@ description: 'Local AI search ranking factors: proximity (primary), review count
   sentiment (secondary), citation consistency (tertiary). Traditional local signals
   apply but AI weights differently.'
 practice_type: entity-seo
-provider: perplexity
 confidence: experimental
 source: {url: 'https://www.soci.ai/resources/facts-framework-local-geo', platform: web}
 published: 2026-07-11

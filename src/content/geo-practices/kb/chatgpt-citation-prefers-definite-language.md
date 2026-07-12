@@ -3,7 +3,6 @@ title: ChatGPT Citation Prefers Definite Language, Questions, and High Entity De
 description: 'Growth Memo Feb 2026: ChatGPT prefers content with definite language,
   question marks, high entity density, balanced facts and opinions, and simple writing.'
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://www.position.digital/blog/ai-seo-statistics/', platform: web}
 published: 2026-07-11

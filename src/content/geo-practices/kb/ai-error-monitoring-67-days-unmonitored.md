@@ -5,7 +5,6 @@ description: 'Erlin 500+ brand study: unmonitored brands 67 days to detect AI ci
   errors vs 14 days monitored. Industry error rates: e-commerce 18%, SaaS 12%, finance
   11.3%.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web,
   author: Pragadeesh Natarajan}

@@ -4,7 +4,6 @@ title: Case Study Benchmark 2026 — 2,300% AI Traffic Growth, 90-180 Day Inflec
 description: 'Presenc AI compiled documented GEO case studies: manufacturing 2,300%,
   auto parts 200% monthly, fintech Ramp 7x, WordPress +148%, legal 312%.'
 practice_type: case-studies
-provider: tavily
 confidence: verified
 source: {url: 'https://presenc.ai/research/geo-case-studies-benchmark-2026', platform: web,
   author: Presenc AI}

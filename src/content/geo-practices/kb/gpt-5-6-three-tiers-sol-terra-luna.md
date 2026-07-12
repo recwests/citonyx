@@ -4,7 +4,6 @@ description: 'OpenAI GPT-5.6 (Jul 2026): Sol (advanced reasoning), Terra (everyd
   work), Luna (fast, low-cost). Grok 4.5 launched for coding with Cursor integration.
   Each model update shifts citation behavior.'
 practice_type: tools
-provider: manual
 confidence: verified
 source: {url: 'https://winbuzzer.com/2026/07/09/openai-says-gpt-56-rolls-out-with-sol-terra-and-luna-xcxwbn/',
   platform: web, author: WinBuzzer}

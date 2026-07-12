@@ -3,7 +3,6 @@ title: Content Freshness Shelf Life — 13 Weeks for AI Citation Eligibility
 description: 'Multiple studies converge: 50% of AI citations from content <13 weeks
   old. ChatGPT most recency-sensitive. Monthly updates required for competitive verticals.'
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://www.radiantelephant.com/geo-tactics-what-works-evidence-based-research-review/',
   platform: web, author: Ahrefs / Semrush / Seer / Radiant Elephant (synthesis)}

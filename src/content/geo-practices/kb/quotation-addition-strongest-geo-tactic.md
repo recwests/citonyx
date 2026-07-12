@@ -4,7 +4,6 @@ title: Quotation Addition +42.6% Citation Lift — Strongest Princeton GEO Tacti
 description: Named-source quotations with credentials outperform all other content
   modifications. Author bylines + source URLs cited more than paraphrased claims.
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://arxiv.org/abs/2311.09735', platform: arxiv, author: Aggarwal
     et al.}

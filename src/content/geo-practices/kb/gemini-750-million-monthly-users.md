@@ -4,7 +4,6 @@ description: Google's Gemini app reached 750M monthly users as of early 2026. Co
   with ChatGPT's 900M weekly users, AI search platforms reach audiences comparable
   to major social networks.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web}
 published: 2026-07-11

@@ -5,7 +5,6 @@ description: 'Roundup of 34 GEO experts reveals fundamental split: traditional S
   argue GEO is "good SEO renamed"; GEO specialists argue it''s fundamentally new.
   Measurement approaches diverge.'
 practice_type: tools
-provider: manual
 confidence: experimental
 source: {url: 'https://inboundblogging.com/the-best-geo-experts-in-the-world/', platform: web,
   author: Inbound Blogging}

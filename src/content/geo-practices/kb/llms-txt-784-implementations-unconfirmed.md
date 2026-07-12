@@ -5,7 +5,6 @@ description: 'Presenc AI State of llms.txt 2026: 784+ implementations but only P
   and Anthropic (Claude Desktop) confirmed use. OpenAI, Google, Meta silent. MCP emerging
   as alternative.'
 practice_type: technical
-provider: manual
 confidence: verified
 source: {url: 'https://presenc.ai/research/state-of-llms-txt-2026', platform: web,
   author: Presenc AI}

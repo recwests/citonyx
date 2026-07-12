@@ -5,7 +5,6 @@ description: Ranqo 100K-prompt study across 100+ brands. 78% of citations go to 
   websites. Best-of listicle is most-cited format (21%). Sentiment flips 6.7x more
   often than mention.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.researchgate.net/publication/407287604_Generative_Engine_Optimization_at_Scale_Measuring_Brand_Visibility_Across_AI_Search_Engines',
   platform: web, author: Ranqo}

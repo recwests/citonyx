@@ -4,7 +4,6 @@ description: Google began suppressing self-promotional listicles in January 2026
   Documented visibility losses of 29-49% across 30+ affected sites. ClickUp lost ~7M
   organic traffic in 6 months.
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://thedigitalbloom.com/learn/geo-traffic-optimization-report-2026/',
   platform: web, author: Vlad Kuriatnyk}

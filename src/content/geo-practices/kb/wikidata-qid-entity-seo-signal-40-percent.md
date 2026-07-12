@@ -5,7 +5,6 @@ description: Wikidata has no notability requirement. QID anchors entity resoluti
   across ChatGPT, Perplexity, Gemini. SameAs schema + Wikidata = highest underused
   citation lever.
 practice_type: entity-seo
-provider: tavily
 confidence: verified
 source: {url: 'https://linkbuildingjournal.co.uk/entity-seo-2026/', platform: web}
 published: 2026-06-01

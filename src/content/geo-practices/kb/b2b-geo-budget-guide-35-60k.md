@@ -3,7 +3,6 @@ title: B2B Mid-Market GEO Budget Guide — $35-60K/Year, 15-30% of Marketing Bud
 description: Geoperf / LLM Pulse convergence. $300-700/month tools + $1-2K/month content
   + $15-25K/year PR + $5K one-shot Wikipedia. 12-18 month ROI payback.
 practice_type: monetization
-provider: tavily
 confidence: experimental
 source: {url: 'https://geoperf.com/en/guide/geo-generative-engine-optimization', platform: web,
   author: Geoperf}

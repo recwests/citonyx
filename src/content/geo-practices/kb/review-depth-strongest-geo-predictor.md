@@ -4,7 +4,6 @@ title: Review Platform Depth Is Strongest Predictor of AI Visibility — 50+ Rev
 description: Brands with 50+ recent reviews on G2/Capterra cited at 3.2x rate of brands
   with <20 reviews. Single highest-impact GEO activity across case studies.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://brandofy.ai/blog/brand-visibility-on-llms-2025-benchmark',
   platform: web}

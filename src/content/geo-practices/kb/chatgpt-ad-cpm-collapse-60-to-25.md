@@ -3,7 +3,6 @@ title: ChatGPT Ad CPM Collapsed from $60 to $25 in 10 Weeks — Performance Shif
 description: OpenAI launched ChatGPT ads at $60 CPM in Feb 2026, hit $100M annualized
   in 6 weeks, then shifted to cost-per-click. CPMs fell from $60 to $25 in ten weeks.
 practice_type: monetization
-provider: tavily
 confidence: verified
 source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-ai-search-shifts',
   platform: web}

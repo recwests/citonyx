@@ -3,7 +3,6 @@ title: 73% of Websites Have Technical Barriers Blocking AI Crawlers
 description: OtterlyAI study of 1M+ citations found 73% of sites block AI crawlers
   via robots.txt, CDN rules, or JS rendering issues.
 practice_type: technical
-provider: tavily
 confidence: verified
 source: {url: 'https://otterly.ai/blog/the-ai-citations-report-2026', platform: web,
   author: Thomas Peham}

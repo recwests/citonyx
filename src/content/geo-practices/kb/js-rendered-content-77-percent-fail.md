@@ -3,7 +3,6 @@ title: JavaScript-Rendered Content Fails 77% of AI Crawler Parsing — Static HT
 description: 'Erlin 500+ brand study: static HTML with schema 94% parse rate, plain
   HTML 68%, JS-rendered 23%, PDF 7%. JS content invisible to most AI crawlers.'
 practice_type: technical
-provider: manual
 confidence: verified
 source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web,
   author: Pragadeesh Natarajan}

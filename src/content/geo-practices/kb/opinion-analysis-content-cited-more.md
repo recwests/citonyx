@@ -4,7 +4,6 @@ description: AI engines cite opinion/analysis pieces more frequently than neutra
   descriptions. Strong point of view with supporting evidence provides a clear citation
   reason.
 practice_type: content
-provider: perplexity
 confidence: experimental
 source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-ai-search-shifts',
   platform: web}

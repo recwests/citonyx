@@ -3,7 +3,6 @@ title: Only 11% of AI Citation Sources Overlap Between ChatGPT and Perplexity
 description: Averi's analysis of 680M citations found ChatGPT and Perplexity share
   only 11% of cited domains. Passionfruit confirmed 12% across 3 engines.
 practice_type: measurement
-provider: chatgpt
 confidence: verified
 source: {url: 'https://authoritytech.io/curated/ai-citation-11-percent-platform-overlap-per-engine-audit-2026',
   platform: web, author: Christian Lehman}

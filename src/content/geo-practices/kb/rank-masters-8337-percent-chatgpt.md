@@ -3,7 +3,6 @@ title: 'Case Study: Rank Masters 8,337% ChatGPT Referral Growth via Semantic SEO
 description: Targeted semantic SEO and modular content architecture drove 8,337% ChatGPT
   referral traffic growth. Narrow topic clusters with extractable claim-based content.
 practice_type: case-studies
-provider: grok
 confidence: verified
 source: {url: 'https://rankmasters.ai', platform: web, author: Rank Masters}
 published: 2026-05-20

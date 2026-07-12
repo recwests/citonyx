@@ -4,7 +4,6 @@ description: 40-year-old gear factory achieved 50% top-20 keyword citation rate 
   technical authority content and schema — AI cited them for keywords without dedicated
   pages.
 practice_type: case-studies
-provider: manual
 confidence: experimental
 source: {url: 'https://medium.com/@ericleeforwork/how-we-got-a-40-year-old-gear-factory-into-chatgpts-answers-in-112-days-47406b44a7f1',
   platform: web, author: Eric Lee}

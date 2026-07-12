@@ -3,7 +3,6 @@ title: 37% of Consumers Now Start Search with AI — AI Is the New Entry Point f
 description: 'Eight Oh Two 500-user study: 37% start with AI tools. 62% want quick
   summaries. 60% say AI gives clearer answers. 85% double-check with traditional search.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://eightohtwo.com/blog/2026-ai-search-behavior-study-ai-now-first-stop-for-search',
   platform: web, author: Eight Oh Two}

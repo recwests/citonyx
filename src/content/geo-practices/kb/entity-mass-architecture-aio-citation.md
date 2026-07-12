@@ -4,7 +4,6 @@ description: Entity mass — total declared, verified, cross-referenced identity
   — matters more than domain authority for AI Overview citation. Thin entity brands
   can rank
 practice_type: entity-seo
-provider: manual
 confidence: experimental
 source: {url: 'https://authoritytech.io/curated/ai-overviews-paid-ctr-entity-mass-fix-2026',
   platform: web, author: Christian Lehman}

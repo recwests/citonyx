@@ -3,7 +3,6 @@ title: Google AI Overviews Cite Brands at 59.8% vs ChatGPT 44.7% and Perplexity 
 description: 'OtterlyAI 1M+ citation study: AI Overviews show strongest brand preference.
   ChatGPT weak link citations. Perplexity balanced. Community dominates Perplexity.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://otterly.ai/blog/the-ai-citations-report-2026', platform: web,
   author: Thomas Peham}

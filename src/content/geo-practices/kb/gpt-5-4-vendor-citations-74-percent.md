@@ -5,7 +5,6 @@ description: 'BeVisibleIQ Mar 2026 analysis of 2,391 citations across 4 models: 
   cites vendor content at 74.6% vs ~79% third-party for older models. Trend toward
   own-site rewards.'
 practice_type: measurement
-provider: manual
 confidence: experimental
 source: {url: 'https://bevisibleiq.com/research/gpt-5-4-citation-patterns', platform: web,
   author: BeVisibleIQ}

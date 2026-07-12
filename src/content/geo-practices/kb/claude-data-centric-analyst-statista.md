@@ -3,7 +3,6 @@ title: Claude Is the Data-Centric Analyst — Statista Leads at 21,620 Citations
 description: 'Meltwater May 2026: Claude''s strongest model-source pairing is Statista
   at 21,620 citations. Claude prefers structured, authority-led, data-rich sources.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-june-2026',
   platform: web, author: Nathaniel Pallen}

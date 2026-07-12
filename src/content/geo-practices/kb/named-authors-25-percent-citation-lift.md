@@ -4,7 +4,6 @@ description: 'Zyppy research: named authors carry odds ratio of 1.40 vs 1.12 ove
   — 25% higher citation probability. Entity authority is top long-term AI citation
   factor.'
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://authoritytech.io/blog/ai-citation-trust-signals-llm-source-selection-2026',
   platform: web, author: Authority Tech / Zyppy}

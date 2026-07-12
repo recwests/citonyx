@@ -4,7 +4,6 @@ title: Original Datasets Are the Highest-ROI GEO Tactic — AI Cannot Synthesize
 description: 'Ranked ROI: original datasets (★★★★★), comparison tables (★★★★★), first-party
   research (★★★★★). AI can''t generate data it doesn''t have access to.'
 practice_type: basics
-provider: chatgpt
 confidence: verified
 source: {url: 'https://www.airops.com', platform: web, author: AirOps / ChatGPT synthesis}
 published: 2026-07-01

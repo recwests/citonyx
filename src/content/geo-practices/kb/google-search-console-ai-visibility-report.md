@@ -5,7 +5,6 @@ description: Google shipped AI visibility report June 2026 showing impressions (
   clicks, no CTR, no query-level data). Google states AIO optimization = SEO for Google
   specifically.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://zaturn.ai/blog/geo', platform: web, author: Zaturn / Google}
 published: 2026-06-25

@@ -3,7 +3,6 @@ title: GEO Visibility Moves 6.8% to 46.7% in 7 Days — Jaeckert & O'Daniel Case
 description: AI visibility tool J.O.E. went from 6.8% to 46.7% in 7 days via landing
   pages, article updates, and YouTube content. GEO moves faster than traditional SEO.
 practice_type: case-studies
-provider: tavily
 confidence: verified
 source: {url: 'https://jaeckert-odaniel.com/en/geo-case-study-46-7-ai-visibility-in-7-days',
   platform: web}

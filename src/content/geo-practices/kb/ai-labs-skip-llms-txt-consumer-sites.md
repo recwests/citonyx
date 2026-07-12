@@ -4,7 +4,6 @@ description: 'HTTP Archive: chatgpt.com, claude.ai, gemini.google.com lack llms.
   But docs.anthropic.com, docs.perplexity.ai have one. Value is for agent-readiness,
   not marketing.'
 practice_type: technical
-provider: tavily
 confidence: verified
 source: {url: 'https://caseyrb.com/blog/state-of-llms-txt-adoption', platform: web}
 published: 2026-07-11

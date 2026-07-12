@@ -3,7 +3,6 @@ title: Answer-First Content Architecture Is the Highest-Return GEO Content Pract
 description: Put direct answer in first 1-3 sentences. Use definitions (X is…), explicit
   claims, avoid marketing fluff. Direct answerability is the strongest citation predictor.
 practice_type: content
-provider: chatgpt
 confidence: verified
 source: {url: 'https://www.reddit.com/r/SEO/comments/1j9z7bc/geo_tactics_what_actually_works_in_2026/',
   platform: reddit, author: r/SEO community synthesis}

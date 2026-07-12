@@ -3,7 +3,6 @@ title: Google Business Profile Silence Penalty — AI Cannot Verify Data, AI Won
 description: When AI crawlers cannot verify GBP data (hours, phone, reviews, attributes),
   the business faces a silence penalty. Unverified or incomplete GBP entries are skipped.
 practice_type: entity-seo
-provider: perplexity
 confidence: experimental
 source: {url: 'https://support.google.com/business/answer/3037951', platform: web}
 published: 2026-07-11

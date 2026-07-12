@@ -4,7 +4,6 @@ title: Perplexity 46.7% of Top-10 Sources Are Reddit; Niche Sites Get 24% Citati
 description: Perplexity cites Reddit heavily (46.7% of top-10) and has 24% niche-site
   citation rate vs ~10% for ChatGPT. Real-time RAG rewards freshness.
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://lumengeo.co/blog/ai-search-statistics-2026', platform: web,
   author: LumenGEO}

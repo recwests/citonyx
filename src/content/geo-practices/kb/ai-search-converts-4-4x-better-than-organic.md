@@ -4,7 +4,6 @@ title: AI Search Traffic Converts 4.4x Better Than Traditional Organic — Conve
 description: 83% of AI Overview citations from outside organic top 10. AI traffic
   converts at 4.4x rate. 12,500+ queries across 8,000 domains studied.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.convertmate.io/research/geo-benchmark-2026', platform: web,
   author: ConvertMate}

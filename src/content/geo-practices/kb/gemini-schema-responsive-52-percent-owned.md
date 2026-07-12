@@ -4,7 +4,6 @@ title: Gemini Is Most Schema-Responsive Engine — 52% Citations from Brand-Owne
 description: 'Yext 6.8M citation study: Gemini cites brand-owned sites at 52% — highest
   of any engine. Gemini and AI Overviews share only 13.7% of citations on same queries.'
 practice_type: schema-markup
-provider: tavily
 confidence: verified
 source: {url: 'https://quickseo.ai/blog/ai-citation-patterns', platform: web}
 published: 2026-05-01

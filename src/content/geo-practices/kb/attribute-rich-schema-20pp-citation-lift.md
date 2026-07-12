@@ -3,7 +3,6 @@ title: Attribute-Rich Schema Outperforms Generic Schema by 20pp for AI Citations
 description: 'Generic schema provides zero citation advantage (OR=0.678, p=.296).
   Product/Review schema with populated pricing/ratings: 61.7% vs 41.6%.'
 practice_type: schema-markup
-provider: tavily
 confidence: verified
 source: {url: 'https://fieldnotes.growthmarshal.io/your-generic-schema-is-useless/',
   platform: web, author: Growth Marshal}

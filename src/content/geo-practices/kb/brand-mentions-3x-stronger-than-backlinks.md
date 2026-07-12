@@ -3,7 +3,6 @@ title: Brand Mentions Correlate 3x Stronger Than Backlinks for AI Citation
 description: Ahrefs 75K brand study shows branded web mentions r=0.664 vs backlinks
   r=0.218. Top quartile averages 169 AI Overview mentions vs 14 for next tier.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://ahrefs.com/blog/ai-overview-brand-correlation/', platform: web,
   author: 'Louise Linehan, Xibeijia Guan'}

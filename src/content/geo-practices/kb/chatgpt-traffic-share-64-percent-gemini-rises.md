@@ -4,7 +4,6 @@ description: 'Erlin Jan 2026: ChatGPT Gen AI traffic share dropped 22.2 points t
   64.5% (from 86.7%). Gemini rose from 5.7% to 21.5%. DeepSeek entered at 4.2%, Grok
   at 3%+.'
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web}
 published: 2026-07-11

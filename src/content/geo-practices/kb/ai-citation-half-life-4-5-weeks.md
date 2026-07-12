@@ -3,7 +3,6 @@ title: AI Citation Half-Life ~4.5 Weeks — GEO Is a Continuity Discipline
 description: Profound 240M-citation analysis shows median cited-source half-life ~4.5
   weeks. 40-60% of cited domains rotate month-to-month.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://lumengeo.co/blog/ai-search-statistics-2026', platform: web,
   author: LumenGEO}

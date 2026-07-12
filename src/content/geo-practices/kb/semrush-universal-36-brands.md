@@ -5,7 +5,6 @@ description: 'Semrush''s 126M-prompt AI Visibility Index: only YouTube, Google, 
   Amazon, Apple and 31 others maintain top-100 across ChatGPT, Gemini, AI Mode, AI
   Overviews.'
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://semrush.com/news/463141', platform: web, author: Semrush}
 published: 2026-06-01

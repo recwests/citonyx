@@ -5,7 +5,6 @@ description: Mixed-effects logistic regression on 114,034 observations. Schema m
   strongest content predictor (OR=1.31). 75.4% of aggregate citations from outside
   top 30 but this is denominator artifact.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://aiplusautomation.com/research/the-seo-floor', platform: web,
   author: AI+Automation Research}

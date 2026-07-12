@@ -3,7 +3,6 @@ title: Community Platforms (Reddit, Quora) Capture 52.5% of All AI Citations
 description: 'OtterlyAI 1M+ citation study: community platforms dominate with 52.5%
   of citations vs 47.5% brand domains. News sites 20.3%, community forums 5.9%.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://otterly.ai/blog/the-ai-citations-report-2026', platform: web,
   author: Thomas Peham}

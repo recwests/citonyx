@@ -3,7 +3,6 @@ title: llms.txt and AI Discovery File Suite Becomes Competitive Differentiator
 description: One-van firm scored ChatGPT 99/100 against national brands using 9 AI
   Discovery Files. Backlinks didn't determine AI assessment — structured facts did.
 practice_type: technical
-provider: tavily
 confidence: verified
 source: {url: 'https://www.pressforge.co.uk/blog/2026/06/16/how-we-built-a-removals-site-chatgpt-rates-99-100/',
   platform: web, author: PressForge / Mark McNeece}

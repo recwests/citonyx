@@ -3,7 +3,6 @@ title: Content Freshness Real 25.7% Advantage — Not the Viral 4.3x Figure
 description: Ahrefs 16.975M URL study shows AI-cited content averages 1,064 days vs
   1,432 for organic top-10. The viral 4.3x figure is unsourced.
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://www.digitalapplied.com/blog/ai-search-citation-ranking-factors-2026-data-study',
   platform: web, author: Digital Applied}

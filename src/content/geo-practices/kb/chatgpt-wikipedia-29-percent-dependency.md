@@ -5,7 +5,6 @@ description: 'Ahrefs 78.6M query study: 67% of ChatGPT''s top 1,000 cited pages 
   Wikipedia, brand homepages, or app stores. Brands with Wikipedia pages earn 3x higher
   citation rates.'
 practice_type: entity-seo
-provider: tavily
 confidence: verified
 source: {url: 'https://quickseo.ai/blog/ai-citation-patterns', platform: web}
 published: 2026-05-01

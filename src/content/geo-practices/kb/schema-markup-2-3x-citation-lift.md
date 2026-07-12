@@ -3,7 +3,6 @@ title: Schema Markup Produces 2.3x Citation Lift on AI Overviews
 description: Study of 1,000 AI Overviews found FAQPage, HowTo, Article, Product schema
   shows 2.3x citation lift vs unmarked pages. Zero-cost technical fix.
 practice_type: schema-markup
-provider: manual
 confidence: verified
 source: {url: 'https://linkbuildingjournal.co.uk/how-google-ai-overviews-choose-cited-pages/',
   platform: web, author: Perwez Alam}

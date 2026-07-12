@@ -3,7 +3,6 @@ title: Mind Reader — Latent Demand-Guided GEO Achieves Up to 2.44x Metrics (AC
 description: 'Novel GEO method: decomposition-recombination query augmentation + reasoning
   coverage optimization. Up to 2.44x objective, 1.23x subjective metrics on GEO-Bench.'
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://aclanthology.org/2026.acl-long.1894.pdf', platform: web, author: ACL
     2026}

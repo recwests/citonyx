@@ -4,7 +4,6 @@ description: 'Writesonic tracked 23M cited sources across AI platforms (Apr–Ju
   44% of cited pages appeared in exactly one answer before vanishing. Median citation
   lifespan: 11-15 days.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://foundationinc.co/lab/vol-298/', platform: web, author: Writesonic}
 published: 2026-06-25

@@ -4,7 +4,6 @@ title: 68% of AI Citations Come from Third-Party Sources — Owned Content Is th
 description: 'Erlin 500+ brand study: Reddit 3.4x, Wikipedia 2.9x, review platforms
   2.6x, YouTube 2.1x citation lift vs owned content only. 1 source = 18%, 5+ = 78%.'
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web,
   author: Pragadeesh Natarajan}

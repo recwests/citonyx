@@ -4,7 +4,6 @@ description: SE Ranking study of 129,000 domains. Statistics Addition + Cite Sou
   boost visibility 40%. Data-rich pages earn nearly double AI citations. Effect strongest
   for law, government queries.
 practice_type: content
-provider: tavily
 confidence: verified
 source: {url: 'https://www.radiantelephant.com/geo-tactics-what-works-evidence-based-research-review/',
   platform: web, author: Radiant Elephant / SE Ranking / ZipTie.dev}

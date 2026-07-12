@@ -4,7 +4,6 @@ description: 'Am I Cited Jan 2026: review velocity correlates r=0.72 with AI cit
   vs r=0.31 for average star rating. 50+ reviews minimum threshold. Incentivize review
   flow, not just scores.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://amicited.com/research/review-velocity-vs-rating-2026', platform: web,
   author: Am I Cited}

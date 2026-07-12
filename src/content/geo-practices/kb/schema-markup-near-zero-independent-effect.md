@@ -5,7 +5,6 @@ description: 'Ahrefs tracked 1,885 pages adding schema vs 4,000 controls. Result
   zero meaningful citation lift on any AI platform. Schema compounds quality but doesn''t
   stand alone.'
 practice_type: schema-markup
-provider: tavily
 confidence: verified
 source: {url: 'https://ahrefs.com/blog/schema-ai-citations/', platform: web, author: Louise
     Linehan}

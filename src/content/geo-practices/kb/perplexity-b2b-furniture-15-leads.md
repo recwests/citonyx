@@ -5,7 +5,6 @@ description: Citation-first B2B content strategy on Perplexity drove 15+ qualifi
   monthly leads. Perplexity's citation-heavy + freshness-priority algorithm benefits
   buyer-intent queries.
 practice_type: case-studies
-provider: grok
 confidence: experimental
 source: {url: 'https://mersel.ai', platform: web, author: Mersel}
 published: 2026-04-20

@@ -4,7 +4,6 @@ title: AI Overviews Reduced Wikipedia Traffic by 15% — Causal Evidence from 46
 description: 'NJIT/NTU peer-reviewed study: AIO exposure reduced daily Wikipedia traffic
   by ~15%. 161K matched pairs, 46.5M observations. ~11.5M fewer daily visits redirected.'
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://arxiv.org/abs/2602.18455', platform: web, author: NJIT/NTU
     Researchers}

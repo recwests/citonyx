@@ -3,7 +3,6 @@ title: GainFrame Playbook 5 Structural Changes Drove 31% of Users from ChatGPT
 description: Quick Answer blocks, question H2s, FAQ schema, multi-schema JSON-LD,
   IndexNow pings — ChatGPT became the top acquisition channel at 31%.
 practice_type: content
-provider: manual
 confidence: experimental
 source: {url: 'https://gainframe.app/blog/generative-engine-optimization-case-study/',
   platform: web, author: Michael Rode}

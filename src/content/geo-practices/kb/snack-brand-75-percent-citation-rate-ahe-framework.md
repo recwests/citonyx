@@ -3,7 +3,6 @@ title: Snack Brand Achieved 75% AI Citation Rate From Zero in 4 Months — AHE F
 description: 0% to 75% Generative Citation Rate across Google AI Overviews, Perplexity,
   ChatGPT. Direct-answer blocks, extractable facts, FAQ/HowTo schema.
 practice_type: case-studies
-provider: tavily
 confidence: verified
 source: {url: 'https://jetdigitalpro.com/ai-search-optimization-snack-brand-case-study/',
   platform: web, author: Nell VH / Jet Digital Pro}

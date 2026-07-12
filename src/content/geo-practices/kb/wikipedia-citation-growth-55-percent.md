@@ -3,7 +3,6 @@ title: Wikipedia Citation Growth +55% MoM — Becoming Shared AI Trust Layer
 description: Wikipedia reached 83,191 citations in May 2026, growing 55.2% MoM with
   visibility score up 50% and citation rate improving 14.3% across major LLMs.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-june-2026',
   platform: web, author: Nathaniel Pallen}

@@ -5,7 +5,6 @@ description: 'Gumlet/DerivateX May 2026: AI referred 27% of new signups but GA t
   only 0.5%. AI traffic lacks referrer headers — dedicated attribution is essential
   for GEO ROI.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://gumlet.com/blog/ai-attribution-gap-2026', platform: web, author: Gumlet
     / DerivateX}

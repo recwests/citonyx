@@ -5,7 +5,6 @@ description: 'BrightEdge Feb 2026: Healthcare 88%, Education 83%, B2B Tech 82% A
   penetration. Seer: even queries without AIOs saw 41% CTR decline. Being cited =
   primary CTR preservation strategy.'
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.radiantelephant.com/geo-tactics-what-works-evidence-based-research-review/',
   platform: web, author: BrightEdge / Seer Interactive / Radiant Elephant (synthesis)}

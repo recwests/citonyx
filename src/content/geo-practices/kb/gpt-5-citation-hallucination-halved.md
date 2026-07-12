@@ -4,7 +4,6 @@ title: GPT-5 Nano Halved Citation Hallucination vs GPT-4o — Claude Haiku 4.5 I
 description: Naser audited 10 LLMs generating 69,557 citations. GPT-5-mini hallucinates
   at 11.4% (down from GPT-4o-mini 45.3%). Multi-model consensus = 95.6% accuracy.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://arxiv.org/abs/2603.03299', platform: arxiv, author: Naser}
 published: 2026-02-01

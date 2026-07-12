@@ -3,7 +3,6 @@ title: Google States No Special AI Schema Required for AI Overviews or AI Mode
 description: 'Google confirmed in 2026 that no AI-specific markup or llms.txt is required
   for AIO or AI Mode: ''GEO is still SEO at the core.'''
 practice_type: technical
-provider: manual
 confidence: verified
 source: {url: 'https://www.arfadia.com/blog/ai-search-geo-statistics-2026-sourced-updated',
   platform: web, author: Tessar Napitupulu}

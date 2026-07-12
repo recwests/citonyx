@@ -4,7 +4,6 @@ description: 'Presenc AI April 2026 report: Anthropic and Perplexity confirmed l
   support. Adoption <10% in finance/healthcare, high in developer SaaS. Top-100 brands
   lead.'
 practice_type: technical
-provider: manual
 confidence: verified
 source: {url: 'https://presenc.ai/research/state-of-llms-txt-2026', platform: web,
   author: Ramanath (Presenc AI)}

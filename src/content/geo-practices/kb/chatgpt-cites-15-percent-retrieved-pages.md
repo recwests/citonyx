@@ -4,7 +4,6 @@ description: 'Zyppy research: AI engines use two-stage source selection. Retriev
   is yes/no, citation is earned through structural and authority signals. ChatGPT
   cites 7-8 sources but only 15% of retrieved.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://authoritytech.io/blog/ai-search-ranking-factors-citation-2026',
   platform: web, author: Authority Tech / Zyppy}

@@ -4,7 +4,6 @@ description: 'HubSpot''s 3x lead conversion from AEO traffic came from one struc
   change: answer arrives within first 60 words after H2. Question-led H2, direct answer,
   expanded context, FAQ schema.'
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://tygartmedia.com/geo-case-studies-2026/', platform: web, author: Tygart
     Media}

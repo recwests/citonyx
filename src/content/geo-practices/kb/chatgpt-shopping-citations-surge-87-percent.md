@@ -5,7 +5,6 @@ description: 'KIME research: ChatGPT''s shopping-related citation share went fro
   8% (late 2025) to 87% (Apr 2026). AI-referred traffic converts at 30-40%. ChatGPT
   commands 87.4% of all AI referral traffic.'
 practice_type: case-studies
-provider: manual
 confidence: verified
 source: {url: 'https://kime.ai/blog/chatgpt-shopping-impact-on-brands', platform: web,
   author: KIME}

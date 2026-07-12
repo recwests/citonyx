@@ -3,7 +3,6 @@ title: Topic Targeting Replaces Keyword Targeting for Generative Engine Optimiza
 description: GEO 2026 shifts from keyword targeting to topic targeting. Generative
   engines prioritize comprehensive topic coverage with answer-first structure.
 practice_type: content
-provider: chatgpt
 confidence: experimental
 source: {url: 'https://www.seo.com/blog/geo-trends', platform: web, author: Macy Storm}
 published: 2026-07-06

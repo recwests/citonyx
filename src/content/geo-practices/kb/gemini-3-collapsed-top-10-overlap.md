@@ -3,7 +3,6 @@ title: Gemini 3 Collapsed Top-10 Overlap from 76% to 38% — Fan-Out Is Now Domi
 description: Post-Gemini 3 only 38% of AI Overview citations come from top-10 organic.
   62% from deeper SERP. Fan-out sub-query mapping is essential.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://linkbuildingjournal.co.uk/how-google-ai-overviews-choose-cited-pages/',
   platform: web, author: Perwez Alam}

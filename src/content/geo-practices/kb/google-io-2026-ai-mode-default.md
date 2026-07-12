@@ -5,7 +5,6 @@ description: Google made AI Mode default for 1B+ monthly users. Traditional blue
   no longer primary discovery. Information Agents, Generative UI, Personal Intelligence
   global in 200 countries.
 practice_type: tools
-provider: manual
 confidence: verified
 source: {url: 'https://authoritytech.io/blog/google-io-2026-ai-search-changes-seo-brand-impact',
   platform: web, author: Authority Tech}

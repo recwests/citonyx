@@ -3,7 +3,6 @@ title: YouTube Dominates AI Citations — 188K Monthly, Becomes Core AI Infrastr
 description: YouTube generated 188,863 AI citations in May 2026, growing 56.4% MoM
   — the most-cited single source across all major LLMs per Meltwater.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://www.meltwater.com/en/blog/ai-search-visibility-report-june-2026',
   platform: web, author: Nathaniel Pallen}

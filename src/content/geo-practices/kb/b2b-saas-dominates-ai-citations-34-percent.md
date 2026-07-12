@@ -3,7 +3,6 @@ title: B2B SaaS Dominates AI Citations (34%), Perplexity Leads — State of GEO 
 description: ChatGPT + Perplexity = 68% of all tracked citations Q1 2026. Gemini fastest-growing
   (doubled MoM). Sector breakdown from 250 engagements tracked Jan-Mar 2026.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://xpandmedia.io/state-of-geo-2026', platform: web, author: Xpand
     Media}

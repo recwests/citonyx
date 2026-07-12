@@ -4,7 +4,6 @@ description: 'OpenAI disclosures + Similarweb: ChatGPT hit 800-900M weekly users
   2026 (4x from 200M late 2024). ~17% of global digital queries. AI-platform sessions
   45B/month.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://aithinkerlab.com/generative-engine-optimization-2026/', platform: web,
   author: AI Thinker Lab}

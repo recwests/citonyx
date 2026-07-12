@@ -4,7 +4,6 @@ description: 'GitHub AI citation patterns study: median cited sentence is 10 wor
   Nothing over 18 words cited. Cited sentences cluster in top 37% of page. Positional
   bias favors front-loaded content.'
 practice_type: content
-provider: manual
 confidence: verified
 source: {url: 'https://github.com/danishashko/ai-citation-patterns', platform: web,
   author: Danish Ashko}

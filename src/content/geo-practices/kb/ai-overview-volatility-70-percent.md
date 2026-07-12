@@ -5,7 +5,6 @@ description: 'Serpstat study: 70% of AI Overview-triggering keywords show volati
   Only 4-8% of AIO citations overlap with organic top 20. Health leads at 54% AIO
   share.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://medium.com/@serpstat_ua/google-ai-overviews-changed-search-faster-than-anyone-expected-cd2b795c42e2',
   platform: web, author: Serpstat}

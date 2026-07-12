@@ -4,7 +4,6 @@ title: Google Deprecated FAQ Rich Results (May 2026) — But AI Citation Signal 
 description: FAQ rich results deprecated for most sites May 7, 2026. FAQPage markup
   should stay — AI citation extraction is separate from Google rich result display.
 practice_type: schema-markup
-provider: tavily
 confidence: verified
 source: {url: 'https://searchengineland.com/google-to-no-longer-support-faq-rich-results-476957',
   platform: web}

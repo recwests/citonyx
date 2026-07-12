@@ -5,7 +5,6 @@ description: Foglift study of 1,430 classified citations across 5 engines. ChatG
   skips video, community discussion, personal blogs entirely. Only 55.4% classifiable
   — significant long-tail diversity.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://foglift.io/research/ai-citation-content-types-by-engine-2026',
   platform: web, author: Foglift}

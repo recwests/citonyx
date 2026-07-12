@@ -3,7 +3,6 @@ title: AI Overviews Now Appear on 48-50% of Google US Queries — 8x Growth in 1
 description: 'Omnibound/BrightEdge: AIOs expanded from 6.49% (Jan 2025) to ~48-50%
   (Feb 2026). Healthcare 88%, Education 83% trigger rates. 2 billion monthly users.'
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://www.omnibound.ai/blog/google-ai-overviews-statistics', platform: web,
   author: Sarah (Omnibound)}

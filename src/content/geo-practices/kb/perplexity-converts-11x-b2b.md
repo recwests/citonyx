@@ -4,7 +4,6 @@ description: Perplexity delivers inline citations that convert at 1.66% for sign
   vs 0.15% from traditional search — 11x advantage. Highest B2B conversion platform
   despite 15-20% referral volume.
 practice_type: measurement
-provider: manual
 confidence: verified
 source: {url: 'https://authoritytech.io/blog/chatgpt-vs-perplexity-vs-google-ai-overviews-b2b-pipeline-2026',
   platform: web, author: Jaxon Parrott}

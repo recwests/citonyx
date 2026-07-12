@@ -3,7 +3,6 @@ title: 'Google May 2026 AIO Updates: Inline Links, Hover Previews, Community Per
 description: 'Google announced 5 AI Overviews/AI Mode updates on May 6 2026: inline
   links, hover previews, Subscribed label, article suggestions, and Community Perspectives.'
 practice_type: basics
-provider: chatgpt
 confidence: verified
 source: {url: 'https://www.seo-kreativ.de/en/blog/google-ai-overviews-updates-2026-en',
   platform: web, author: Christian Ott}

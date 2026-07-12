@@ -4,7 +4,6 @@ description: Claude and ChatGPT cited sources overlap just 8% for same prompts. 
   aligns with Google rankings 64%, ChatGPT does not. Each engine reads a different
   web.
 practice_type: measurement
-provider: tavily
 confidence: verified
 source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-ai-search-shifts',
   platform: web}
