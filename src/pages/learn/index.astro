@@ -87,18 +87,18 @@ const allTags = [...tagCounts.entries()].filter(([, c]) => c >= 2).sort((a, b) =
       }))}
     />
 
-    <div class="mb-10">
-      <div class="sticky top-[70px] z-30 -mx-2 px-2 py-2 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm rounded-lg">
-        <label for="learn-search" class="sr-only">Search practices</label>
-        <input
-          type="search"
-          id="learn-search"
-          placeholder={`Search ${allPractices.length} practices…`}
-          autocomplete="off"
-          class="w-full max-w-xl rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary"
-        />
-      </div>
-      <div id="learn-tags" class="mt-4 flex flex-wrap gap-2">
+    <div class="sticky top-[70px] z-30 -mx-2 px-2 py-2 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm rounded-lg">
+      <label for="learn-search" class="sr-only">Search practices</label>
+      <input
+        type="search"
+        id="learn-search"
+        placeholder={`Search ${allPractices.length} practices…`}
+        autocomplete="off"
+        class="w-full max-w-xl rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary"
+      />
+    </div>
+    <div class="mb-10 mt-4">
+      <div id="learn-tags" class="flex flex-wrap gap-2">
         {
           allTags.map(([tag], i) => (
             <button
