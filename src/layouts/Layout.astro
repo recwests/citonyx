@@ -66,6 +66,7 @@ const { language, textDirection } = I18N;
     <BasicScripts />
 
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/entry-lift.js" type="module" is:inline></script>
     <script src="/pagefind/pagefind-ui.js" type="module" is:inline>
       document.addEventListener('DOMContentLoaded', () => {
         new PagefindUI({ element: '#search', showSubResults: true });
