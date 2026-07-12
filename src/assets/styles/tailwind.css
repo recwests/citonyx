@@ -123,6 +123,12 @@
 
 /* 1. Text overflow protection: long words/URLs break instead of escaping bounds */
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+  :root.dark {
+    color-scheme: dark;
+  }
   body {
     overflow-wrap: break-word;
   }
