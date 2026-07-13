@@ -1,15 +1,15 @@
 ---
-title: 82% of AI Citations Come From Earned Media — Third-Party News Distribution
+title: 84% of AI Citations From Earned Media (Updated) — Third-Party News Distribution
   Gives 239% Lift
-description: 'Muck Rack 1M+ citation study: 82% of AI citations from earned media,
-  94% from non-paid sources. Controlled study found third-party news distribution
-  = 239% median lift in AI visibility.'
+description: 'Muck Rack third edition (25M+ links, 17 industries): 84% of AI citations
+  from earned media. Journalism alone 27%. Paid content just 0.3%. Consistent across
+  three report editions.'
 practice_type: measurement
 confidence: verified
-source: {url: 'https://subscribepr.com/blog/digital-pr-for-ai-visibility/', platform: web,
-  author: SubscribePR / Muck Rack}
-published: 2026-06-01
-updated: 2026-07-12
+source: {url: 'https://www.globenewswire.com/news-release/2026/05/07/3290268/0/en/Generative-Pulse-Earned-Media-Consistently-Drives-AI-Citations-Holding-at-84.html',
+  platform: web, author: Muck Rack}
+published: 2026-05-07
+updated: 2026-07-13
 locale: en
 tags: [digital-pr, news-distribution]
 difficulty: intermediate
@@ -20,7 +20,7 @@ manual: false
 hub: measurement
 ---
 ## Summary
-Muck Rack's 1M+ citation study: 82% of AI citations originate from earned media, 94% from non-paid sources. A controlled experiment showed third-party news distribution creates a 239% median lift in AI visibility. Unlinked brand mentions move AI visibility — engines read text, not PageRank.
+Muck Rack's third "What Is AI Reading?" report (May 2026) analyzed 25M+ links across 17 industries. Earned media accounts for 84% of AI citations — journalism alone 27%, paid content just 0.3%. ChatGPT cites in 96% of responses (avg 5 citations), Gemini in 82% (avg 8), Claude in 55% (avg 13). Consistent across three report editions.
 
 ## Details
-This finding reinforces that digital PR is the single highest-leverage GEO investment. Unlike traditional SEO where unlinked mentions have limited value, AI engines process brand mentions in text regardless of hyperlink status — the entity is recognized through contextual reference. The 239% median lift from news distribution demonstrates that press release syndication through news wires and industry publications directly drives AI citation rates. The Puffer separately found ~84% of AI citations trace to earned media, corroborating this finding across independent methodologies.
+The updated finding raises the earned media share from 82% to 84% and dramatically increases the sample from 1M+ to 25M+ links. The per-engine citation breakdown is new: ChatGPT cites earned media in 96% of responses vs Claude's 55%, confirming platform divergence. Paid content's near-zero share (0.3%) reinforces that earned media (digital PR, news distribution, expert quotes, third-party coverage) is the single highest-leverage GEO investment. Unlinked brand mentions move AI visibility — engines read text, not PageRank.

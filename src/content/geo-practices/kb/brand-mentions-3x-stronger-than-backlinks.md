@@ -4,10 +4,10 @@ description: Ahrefs 75K brand study shows branded web mentions r=0.664 vs backli
   r=0.218. Top quartile averages 169 AI Overview mentions vs 14 for next tier.
 practice_type: measurement
 confidence: verified
-source: {url: 'https://ahrefs.com/blog/ai-overview-brand-correlation/', platform: web,
+source: {url: 'https://betteraisearch.com/tactics/brand-entity-ai-search', platform: web,
   author: 'Louise Linehan, Xibeijia Guan'}
 published: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-13
 locale: en
 tags: [digital-pr, citation-factors]
 difficulty: intermediate
@@ -20,4 +20,4 @@ hub: measurement
 Branded web mentions across third-party sites are the strongest known predictor of AI citation — 3x more powerful than backlinks and 3.7x more than Domain Authority. Invest in digital PR, not raw link acquisition. Ahrefs analyzed 75,000 brands using Spearman correlation.
 
 ## Details
-Branded web mentions scored 0.664 vs backlinks at 0.218 and Domain Authority at 0.18. The top 25% by mentions average 169 AI Overview mentions vs 14 for the next quartile. Domain Authority correlation has fallen from r=0.43 (pre-2024) to r=0.18. Cross-validated by AirOps (548K pages, 82K citations) and SE Ranking (129K domains). Earned media distribution produces 325% more AI citations than owned content alone per AuthorityTech research.
+Branded web mentions scored 0.664 vs backlinks at 0.218 and Domain Authority at 0.18. The top 25% by mentions average 169 AI Overview mentions vs 14 for the next quartile. Domain Authority correlation has fallen from r=0.43 (pre-2024) to r=0.18. Cross-validated by AirOps (548K pages, 82K citations) and SE Ranking (129K domains). Enhanced analysis (Better AI Search, 75K brands): YouTube channel mentions correlate at r=0.737 — the strongest single signal. Pages with 15+ Knowledge Graph entities show 4.8× higher AIO citation probability. Earned media distribution produces 325% more AI citations than owned content alone per AuthorityTech research.

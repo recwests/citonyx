@@ -5,10 +5,10 @@ description: FAQ rich results deprecated for most sites May 7, 2026. FAQPage mar
   should stay — AI citation extraction is separate from Google rich result display.
 practice_type: schema-markup
 confidence: verified
-source: {url: 'https://searchengineland.com/google-to-no-longer-support-faq-rich-results-476957',
-  platform: web}
+source: {url: 'https://rankeo.io', platform: web, author: Search Engine Land / Ahrefs
+    / Search Atlas}
 published: 2026-05-07
-updated: 2026-07-07
+updated: 2026-07-13
 locale: en
 tags: [citation-behavior, google]
 difficulty: intermediate
@@ -21,4 +21,4 @@ hub: schema-markup
 Google deprecated FAQ rich results for most sites on May 7, 2026 (full API support sunsets Aug 2026). FAQPage markup itself should stay — Google still uses it for understanding without the rich result display. The AI citation signal is separate from the display feature.
 
 ## Details
-Schema types that still earn SERP features: Article, HowTo, Product, Review, Recipe, BreadcrumbList. Existing FAQPage markup should be kept for AI extraction. Frase: pages with FAQ schema were 3.2x more likely to appear in AI Overviews. Goodie: adding FAQ schema increased Perplexity direct-answer retrieval by +31%. The Search/Atlas study found domains with full schema coverage performed no better than minimal schema — supporting the view that schema aids quality but has no multiplier effect. Keep FAQPage markup; don't confuse rich result deprecation with citation signal.
+Schema types that still earn SERP features: Article, HowTo, Product, Review, Recipe, BreadcrumbList. Existing FAQPage markup should be kept for AI extraction. Frase: pages with FAQ schema were 3.2x more likely to appear in AI Overviews. Goodie: adding FAQ schema increased Perplexity direct-answer retrieval by +31%. However, conflicting evidence exists: Ahrefs Feb 2026 found pages with full Article+FAQ+Organization schema were 73% more likely cited in AIO, but Search Atlas (June 2026) found no correlation between schema coverage and LLM citation frequency. Ahrefs' own controlled study (1,885 pages, Aug 2025–Mar 2026) found schema produced no significant citation lift. The Search/Atlas study confirmed domains with full schema coverage performed no better than minimal schema. Keep FAQPage markup; don't confuse rich result deprecation with citation signal — but schema alone does not drive citations.

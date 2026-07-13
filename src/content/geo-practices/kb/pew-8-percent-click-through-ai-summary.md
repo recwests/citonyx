@@ -4,10 +4,9 @@ description: When AI summary is present, only 8% of users click any result vs 15
   without. Being inside the summary equals existence; absence equals invisibility.
 practice_type: measurement
 confidence: verified
-source: {url: 'https://www.tryaivo.com/blog/generative-engine-optimization-2026-ai-search-shifts',
-  platform: web}
+source: {url: 'https://superlines.io', platform: web, author: Pew Research / Superlines}
 published: 2026-07-11
-updated: 2026-07-11
+updated: 2026-07-13
 locale: en
 tags: [referral-traffic, market-data]
 difficulty: beginner
@@ -17,7 +16,7 @@ manual: false
 hub: measurement
 ---
 ## Summary
-Pew Research (2026): when an AI summary is present on a search results page, only 8% of users click any result, compared to 15% without. For the growing share of searches with AI summaries, being cited inside the summary equals existence.
+~93% of AI search sessions end without a website click (Superlines 2026). Pew Research confirms: when an AI summary appears, only 8% of users click any result vs 15% without. Zero-click grew from 56% to 69% in one year. Being cited inside an AI summary equals existence; absence equals invisibility.
 
 ## Details
-The Pew finding quantifies the zero-click search reality at the user behavior level. Not being cited in an AI summary means effective invisibility for 92% of searchers. This compounds with the Seer/BrightEdge finding that queries with AI Overviews see organic CTR drop 61%. Strategic implication: traditional ranking optimization is insufficient when the majority of users never scroll past the AI answer. GEO must prioritize citation within AI summaries over organic ranking position. Brands absent from AI summaries lose the primary attention channel regardless of where they rank in traditional results.
+Superlines quantified AI search zero-click at ~93%, far higher than traditional search. Pew Research found AI summaries reduce click-through to any result from 15% to 8%. Zero-click share grew from 56% to 69% in one year (Similarweb). However, brands mentioned in AI answers see 15% branded search uplift as compensating factor. New metrics needed: Answer Share, Citation Stability, Entity Weight, Prompt Coverage. Strategic implication: traditional ranking optimization is insufficient when the majority of users never scroll past the AI answer. GEO must prioritize citation within AI summaries over organic ranking position.

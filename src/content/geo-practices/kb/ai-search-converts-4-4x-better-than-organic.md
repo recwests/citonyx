@@ -1,14 +1,13 @@
 ---
-title: AI Search Traffic Converts 4.4x Better Than Traditional Organic — ConvertMate
-  GEO Benchmark
-description: 83% of AI Overview citations from outside organic top 10. AI traffic
-  converts at 4.4x rate. 12,500+ queries across 8,000 domains studied.
+title: AI Search Traffic Converts 4.4-23x Better Than Organic — Per-Engine Benchmarks
+description: 'Conductor 2026 Benchmarks (3.3B sessions, 13K+ domains): ChatGPT 15.9%
+  conversion, Perplexity 10.5%, Claude 5.0%. B2B SaaS sees 23x uplift. AI-referred
+  visitors spend 68% more time on site.'
 practice_type: measurement
 confidence: verified
-source: {url: 'https://www.convertmate.io/research/geo-benchmark-2026', platform: web,
-  author: ConvertMate}
+source: {url: 'https://authoritytech.io', platform: web, author: ConvertMate / Conductor}
 published: 2026-03-29
-updated: 2026-07-06
+updated: 2026-07-13
 locale: en
 tags: [roi, ai-overviews]
 difficulty: beginner
@@ -18,7 +17,7 @@ manual: false
 hub: measurement
 ---
 ## Summary
-ConvertMate's GEO Benchmark Study (12,500+ queries, 8,000 domains) found AI search traffic converts 4.4x better than traditional organic, and 83% of AI Overview citations come from pages outside the organic top 10. Content structure matters more than domain authority for AI citation.
+Multiple independent studies confirm AI-referred visitors convert at dramatically higher rates. Conductor's 2026 Benchmarks (3.3B sessions, 13K+ domains): ChatGPT 15.9% conversion rate, Perplexity 10.5%, Claude 5.0%, vs 1-4% organic. B2B SaaS sees highest uplift at 23x. AI visitors spend 68% more time on site. AI referral traffic averages ~1.08% of total. McKinsey projects $750B US revenue influenced by AI search by 2028.
 
 ## Details
-The overlap between Google's top-link results and AI-cited sources collapsed from ~70% in 2024 to below 20% in 2026. Pages with strong, claim-rich introductions get cited 2.1x more. Product pages with benchmark data (pricing comparisons, performance metrics) are cited 2.8x more than generic descriptions. Content updated within 30 days receives 3.2x more citations. AI-cited content is 25.7% fresher than average organic results. HubSpot 2026 found LLM leads up 1,850% YoY. ChatGPT users click 1.4 external links per visit vs 0.6 from Google organic.
+ConvertMate's GEO Benchmark (12,500+ queries, 8,000 domains) originally found 4.4x baseline. Conductor's larger study provides per-platform benchmarks: ChatGPT converts at 15.9%, Perplexity at 10.5%, Claude at 5.0%. ChatGPT drives 87.4% of all AI referrals. Pages with strong, claim-rich introductions get cited 2.1x more. Product pages with benchmark data are cited 2.8x more. HubSpot 2026 found LLM leads up 1,850% YoY. ChatGPT users click 1.4 external links per visit vs 0.6 from Google organic. B2B SaaS firms see the highest conversion uplift from AI traffic — up to 23x vs organic.

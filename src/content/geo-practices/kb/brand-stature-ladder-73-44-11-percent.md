@@ -6,10 +6,9 @@ description: Ranqo 100K-prompt study across 100+ brands. 78% of citations go to 
   often than mention.
 practice_type: measurement
 confidence: verified
-source: {url: 'https://www.researchgate.net/publication/407287604_Generative_Engine_Optimization_at_Scale_Measuring_Brand_Visibility_Across_AI_Search_Engines',
-  platform: web, author: Ranqo}
+source: {url: 'https://arxiv.org/pdf/2606.20065v1', platform: arxiv, author: Ranqo}
 published: 2026-06-21
-updated: 2026-07-06
+updated: 2026-07-13
 locale: en
 tags: [authority, citation-behavior]
 difficulty: advanced
