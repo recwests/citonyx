@@ -23,9 +23,7 @@ UAS=(
   "CCBot/2.0"
 )
 
-CACHE_DIR="$HOME/.cache/citonyx"
-ROBOTS_URL="https://citonyx.com/robots.txt"
-ROBOTS_SHA="$CACHE_DIR/robots.sha"
+ROBOTS_URL="${ROBOTS_URL:-https://citonyx.com/robots.txt}"
 
 failures=()
 
@@ -40,21 +38,33 @@ for url in "${URLS[@]}"; do
   done
 done
 
-mkdir -p "$CACHE_DIR"
-response=$(curl -s -w '\n%{http_code}' --max-time 20 "$ROBOTS_URL")
-code=$(echo "$response" | tail -1)
-body=$(echo "$response" | sed '$d')
-if [[ "$code" == "200" ]]; then
-  current_sha=$(printf '%s' "$body" | sha256sum | awk '{print $1}')
-  if [[ -f "$ROBOTS_SHA" ]]; then
-    stored_sha=$(cat "$ROBOTS_SHA")
-    if [[ "$current_sha" != "$stored_sha" ]]; then
-      failures+=("robots.txt CHANGED")
+# REPO_DIR: compute from canonical script location (handles symlinks)
+REPO_DIR="$(dirname "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")")"
+ROBOTS_ETALON="$REPO_DIR/public/robots.txt"
+# Assumption: this repo checkout is the source of truth for what's deployed.
+# Live robots.txt should match public/robots.txt byte-for-byte.
+# Any difference means deploy-lag or external tampering → CRITICAL.
+# See experiments/sprint-crawler-smoke.md for full rationale.
+
+tmp_live=""
+cleanup() { [[ -n "$tmp_live" ]] && rm -f "$tmp_live"; }
+trap cleanup EXIT
+
+if [[ ! -f "$ROBOTS_ETALON" ]]; then
+  failures+=("robots.txt эталон не найден: $ROBOTS_ETALON — мисконфиг смока")
+else
+  tmp_live="$(mktemp)"
+  code=$(curl -s -L --max-redirs 3 --max-time 20 -w '%{http_code}' -o "$tmp_live" "$ROBOTS_URL" || echo 000)
+  if [[ "$code" != "200" ]]; then
+    failures+=("robots.txt fetch -> $code")
+  else
+    etalon_sha=$(sha256sum "$ROBOTS_ETALON" | awk '{print $1}')
+    live_sha=$(sha256sum "$tmp_live" | awk '{print $1}')
+    if [[ "$etalon_sha" != "$live_sha" ]]; then
+      diff_out=$(diff "$ROBOTS_ETALON" "$tmp_live" 2>/dev/null | head -20)
+      failures+=("robots.txt LIVE ≠ repo (public/robots.txt) — deploy-lag или ЧУЖОЕ изменение, проверить:"$'\n'"$diff_out")
     fi
   fi
-  echo "$current_sha" > "$ROBOTS_SHA"
-else
-  failures+=("robots.txt fetch -> $code")
 fi
 
 if [[ ${#failures[@]} -gt 0 ]]; then
