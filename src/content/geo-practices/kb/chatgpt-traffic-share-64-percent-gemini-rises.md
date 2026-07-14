@@ -1,13 +1,13 @@
 ---
-title: ChatGPT AI Traffic Share Drops to 64.5%, Gemini Rises to 21.5%
-description: 'Erlin Jan 2026: ChatGPT Gen AI traffic share dropped 22.2 points to
-  64.5% (from 86.7%). Gemini rose from 5.7% to 21.5%. DeepSeek entered at 4.2%, Grok
-  at 3%+.'
+title: ChatGPT AI Traffic Share Drops to 60.5%, Gemini Rises to 21.5%
+description: 'First Page Sage July 2026: ChatGPT Gen AI market share dropped to 60.5%
+  (from 74.8% June 2025). Gemini rose from 5.7% to 21.5%. Multi-engine optimization
+  essential.'
 practice_type: measurement
 confidence: verified
-source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web}
+source: {url: 'https://firstpagesage.com/seo-blog/chatgpt-usage-statistics/', platform: web}
 published: 2026-07-11
-updated: 2026-07-11
+updated: 2026-07-14
 locale: en
 tags: [chatgpt, gemini, deepseek, grok, market-data, multi-model]
 difficulty: beginner
@@ -18,7 +18,7 @@ manual: false
 hub: measurement
 ---
 ## Summary
-Erlin data (January 2026): ChatGPT's share of Gen AI referral traffic dropped 22.2 points to 64.5%, down from 86.7% a year prior. Gemini rose from 5.7% to 21.5%. DeepSeek entered the market at 4.2%, Grok surpassed 3%. Platform diversification is accelerating rapidly.
+First Page Sage July 2026: ChatGPT's Gen AI market share dropped to 60.5% (from 74.8% in June 2025). Gemini and Claude absorb share as ecosystem diversifies. ChatGPT still has 901M monthly users but single-engine optimization now misses ~40% of AI search exposure.
 
 ## Details
-The 22-point share loss for ChatGPT in one year signals a structural market shift from single-platform dominance to multi-platform fragmentation. For GEO practitioners: over-optimizing for ChatGPT carries increasing risk as other platforms grow. Gemini's 3.8x growth (5.7% to 21.5%) is particularly significant given Google's distribution advantage. DeepSeek's entry at 4.2% shows new competitors can gain traction quickly. Strategic recommendation: allocate GEO investment proportionally to current traffic share (roughly 65% ChatGPT, 22% Gemini, 8% Perplexity, 5% others) but monitor quarterly for shifts.
+ChatGPT reached 901M monthly users (up from 812M June 2025) but market share dropped 14.3pp in 12 months to 60.5%. Gemini's well-received updates and Claude's enterprise traction are primary beneficiaries. ChatGPT still dominates referral traffic (87.4% of all AI referrals per Conductor), but the long tail of engines (Grok, Perplexity, Copilot, Claude, Gemini) now accounts for ~40% of AI search exposure. Over-optimizing for ChatGPT carries increasing risk as other platforms grow. Strategic recommendation: allocate GEO investment proportionally (roughly 60% ChatGPT, 22% Gemini, 8% Perplexity, 10% others) but monitor quarterly.

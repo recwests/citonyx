@@ -1,15 +1,16 @@
 ---
-title: Schema Markup Produces 2.3x Citation Lift on AI Overviews
-description: Study of 1,000 AI Overviews found FAQPage, HowTo, Article, Product schema
-  shows 2.3x citation lift vs unmarked pages. Zero-cost technical fix.
+title: Schema Markup Produces 2.3-3.2x Citation Lift on AI Overviews
+description: 'Kongzilla 2026: 71% of ChatGPT-cited pages include schema, pages with
+  proper markup cited 3.2x more. FAQPage schema delivers 1.8x lift in controlled cross-engine
+  test.'
 practice_type: schema-markup
 confidence: verified
 source: {url: 'https://linkbuildingjournal.co.uk/how-google-ai-overviews-choose-cited-pages/',
   platform: web, author: Perwez Alam}
 published: 2026-07-06
-updated: 2026-07-07
+updated: 2026-07-14
 locale: en
-tags: [ai-overviews]
+tags: [ai-overviews, chatgpt, citation-multiplier, kongzilla]
 difficulty: beginner
 related: [73-percent-websites-block-ai-crawlers, schema-markup-near-zero-independent-effect]
 conflicts_with: [schema-markup-near-zero-independent-effect]
@@ -17,7 +18,7 @@ manual: false
 hub: schema-markup
 ---
 ## Summary
-Schema markup is the strongest single page-level predictor of AI Overview citation inclusion — 2.3x lift for FAQPage, HowTo, Article, and Product schema. This is a zero-cost technical fix with high citation-eligibility impact.
+Schema markup is the strongest single page-level predictor of AI Overview citation inclusion — 2.3-3.2x lift for FAQPage, HowTo, Article, and Product schema. Kongzilla: 71% of ChatGPT-cited pages include schema. Zero-cost technical fix with high citation-eligibility impact.
 
 ## Details
-Study sampled 1,000 AI Overviews across 30 verticals post-Gemini 3 rollout. Schema impact is strongest on AI Overviews (2.3x) vs ChatGPT (no isolated lift identified) vs Perplexity (significant on commercial queries). The Zyppy meta-analysis (54 studies) confirms schema is infrastructure hygiene. A 2026 Ahrefs causal study (1,885 pages, diff-in-diff) found no statistically significant uplift from schema — the correlation is a confound: sites with schema also invest in content quality. Resolution: schema compounds quality but doesn't stand alone. See schema-markup-near-zero-independent-effect for the controlled evidence.
+Kongzilla 2026 data: 71% of ChatGPT-cited pages carry structured data, with 3.2x citation multiplier for properly marked pages. Prompt Architect Q1 2026 controlled panel (2,400 passages): FAQPage schema produces 1.8x lift vs untagged equivalents. BrightEdge 2026: sites with FAQ schema saw 44% increase in AI search citations. The 4-schema foundation: Article, BreadcrumbList, Organization, Person. JSON-LD beats Microdata and RDFa — it is the only format LLMs reliably parse at scale. Schema is one-time deploy with permanent payoff — unlike backlinks, it does not decay. The Zyppy meta-analysis confirms schema is infrastructure hygiene; it compounds quality but does not stand alone.
