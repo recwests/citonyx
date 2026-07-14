@@ -4,11 +4,19 @@
 
 <div
   id="cc-banner"
-  class="hidden fixed bottom-0 inset-x-0 z-30 bg-slate-900 text-slate-100 px-4 py-3 text-sm flex flex-wrap items-center justify-center gap-3 border-t border-slate-600"
+  class="hidden fixed bottom-0 inset-x-0 z-30 bg-slate-900 text-slate-100 px-3 py-2 text-xs gap-2 sm:px-4 sm:py-3 sm:text-sm sm:gap-3 flex flex-wrap items-center justify-center border-t border-slate-600"
 >
   <span>We use analytics cookies to improve the site. No ads, no tracking across sites.</span>
-  <button id="cc-accept" class="rounded bg-blue-600 hover:bg-blue-700 px-3 py-2 font-semibold">Accept</button>
-  <button id="cc-decline" class="rounded border border-slate-500 hover:border-slate-300 px-3 py-2">Decline</button>
+  <button
+    id="cc-accept"
+    class="rounded bg-blue-600 hover:bg-blue-700 px-2.5 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm font-semibold"
+    >Accept</button
+  >
+  <button
+    id="cc-decline"
+    class="rounded border border-slate-500 hover:border-slate-300 px-2.5 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm"
+    >Decline</button
+  >
 </div>
 <script is:inline data-astro-rerun>
   (function () {
