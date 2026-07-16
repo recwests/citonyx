@@ -8,7 +8,7 @@ confidence: verified
 source: {url: 'https://presenc.ai/research/state-of-llms-txt-2026', platform: web,
   author: Ramanath (Presenc AI)}
 published: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-16
 locale: en
 tags: [llms-txt, technical-seo, robots-txt]
 difficulty: intermediate
@@ -21,4 +21,4 @@ hub: technical
 Presenc AI's 2026 state of llms.txt finds Anthropic and Perplexity have publicly confirmed support. Adoption follows classic tech diffusion — high in developer SaaS and tech, <10% in financial services and healthcare. The file is now a routine AI access stack component for sophisticated brands.
 
 ## Details
-The llms.txt convention evolved from niche proposal (Jeremy Howard, 2024) to near-mainstream by April 2026. The two-bot pattern is recommended: block training-only crawlers (GPTBot, ClaudeBot) while allowing search bots (OAI-SearchBot, Claude-SearchBot, PerplexityBot) for citation visibility. The file fills gaps robots.txt cannot address — it adds editorial curation on top of access control. The adoption gap by sector is also an opportunity for mid-market brands. Zyppy's evidence-weighted analysis scores llms.txt at 2.0/10 — no credible evidence it directly boosts citations, but it enables visibility control.
+The llms.txt convention evolved from niche proposal (Jeremy Howard, 2024) to near-mainstream by April 2026. The two-bot pattern is recommended: block training-only crawlers (GPTBot, ClaudeBot) while allowing search bots (OAI-SearchBot, Claude-SearchBot, PerplexityBot) for citation visibility. Anthropic split: ClaudeBot (training) vs Claude-SearchBot/Claude-User (search). Google wrinkle: no separate AIO bot — AI Overviews use same Googlebot, so you cannot block AIO without blocking Google Search. Google-Extended only governs Gemini training. IndexNow ping on every publish for fast AI indexing. 2026 default: block training bots, allow retrieval bots. 79% of top 100 US/UK news sites block at least one AI bot (BuzzStream). The file fills gaps robots.txt cannot address — it adds editorial curation on top of access control. The adoption gap by sector is an opportunity for mid-market brands. Zyppy's evidence-weighted analysis scores llms.txt at 2.0/10 — no credible evidence it directly boosts citations, but it enables visibility control.

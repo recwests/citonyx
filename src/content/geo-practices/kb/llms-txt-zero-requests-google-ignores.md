@@ -9,7 +9,7 @@ confidence: verified
 source: {url: 'https://hybridranking.com/blog/llms-txt-one-year-later', platform: web,
   author: Hybrid Ranking}
 published: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-16
 locale: en
 tags: [llms-txt, technical-seo, google-position, robots-txt]
 difficulty: intermediate
@@ -19,7 +19,7 @@ manual: false
 hub: technical
 ---
 ## Summary
-Despite hitting 800K+ sites, llms.txt sees negligible AI crawler traffic. OtterlyAI logged only 84 hits out of 62,100+ AI bot requests (0.1%). Google explicitly confirmed it ignores the file. SE Ranking's 300K-domain study found no correlation with citation rates. The file's main utility is for IDE agents (Cursor, Claude Code), not search AI.
+Despite hitting 800K+ sites, llms.txt sees negligible AI crawler traffic. Ahrefs (June 2026) confirmed no major LLM provider supports it. SE Ranking's 300K-domain study (Nov 2025) found no measurable improvement in AI citations from having llms.txt. Google explicitly confirmed it ignores the file. Only ~2% of 1M sites have it. The file's main utility is for IDE agents (Cursor, Continue, Claude Code) and some MCP integrations, not search AI.
 
 ## Details
-The 800K adoption figure masks near-zero effectiveness for AI search citation. Google's Gary Illyes and John Mueller both confirmed Google does not support llms.txt. Ahrefs tracked 137,210 domains: 97% received zero AI bot requests to the file. Limy.AI recorded 408 llms.txt hits out of 500M+ AI bot events. The file remains useful for developer ecosystem tools but is not a citation driver. Cloudflare's Agent Readiness score includes it, but this has no demonstrated citation correlation.
+Ahrefs (June 2026) confirmed no major LLM provider supports llms.txt. Google's Gary Illyes and John Mueller both confirmed Google ignores it. Anthopic and Perplexity publicly confirmed support; Claude Desktop and Perplexity both respect it in retrieval workflows. The 800K adoption figure masks near-zero effectiveness for AI search citation. Presenc AI's State of llms.txt 2026 report shows adoption follows classic technology diffusion — early adopters in tech/cybersecurity, expanding into mainstream SaaS. IDE agents (Cursor, Continue, Cline) and some MCP integrations do use it for code documentation retrieval. The standard may merge with Model Context Protocol (MCP). Practical advice: implement only if auto-generated (Mintlify, Rank Math) or for developer documentation where IDE agent accuracy matters.
