@@ -25,3 +25,15 @@ pnpm-lock.yaml
 
 # astro generated types
 .astro/
+
+# ── Citonyx machinery — ПРИВАТНО (внутренняя механика сбора/измерения/публикации) ──
+# Наружу нельзя: runner (как меряем), bridge/digest (как публикуем), prompts (панель запросов).
+# Публичны только ДАННЫЕ: experiments/runs/*.json + schema. Полное удаление из истории — отдельно (purge).
+experiments/*.py
+experiments/*.yaml
+experiments/*.sh
+experiments/README.md
+experiments/digest_prompt.md
+experiments/review_prompt.md
+experiments/requirements.txt
+experiments/sprints/
