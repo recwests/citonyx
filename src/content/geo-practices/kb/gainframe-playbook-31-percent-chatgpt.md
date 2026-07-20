@@ -1,23 +1,24 @@
 ---
-title: GainFrame Playbook 5 Structural Changes Drove 31% of Users from ChatGPT
-description: Quick Answer blocks, question H2s, FAQ schema, multi-schema JSON-LD,
-  IndexNow pings — ChatGPT became the top acquisition channel at 31%.
-practice_type: content
+title: 'GainFrame: 31% of New Users from 5 Structural Changes'
+description: 'GainFrame app achieved ChatGPT as #1 acquisition channel (31% of users)
+  via weekend changes: Quick Answer blocks, question H2s, FAQ schema, multi-schema
+  JSON-LD, IndexNow pings.'
+practice_type: case-studies
+hub: content
 confidence: experimental
 source: {url: 'https://gainframe.app/blog/generative-engine-optimization-case-study/',
-  platform: web, author: Michael Rode}
+  platform: web}
 published: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-20
 locale: en
-tags: [case-study, technical-seo, schema-markup, chatgpt]
+tags: [acquisition, case-study, chatgpt, schema-markup, technical-seo, quick-answers]
 difficulty: beginner
-related: [schema-markup-2-3x-citation-lift]
+related: []
 conflicts_with: []
 manual: false
-hub: content
 ---
 ## Summary
-Five zero-cost structural changes (Quick Answer blocks, question-format H2s, FAQ schema, multi-schema JSON-LD with author entity, IndexNow pings) drove ChatGPT to become the number one user acquisition channel at 31% of new users.
+Fitness app GainFrame shipped 5 structural changes in a weekend and ChatGPT became their #1 acquisition channel (31% of new users vs TikTok 16.5% and Google 8.7%). Changes: Quick Answer blocks (40-60 words), question-format H2s, FAQ sections with schema, multi-schema JSON-LD with author entity, IndexNow pings to Bing (GainFrame, Apr 2026).
 
 ## Details
-GainFrame's 5-step playbook: 40-60 word Quick Answer block after each H2, each H2 phrased as a full grammatical question, visible FAQ section with matching FAQPage JSON-LD, multi-schema JSON-LD with normalized author entity (Person and Organization with sameAs), IndexNow pings to Bing on publish (ChatGPT pulls approximately 63% of citations from top Bing result). Results: ChatGPT 31% of new users vs TikTok 16.5%, App Store 10.4%, Google 8.7%.
+PostHog attribution showed ChatGPT citations drove 31% of new users. ChatGPT pulls ~63% of citations from top Bing result, so IndexNow pings to Bing were critical for rapid indexing. Key details: Quick Answer blocks under 40 words got truncated; over 60 got cut mid-sentence. Author entity normalized across all 65 posts with canonical URL. FAQPage schema matched visible FAQ content exactly to avoid mismatch penalties. Source: gainframe.app/blog/generative-engine-optimization-case-study.

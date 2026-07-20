@@ -1,28 +1,23 @@
 ---
-title: Brand Web Mentions Predict AI Citation 3x Stronger Than Backlinks
-description: Ahrefs study of 75,000 brands found web mentions correlate at r=0.664
-  with AI citation rate versus backlinks at r=0.218 — a 3x stronger signal.
+title: Brand Web Mentions (0.664) Outperform Backlinks (0.218) for AI Visibility
+description: Ahrefs analyzed 75K brands across millions of AI Overview responses.
+  Branded web mentions show 0.664 correlation vs backlinks 0.218. Top quartile gets
+  10x more AI mentions.
 practice_type: measurement
 hub: measurement
 confidence: verified
-source: {url: 'https://authoritytech.io/curated/ai-citation-11-percent-platform-overlap-per-engine-audit-2026',
-  platform: web}
+source: {url: 'https://ahrefs.com/blog/ai-overview-brand-correlation/', platform: web}
 published: 2026-07-19
-updated: 2026-07-19
+updated: 2026-07-20
 locale: en
-tags: [authority, citation-factors, digital-pr]
+tags: [digital-pr, web-mentions, correlation-study]
 difficulty: intermediate
 related: []
 conflicts_with: []
 manual: false
 ---
 ## Summary
-
-Ahrefs 2026 analysis of 75,000 brands found brand web mentions (r=0.664) are roughly 3x stronger than backlinks (r=0.218) in predicting AI citation rates. SE Ranking found domains with active G2/Capterra/Trustpilot profiles have 3x higher ChatGPT citation rates; Reddit/Quora presence gives 4x.
+Analysis of 75,000 brands using Spearman correlation found branded web mentions (0.664) are the strongest predictor of AI Overview visibility — far ahead of backlinks (0.218). Branded anchors (0.527) and search volume (0.392) follow. Top 25% of brands by web mentions average 169 AI mentions — 10x more than the next quartile (Ahrefs, May 2025).
 
 ## Details
-
-- Earned media distribution produces 325% more AI citations than owned content alone (AuthorityTech).
-- For ChatGPT specifically: off-page entity strength built through third-party mentions and co-occurrence with category terms drives visibility.
-- Traditional link building is becoming less relevant for AI visibility.
-- Brands in top 25% for web mentions receive 10x more AI visibility than bottom quartile.
+Ahrefs' Louise Linehan studied 75,000 brands, filtering for DR >40 and keywords with 800+ monthly searches, analyzing millions of AI Overview responses. Paid factors (ad traffic 0.216, ad cost 0.215) showed weak correlation. 26% of brands had zero AI Overview mentions. Off-site text-based signals dominate entirely. Practical implication: invest in earned media, PR, and thought leadership — not just link building. Source: ahrefs.com/blog/ai-overview-brand-correlation.

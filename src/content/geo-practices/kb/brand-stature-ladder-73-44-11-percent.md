@@ -1,24 +1,24 @@
 ---
-title: 'Brand Stature Ladder: Global Brands 73%, Mid-Market 44%, Niche 11% AI Citation
-  Rate'
-description: Ranqo 100K-prompt study across 100+ brands. 78% of citations go to corporate
-  websites. Best-of listicle is most-cited format (21%). Sentiment flips 6.7x more
-  often than mention.
+title: 'Brand Stature Ladder: 30pp Visibility Gap per Tier'
+description: 'Ranqo: 102K+ prompts, 102 brands, 5 engines. Tier 1 brands in 73% of
+  answers, mid-market 44%, niche 11%. Listicles = 21% of citations. Sentiment flips
+  6.7x more than mention.'
 practice_type: measurement
+hub: measurement
 confidence: verified
-source: {url: 'https://arxiv.org/pdf/2606.20065v1', platform: arxiv, author: Ranqo}
+source: {url: 'https://www.researchgate.net/publication/407287604_Generative_Engine_Optimization_at_Scale_Measuring_Brand_Visibility_Across_AI_Search_Engines',
+  platform: web}
 published: 2026-06-21
-updated: 2026-07-13
+updated: 2026-07-20
 locale: en
-tags: [authority, citation-behavior]
+tags: [authority, citation-behavior, content-structure, ranqo, social-proof, visibility-tiers]
 difficulty: advanced
-related: [brand-mentions-3x-stronger-than-backlinks, brand-entity-mentions-surpass-domain-rating]
+related: []
 conflicts_with: []
 manual: false
-hub: measurement
 ---
 ## Summary
-First large-scale baseline for measuring GEO: 100K+ prompt responses across 100+ brands tracked on Ranqo (March-May 2026). Brand stature is the dominant determinant of day-1 AI visibility. Three tiers: global household names 73%, established mid-market 44%, niche/small brands 11% — ~30pp per step.
+Academic paper analyzing 102K+ prompt responses with Ranqo across 102 brands (Mar–May 2026). Three-tier brand stature ladder: global household names (73% visibility), mid-market (44%), niche (11%) — ~30pp per step. Listicles are the highest-leverage format (21% of citations). Sentiment is 6.7x more volatile than mention rate. ~78% of citations go to corporate websites (Ranqo, Jun 2026).
 
 ## Details
-78% of citations go to corporate websites; YouTube leads non-corporate sources ahead of Reddit, editorial media, Wikipedia. Best-of listicle is the most-cited format (~21% of all citations). Sentiment is unstable: positive/negative framing flips ~6.7x more often than mention/no-mention. Paper proposes seven v1.1 protocols for causal testing of GEO interventions. SMEs, D2C brands, creators, and early-stage startups face the hardest path to AI visibility.
+First large-scale GEO measurement study. Source composition: corporate 78%, YouTube 4.2%, editorial 3.8%, Reddit 3.3%, Wikipedia 2.1%. Day-1 recognition is the headline finding: brand stature determines initial AI visibility more than any optimization. CRM category study (50 prompts, 10 brands, 2,500 responses): Salesforce+HubSpot+Zoho took 51% of all mentions. Engines disagree on brand ordering. Source: researchgate.net publication 407287604.

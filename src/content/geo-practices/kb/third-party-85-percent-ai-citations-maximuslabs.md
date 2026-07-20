@@ -1,24 +1,23 @@
 ---
-title: 85% of AI Citations Come from Third-Party Pages — MaximusLabs 200+ Company
-  Benchmark
-description: Only 11% of companies meet baseline for consistent AI citation. 85% of
-  citations from third-party pages (PR, analyst mentions, reviews). Brand size is
-  a weak predictor.
+title: 83% of AI Citations Come from Third-Party Sources
+description: 'Analyze AI study of 83,670 citations: 82.9% from third-party (reviews,
+  news, Wikipedia). Capterra leads. ChatGPT cites own sites least (13.5%). Brands
+  6.5x more likely cited externally.'
 practice_type: measurement
+hub: measurement
 confidence: verified
-source: {url: 'https://maximuslabs.ai/resources/research-reports/the-ai-visibility-gap',
-  platform: web, author: MaximusLabs}
+source: {url: 'https://www.tryanalyze.ai/blog/ai-overview-brand-correlation', platform: web}
 published: 2026-04-01
-updated: 2026-07-18
+updated: 2026-07-20
 locale: en
-tags: [third-party-citations, off-site-authority, digital-pr]
+tags: [citation-behavior, digital-pr, distribution, off-site-authority, third-party-citations]
 difficulty: intermediate
-related: [third-party-sources-68-percent-citations, earned-media-82-percent-ai-citations-muckrack]
+related: []
 conflicts_with: []
 manual: false
-hub: measurement
 ---
 ## Summary
-MaximusLabs benchmark of 200+ companies: only 11% meet baseline structural requirements for consistent AI citation. 85% of AI citations come from third-party pages — PR, analyst mentions, G2/Capterra reviews, LinkedIn. Brand size is a weak predictor — smaller brands outperform via targeted strategy.
+Analysis of 83,670 AI citations across ChatGPT, Claude, Perplexity (Nov 2025–Jan 2026) found 82.9% come from third-party sources. Claude cites brand sites most (22.2%), ChatGPT least (13.5%). Top 10 brands captured 30% of all mentions (Salesforce alone 6.3%). Distribution to publications can increase citations by 325% vs own-site only (Analyze AI, Apr 2026).
+
 ## Details
-Pages updated within 2 months earn 28% more citations. Every top performer ran a deliberate third-party citation pipeline (PR, analyst relations, community) as a core quarterly deliverable. AI citation rate targets: >50% top tier (vs 11% market average). GEO maturity pattern: initial results in 60-90 days; substantial visibility at 6-12 months. Top performers treat AI Share of Voice as primary metric, not Google Search Console. This finding complements Muck Rack's 84% earned-media share and Erlin's 68% third-party rate — the consistent signal across all studies is that off-site authority drives AI visibility more than owned content.
+Third-party sources include review sites (G2, Capterra, TrustRadius), news, analyst reports, Wikipedia. Muck Rack confirmed 82% from earned media. AirOps: brands 6.5x more likely cited via third-party. Stacker: content distribution to publications increases citations up to 325%. Claude is most likely to cite brand websites directly (22.2%). ChatGPT is least (13.5%). Implication: earned media and review platforms are higher leverage than on-page optimization alone. Source: tryanalyze.ai/blog/ai-overview-brand-correlation.

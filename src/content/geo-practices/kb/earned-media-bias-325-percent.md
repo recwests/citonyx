@@ -1,24 +1,22 @@
 ---
-title: Earned Media Yields ~325% More AI Citations Than Brand-Owned Content
-description: 'Controlled experiments show AI engines cite third-party authoritative
-  sources far more than owned pages — opposite of Google''s balanced mix. KIME: ~325%
-  lift.'
+title: Earned media produces 325% more AI citations than owned content
+description: Stacker (Dec 2025) found distributing content to publications increases
+  AI citations 325% vs owned-only. Brands with 5+ source types achieve 78% AI coverage.
 practice_type: content
-confidence: verified
-source: {url: 'https://arxiv.org/abs/2509.08919', platform: arxiv, author: 'Mahe Chen,
-    Xiaoxuan Wang, Kaiwen Chen, Nick Koudas'}
-published: 2025-09-10
-updated: 2026-07-16
-locale: en
-tags: [digital-pr, authority, citation-bias]
-difficulty: intermediate
-related: [third-party-sources-68-percent-citations, earned-media-82-percent-ai-citations-muckrack]
-conflicts_with: [earned-media-82-percent-ai-citations-muckrack]
-manual: false
 hub: content
+confidence: verified
+source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web}
+published: 2025-09-10
+updated: 2026-07-20
+locale: en
+tags: [authority, citation-bias, digital-pr, citation-behavior]
+difficulty: intermediate
+related: []
+conflicts_with: []
+manual: false
 ---
 ## Summary
-Large-scale controlled experiments find AI answer engines show a systematic, overwhelming bias toward earned/third-party media over brand-owned and social content — a stark contrast to Google's more balanced mix.
+68% of AI citations come from third-party sources, only 32% from brand-owned websites (Erlin 2026, 500+ brands). Reddit discussions give 3.4x lift vs owned content, Wikipedia 2.9x, review platforms 2.6x, YouTube 2.1x. Brands with one source type achieve 18% AI coverage; five or more sources reach 78%.
 
 ## Details
-University of Toronto study quantifies that AI search (ChatGPT, Perplexity, Gemini) preferentially sources from authoritative third-party publishers rather than a brand's own site. AuthorityTech later quantified earned media yields ~325% more citations than equivalent brand-owned content (KIME analysis, 2026) — a different magnitude than the 82% figure from Muck Rack, flagged as conflicting. Implication: GEO must prioritize PR, guest contributions, and third-party placements on domains engines already trust. This signal is volatility-resistant — a Forbes/Reuters mention persists regardless of daily URL reshuffling.
+AuthorityTech documented earned media distribution produces 325% more AI citations than owned content alone (Stacker, Dec 2025). Source diversity compounds: single source type = 18% coverage, two = 35%, three = 58%, five+ = 78%. Reddit Q&A threads account for over 50% of Reddit-sourced AI citations from ~250,000 posts.

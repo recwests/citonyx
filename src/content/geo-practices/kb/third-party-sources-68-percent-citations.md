@@ -1,25 +1,24 @@
 ---
-title: 68% of AI Citations Come from Third-Party Sources — Owned Content Is the Weakest
-  Signal
-description: 'Erlin 500+ brand study: Reddit 3.4x, Wikipedia 2.9x, review platforms
-  2.6x, YouTube 2.1x citation lift vs owned content only. 1 source = 18%, 5+ = 78%.'
-practice_type: content
+title: 83% of AI Citations Come from Third-Party Sources
+description: 'Analyze AI study of 83,670 citations: 82.9% from third-party (reviews,
+  news, Wikipedia). Capterra leads. ChatGPT cites own sites least (13.5%). Brands
+  6.5x more likely cited externally.'
+practice_type: measurement
+hub: content
 confidence: verified
-source: {url: 'https://www.erlin.ai/blog/generative-engine-optimization-trends', platform: web,
-  author: Pragadeesh Natarajan}
+source: {url: 'https://www.tryanalyze.ai/blog/ai-overview-brand-correlation', platform: web}
 published: 2026-05-15
-updated: 2026-07-16
+updated: 2026-07-20
 locale: en
-tags: [digital-pr, reddit, wikipedia, social-proof]
+tags: [digital-pr, reddit, wikipedia, social-proof, citation-behavior, distribution]
 difficulty: intermediate
 related: [brand-mentions-3x-stronger-than-backlinks, perplexity-46-percent-reddit-sources,
   chatgpt-wikipedia-29-percent-dependency]
 conflicts_with: []
 manual: false
-hub: content
 ---
 ## Summary
-Erlin's analysis of 500+ brands found 68% of AI citations come from third-party sources, not owned websites. Source diversity compounds dramatically: brands with 1 source type achieve 18% AI coverage, 2 sources = 35%, 3 = 58%, and 5+ = 78%. Digital PR and reputation management are now core GEO tactics.
+Analysis of 83,670 AI citations across ChatGPT, Claude, Perplexity (Nov 2025–Jan 2026) found 82.9% come from third-party sources. Claude cites brand sites most (22.2%), ChatGPT least (13.5%). Top 10 brands captured 30% of all mentions (Salesforce alone 6.3%). Distribution to publications can increase citations by 325% vs own-site only (Analyze AI, Apr 2026).
 
 ## Details
-Citation lift vs owned content baseline: Reddit discussions 3.4x, Wikipedia presence 2.9x, review platforms (G2, Capterra) 2.6x, YouTube 2.1x. Review platforms are no longer just lead gen channels — they are AI citation nodes that influence purchase decisions in AI answers. For B2B SaaS, Gartner Reviews is disproportionately cited (81.7% of analyst-relations citations, 96% from user reviews not gated reports). Stacker data (Dec 2025) found distributing content to wide publication networks increases AI citations by up to 325%. Peec AI analysis of 30M sources confirms Reddit most-cited domain across all platforms, followed by YouTube, LinkedIn, Wikipedia, Forbes. Freshness requirements vary by platform: Reddit under 6 months, Wikipedia persistent, reviews under 12 months, YouTube persistent. Q&A threads account for >50% of Reddit-sourced AI citations.
+Third-party sources include review sites (G2, Capterra, TrustRadius), news, analyst reports, Wikipedia. Muck Rack confirmed 82% from earned media. AirOps: brands 6.5x more likely cited via third-party. Stacker: content distribution to publications increases citations up to 325%. Claude is most likely to cite brand websites directly (22.2%). ChatGPT is least (13.5%). Implication: earned media and review platforms are higher leverage than on-page optimization alone. Source: tryanalyze.ai/blog/ai-overview-brand-correlation.

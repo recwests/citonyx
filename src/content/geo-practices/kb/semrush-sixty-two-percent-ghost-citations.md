@@ -1,24 +1,24 @@
 ---
-title: 62% of AI Citations Are Ghost Citations — Site Linked, Brand Unnamed
-description: Semrush study found 62% of AI citations link to a site without naming
-  the brand. Ghost citation rate varies by engine and country. Mention rate vs citation
-  rate diverges by 40pp+.
+title: 'Ghost Citations: 62% of AI Citations Don''t Name the Brand'
+description: 'Semrush + Kevin Indig study: 3,981 domain appearances across 14 countries,
+  4 engines. 62% ghost citations (link without brand name). ChatGPT: 87% cite rate,
+  20.7% mention rate.'
 practice_type: measurement
+hub: measurement
 confidence: verified
-source: {url: 'https://www.semrush.com/blog/the-ghost-citations-study', platform: web,
-  author: Margarita Loktionova}
+source: {url: 'https://www.semrush.com/blog/the-ghost-citations-study/', platform: web}
 published: 2026-06-20
-updated: 2026-07-14
+updated: 2026-07-20
 locale: en
-tags: [ghost-citations, digital-pr, citation-quality, attribution, semrush]
+tags: [attribution, digital-pr, citation-quality, citation-behavior, ghost-citations,
+  semrush]
 difficulty: intermediate
-related: [ghost-citations-8-months, ai-attribution-gap-54x-undercount, forty-four-percent-citations-appear-once]
+related: []
 conflicts_with: []
 manual: false
-hub: measurement
 ---
 ## Summary
-Being cited does not equal being mentioned. Semrush partnered with Kevin Indig to find 62% of AI citations are "ghost citations" — the source URL appears but the brand is never named. When a brand appears in Gemini answers, it is named 83.7% of the time but cited only 21.4%. ChatGPT reverses this: 87% citation rate, 20.7% mention rate.
+Study of 3,981 domain appearances across 115 prompts, 14 countries, 4 AI engines found 62% of citations are 'ghost' — site gets a source link but brand is never named. ChatGPT: 87% cite rate vs 20.7% mention rate. Gemini: 83.7% mention rate vs 21.4% cite rate (Semrush, Jun 2026).
 
 ## Details
-Mention rates vary by country: 50% in India and Sweden vs 18-22% in Italy, Brazil, Netherlands. Short conversational queries produce 30-50x more brand mentions than long prompts. For brands, this means tracking both citation (URL presence) and mention (brand name in text) as separate metrics — a site can be heavily cited yet invisible to readers. The gap between citation and mention is largest for ChatGPT (87% cited vs 20.7% mentioned) and narrowest for Gemini (21.4% cited vs 83.7% mentioned).
+Kevin Indig and Semrush analyzed 3,981 domain appearances. 61.7% were ghost citations, 13.2% were both cited and mentioned, 25.1% were mentions without citation. Citation rate (74.9%) was nearly double mention rate (38.3%). Mention rates varied by country from 18% (Italy, Brazil) to 50% (India, Sweden). Short conversational queries produced 30-50x more brand mentions. Comparative content produced 2.4x more mentions than informational. Source: semrush.com/blog/the-ghost-citations-study.
