@@ -1,24 +1,24 @@
 ---
-title: Schema Markup Produces 2.3-3.2x Citation Lift on AI Overviews
-description: 'Kongzilla 2026: 71% of ChatGPT-cited pages include schema, pages with
-  proper markup cited 3.2x more. FAQPage schema delivers 1.8x lift in controlled cross-engine
-  test.'
+title: Schema markup increases AI citations by 3.2x — ClaimReview + Author URL lifts
+  Perplexity 12% to 34%
+description: 'NetWebMedia tested schema across Perplexity, ChatGPT, Claude, AI Overviews.
+  ClaimReview+Author schema: Perplexity citation rate jumped from 12% to 34% in 6
+  weeks. BreadcrumbList helps context-aware ci'
 practice_type: schema-markup
-confidence: verified
-source: {url: 'https://linkbuildingjournal.co.uk/how-google-ai-overviews-choose-cited-pages/',
-  platform: web, author: Perwez Alam}
-published: 2026-07-06
-updated: 2026-07-16
-locale: en
-tags: [ai-overviews, chatgpt, citation-multiplier, kongzilla]
-difficulty: beginner
-related: [73-percent-websites-block-ai-crawlers, schema-markup-near-zero-independent-effect]
-conflicts_with: [schema-markup-near-zero-independent-effect]
-manual: false
 hub: schema-markup
+confidence: verified
+source: {url: 'https://netwebmedia.com/blog/schema-markup-ai-search-2026.html', platform: web}
+published: 2026-07-06
+updated: 2026-07-22
+locale: en
+tags: [ai-overviews, author-schema, chatgpt, citation-multiplier, claimreview, kongzilla]
+difficulty: intermediate
+related: []
+conflicts_with: []
+manual: false
 ---
 ## Summary
-Schema markup is the strongest single page-level predictor of AI Overview citation inclusion — 2.3-3.2x lift for FAQPage, HowTo, Article, and Product schema. Kongzilla: 71% of ChatGPT-cited pages include schema. Zero-cost technical fix with high citation-eligibility impact.
+NetWebMedia tested structured data across Perplexity, ChatGPT Search, Claude, and AI Overviews over 18 months (2025-2026). Businesses with complete schema markup appear 3.2x more often in AI responses. Perplexity shows 47% preference for ClaimReview + Author schema with URL to author bio page. Financial services client: after adding ScholarlyArticle schema (instead of plain Article) with complete author credentials and educational org markup, Perplexity citation rate jumped from 12% to 34% in 6 weeks.
 
 ## Details
-Kongzilla 2026 data: 71% of ChatGPT-cited pages carry structured data, with 3.2x citation multiplier for properly marked pages. SE Ranking 2026: 65% of Google AI Mode citations and 71% of ChatGPT citations carry structured data. Stackmatix: pages with proper schema have 2.5x higher AI citation chance. SearchX 2026 found structured data gives +43% boost to AI visibility. Prompt Architect Q1 2026 controlled panel (2,400 passages): FAQPage schema produces 1.8x lift vs untagged equivalents. BrightEdge 2026: sites with FAQ schema saw 44% increase in AI search citations. The 4-schema foundation: Article, BreadcrumbList, Organization, Person. JSON-LD beats Microdata and RDFa — it is the only format LLMs reliably parse at scale. Schema is one-time deploy with permanent payoff — unlike backlinks, it does not decay. Critical nuance: schema alone does not guarantee citations — it is an existence signal, not a ranking signal. Content-schema alignment matters more than having schema at all. Half-schema sites perform as poorly as no-schema sites.
+AI engines care about different schema types than Google's blue links. Most impactful for AI: NewsArticle/ScholarlyArticle (with datePublished, author, organizationName), Author schema with URL to author page/LinkedIn, ClaimReview (44% citation lift), Organization with sameAs URLs (verified profiles signal trust), BreadcrumbList (context-aware citations). 12 critical schema types for AI search include Article, FAQPage, HowTo, Organization, Product, LocalBusiness, BreadcrumbList, ClaimReview, Review, VideoObject, Event, and Speakable (powers 60% of voice answers). Template-level implementation reduces schema errors by 78%.

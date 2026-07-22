@@ -1,23 +1,24 @@
 ---
-title: 'Google May 2026 AIO Updates: Inline Links, Hover Previews, Community Perspectives'
-description: 'Google announced 5 AI Overviews/AI Mode updates on May 6 2026: inline
-  links, hover previews, Subscribed label, article suggestions, and Community Perspectives.'
-practice_type: basics
+title: 'Google AI Overviews May 2026 update: forum perspectives blocks, Further Exploration,
+  hover-to-preview cards'
+description: 'Tygart Media: May 6, 2026 update added 5 citation changes including
+  forum/social perspectives blocks and Further Exploration sections — net-new citation
+  slots with different optimization rules.'
+practice_type: technical
 confidence: verified
-source: {url: 'https://www.seo-kreativ.de/en/blog/google-ai-overviews-updates-2026-en',
-  platform: web, author: Christian Ott}
+source: {url: 'https://tygartmedia.com/google-ai-overviews-citation-playbook/', platform: web}
 published: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-22
 locale: en
-tags: [ai-overviews, attribution]
-difficulty: beginner
+tags: [ai-overviews, attribution, further-exploration, may-2026-update, perspectives-blocks]
+difficulty: intermediate
 related: []
 conflicts_with: []
 manual: false
 hub: basics
 ---
 ## Summary
-Google's May 6, 2026 AIO updates add inline links next to bullet points, desktop hover previews, a Subscribed label for news, article suggestions, and Community Perspectives. Pew found 8% click rate with AIO vs 15% without (-47%). Cited brands get +120% more organic clicks per impression.
+Google shipped a major AI Overviews update on May 6, 2026. Five changes: (1) Forum/social 'perspectives' blocks embedding Reddit quotes alongside cited URLs, (2) subscription-aware citation highlights (logged-in news outlets flagged, click-through significantly higher), (3) suggested exploration topics at end of AI responses, (4) Further Exploration section with bulleted link cluster + 'Expert Advice' snippet, (5) hover-to-preview link cards showing site name, page summary, metadata before click.
 
 ## Details
-Ahrefs measured 58% lower CTR on top-ranking page for AIO keywords (300K keywords, Dec 2023 vs Dec 2025). Seer Interactive tracked 1.76% to 0.61% CTR decline (-65%), then stabilization to 2.4% in Feb 2026. GSC now has AI Mode + AI Overviews filters under Search Appearance. Seer April 2026: cited brands get +120% more organic clicks per impression. 33.2% of SEOs would block Google once opt-out available.
+Two of five changes (perspectives blocks and Further Exploration) are net-new citation slots with different optimization rules. Perspectives block requires off-site presence on Reddit, WordPress, forums — content on third-party platforms. Further Exploration favors diverse, interlinked resource pages. The other three changes shift which citations users actually click. Practical: for AI Overviews, off-site community presence (Reddit, forums) now directly feeds the AI answer surface, not just brand awareness. Pages need to be structured as both primary citations and exploration resources.

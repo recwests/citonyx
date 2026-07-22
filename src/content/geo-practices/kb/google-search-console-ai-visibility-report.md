@@ -1,24 +1,24 @@
 ---
-title: Google Launched Dedicated AI Visibility Report in Search Console — Impressions
-  Only
-description: Google shipped AI visibility report June 2026 showing impressions (no
-  clicks, no CTR, no query-level data). Google states AIO optimization = SEO for Google
-  specifically.
+title: Google launches GenAI performance reports in Search Console (June 2026)
+description: Google introduced dedicated Generative AI Performance reports in Google
+  Search Console on June 3, 2026. Reports show how often pages appear as citations
+  in AI Overviews and Google AI Mode responses.
 practice_type: measurement
+hub: measurement
 confidence: verified
-source: {url: 'https://zaturn.ai/blog/geo', platform: web, author: Zaturn / Google}
+source: {url: 'https://www.resultfirst.com/blog/seo-updates/google-launches-generative-ai-reports-in-search-console/',
+  platform: web}
 published: 2026-06-25
-updated: 2026-07-06
+updated: 2026-07-22
 locale: en
-tags: [google, attribution, ai-overviews]
+tags: [ai-overviews, attribution, citation-tracking, genai-reports, google, google-search-console]
 difficulty: beginner
-related: [gsc-ai-mode-segmentation, google-ai-overviews-48-percent-ctr-drop-61]
+related: []
 conflicts_with: []
 manual: false
-hub: measurement
 ---
 ## Summary
-On May 15, 2026 Google published standalone guidance for generative AI features optimization. On June 3, Google shipped an AI visibility report in Search Console showing impressions only — no clicks, CTR, or query-level data. Google's position: for Google specifically, optimizing for AI Overviews/AI Mode is just SEO, not a separate discipline.
+On June 3, 2026, Google launched dedicated Generative AI performance reports in Google Search Console. These reports show how websites appear as AI citations in Google AI Overviews and AI Mode responses. For the first time, site owners get direct Google-sourced data on their AI citation performance — how often their pages are cited, which queries trigger citations, and which pages are selected.
 
 ## Details
-Google's guidance states crawlable pages, genuine expertise, clean technical hygiene, and strong backlink/authority profile remain ~80% of the work for both Google rankings and AI citations. Google says no special chunking required, though other platforms reward it independently. SEOClarity found 94% of AI Overviews cite at least one page from organic top 20. Google has said more metrics are coming but hasn't committed to a timeline.
+This is a major shift in citation measurement infrastructure. Previously, GEO tracking required third-party tools (Otterly, Profound, etc.) that sample responses. Google Search Console now provides first-party data on AI citation performance. Practical: check Search Console's 'AI Overviews' and 'AI Mode' performance sections. This democratizes GEO measurement — every site with Search Console can now access baseline AI citation data without paying for specialized tools. Site owners should set this up immediately and establish baseline citation metrics.

@@ -1,23 +1,24 @@
 ---
-title: Brand Web Mentions (0.664) Outperform Backlinks (0.218) for AI Visibility
-description: Ahrefs analyzed 75K brands across millions of AI Overview responses.
-  Branded web mentions show 0.664 correlation vs backlinks 0.218. Top quartile gets
-  10x more AI mentions.
+title: Brand web mentions correlate 3x stronger with AI citations than backlinks do
+description: 'Ahrefs 75K-brand study: web mentions correlate with AI Overview visibility
+  at 0.664 vs backlinks 0.218, Domain Authority 0.18. Top 25% by mentions earn 10x
+  more AI citations. Seer: 75x multiplier with'
 practice_type: measurement
 hub: measurement
 confidence: verified
-source: {url: 'https://ahrefs.com/blog/ai-overview-brand-correlation/', platform: web}
+source: {url: 'https://machinerelations.ai/research/ai-search-citation-factors-2026',
+  platform: web}
 published: 2026-07-19
-updated: 2026-07-20
+updated: 2026-07-22
 locale: en
-tags: [digital-pr, web-mentions, correlation-study]
+tags: [digital-pr, citation-behavior, correlation-study, off-site-signals, web-mentions]
 difficulty: intermediate
 related: []
 conflicts_with: []
 manual: false
 ---
 ## Summary
-Analysis of 75,000 brands using Spearman correlation found branded web mentions (0.664) are the strongest predictor of AI Overview visibility — far ahead of backlinks (0.218). Branded anchors (0.527) and search volume (0.392) follow. Top 25% of brands by web mentions average 169 AI mentions — 10x more than the next quartile (Ahrefs, May 2025).
+Ahrefs' 2025-2026 study of 75,000 brands found branded web mentions correlate with AI Overview visibility at 0.664 (linked or unlinked). Backlinks correlate at just 0.218, Domain Authority at 0.18. LumenGEO 2026 (1,000+ brands) confirmed: brand mentions r=0.664, backlinks r=0.218. Brands in top 25% for web mentions earn 10x more AI citations (ZipTie.dev). Seer Interactive: active third-party signals = 75% appearance in AI answers vs 1% without — a 75x multiplier.
 
 ## Details
-Ahrefs' Louise Linehan studied 75,000 brands, filtering for DR >40 and keywords with 800+ monthly searches, analyzing millions of AI Overview responses. Paid factors (ad traffic 0.216, ad cost 0.215) showed weak correlation. 26% of brands had zero AI Overview mentions. Off-site text-based signals dominate entirely. Practical implication: invest in earned media, PR, and thought leadership — not just link building. Source: ahrefs.com/blog/ai-overview-brand-correlation.
+AI engines trained on large web corpora absorb patterns of which brands are mentioned, referenced, and searched for. Brand search volume correlates 0.334-0.466. Three-tier brand stature: global household names appear in 73% of relevant AI answers, established mid-market in 44%, niche in 11% (~30pp per tier). Brand mentions feed AI through three channels: training-corpus memory, retrieval-time corroboration (RAG), and entity graph linking. SEO now requires a brand monitoring system that tracks mentions across the entire web, not just backlinks.

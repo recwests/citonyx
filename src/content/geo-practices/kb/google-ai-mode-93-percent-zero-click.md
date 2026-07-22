@@ -1,25 +1,25 @@
 ---
-title: 93% of Google AI Mode Sessions End Without a Click
-description: 'Semrush data: 93% zero-click rate for AI Mode. AI Overviews 83% zero-click.
-  Traditional search ~58.5%. Content must earn visibility inside answers, not just
-  rankings.'
-practice_type: measurement
+title: 'Google AI Mode: 1B MAU, query fan-out creates 8-12 parallel sub-queries per
+  question, cited URLs cut 59%'
+description: 'Google I/O 2026: AI Mode crossed 1B MAU. Query fan-out issues 8-12 parallel
+  sub-queries per question. Between Apr-May 2026 AI Mode slashed cited URLs per response
+  by 59% — fewer slots, higher competit'
+practice_type: technical
+hub: measurement
 confidence: verified
-source: {url: 'https://www.goodfirms.co/resources/seo-statistics-ai-search-rankings-zero-click-trends',
-  platform: web, author: GoodFirms}
+source: {url: 'https://guptadeepak.com/geo-compass/guides/google-ai-mode-explained-2026/',
+  platform: web}
 published: 2026-06-10
-updated: 2026-07-16
+updated: 2026-07-22
 locale: en
-tags: [referral-traffic, ai-overviews, click-rates]
-difficulty: beginner
-related: [ai-overviews-48-percent-us-queries-8x-growth, pew-8-percent-click-through-ai-summary,
-  google-ai-overviews-48-percent-ctr-drop-61]
+tags: [ai-overviews, citation-shrink, click-rates, query-fan-out, referral-traffic]
+difficulty: intermediate
+related: []
 conflicts_with: []
 manual: false
-hub: measurement
 ---
 ## Summary
-Google AI Mode launched as a separate search tab (google.com/aimode) alongside Images and Videos. Runs on Gemini 2.5 with deeper reasoning, conversational follow-ups, and product comparisons. At I/O 2026 (May 19), Google announced information agents — Search agents that keep track of information for you — rolling out for AI Ultra subscribers. Semrush reports 93% of AI Mode sessions end without a click. AI Overviews: 83% zero-click. Traditional search: ~58.5%. Strategy must decouple visibility from traffic expectations.
+Google AI Mode reached 1B+ monthly active users by I/O 2026 (May). Query fan-out breaks questions into 8-12+ parallel sub-queries, then synthesizes results into a single cited answer. AI Mode runs 816 active experiments simultaneously, averages 6.5 seconds per response (Discovered Labs). Between late April and May 2026, AI Mode reduced unique URLs cited per response by 59% — roughly 23,000 fewer unique URLs for the same prompts (Adapt Worldwide).
 
 ## Details
-Ahrefs confirms: 58% lower CTR for position 1 when AI Overviews appear. Seer Interactive: 61% organic CTR drop on AIO queries. Pew: 8% click-through with AI summaries vs 15% without. AI Mode differs from AI Overviews: accessed via separate tab, deeper interactive exploration with follow-ups and context retention, best for exploratory tasks, product comparisons, how-tos, and planning. Google's AI Overviews now run on Gemini 3 (Yext, Feb 2026). AI Mode has broader citation distribution than AI Overviews — less winner-takes-most. The trigger rate shift from informational to commercial is the most important AI Overview trend — moving into the buyer's decision journey. The practical implication: brands must optimize for answer presence as a separate KPI from clicks.
+AI Mode and AI Overviews were unified at I/O 2026 into a continuum — user flows from AI Overview to follow-up in AI Mode with context retention. AI Mode uses five backend services including AimThreadsService and streaming endpoint (/async/folif). Citations delivered as HTML fragments with tracking tokens (data-ved). For brands: fewer citation slots means comprehensive topical coverage matters more than any single page. Content must survive query fan-out across multiple subtopics. Google runs 816+ active experiments on AI Mode — what works today may shift tomorrow.
