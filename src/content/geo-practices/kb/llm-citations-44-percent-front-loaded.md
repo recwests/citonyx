@@ -9,9 +9,10 @@ confidence: verified
 source: {url: 'https://searchengineland.com/chatgpt-citations-content-study-469483',
   platform: web}
 published: 2026-03-29
-updated: 2026-07-20
+updated: 2026-07-25
 locale: en
-tags: [citation-position, content-structure, structure]
+tags: [citation-position, content-positioning, content-structure, page-structure,
+  structure]
 difficulty: beginner
 related: []
 conflicts_with: []

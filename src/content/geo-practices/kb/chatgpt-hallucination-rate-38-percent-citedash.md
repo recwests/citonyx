@@ -3,18 +3,19 @@ title: ChatGPT Academic Citation Hallucination Rate ~38% — Highest Among Engin
 description: CiteDash benchmark of ~3,400 citations found ChatGPT hallucinates ~38%
   of academic references. Claude ~24%, Gemini ~19%, Perplexity ~8%.
 practice_type: measurement
+hub: measurement
 confidence: verified
 source: {url: 'https://citedash.ai/blog/citation-hallucination-benchmark-2026', platform: web,
   author: CiteDash}
 published: 2026-06-15
-updated: 2026-07-12
+updated: 2026-07-25
 locale: en
-tags: [hallucination, accuracy, chatgpt]
+tags: [academic-tools, accuracy, ai-error-monitoring-67-days-unmonitored, chatgpt,
+  cross-model, fabrication-rate]
 difficulty: advanced
 related: [ai-error-monitoring-67-days-unmonitored, credibility-paradox-ai-visibility-not-trust]
 conflicts_with: []
 manual: false
-hub: measurement
 ---
 ## Summary
 CiteDash's 2026 benchmark of ~3,400 academic citations found ChatGPT hallucinates ~38% of references — inventing plausible DOIs and real authors on fabricated papers. Claude hallucinates ~24%, Gemini ~19%, and Perplexity only ~8%, making Perplexity the most citation-accurate engine.

@@ -8,9 +8,9 @@ confidence: verified
 source: {url: 'https://discoveredlabs.com/blog/what-is-geo-generative-engine-optimization-explained-2026',
   platform: web}
 published: 2026-07-19
-updated: 2026-07-19
+updated: 2026-07-25
 locale: en
-tags: [roi, referral-traffic, b2b]
+tags: [referral-traffic, b2b, b2b-benchmark, roi, traffic-quality]
 difficulty: beginner
 related: []
 conflicts_with: []
@@ -23,3 +23,5 @@ Microsoft Clarity research revealed AI referral traffic converts at 1.66% versus
 ## Details
 
 B2B buyers using AI assistants provide detailed context about tech stack, budget, and pain points upfront. AI synthesizes personalized recommendations. Prospects arriving from AI citations are past awareness stage and actively building shortlists. Average annual GEO investment $78K vs $560K+ for equivalent traditional content team (86% cost reduction).
+
+Despite higher conversion quality, AI search platforms still account for less than 1% of total referral traffic, with Google commanding over 90% (BrightEdge 2026). The economics are fundamentally different — GEO is a brand visibility play with high-intent, low-volume traffic. For B2B SaaS, AI-referred leads show 40% higher lifetime value per HubSpot 2026.

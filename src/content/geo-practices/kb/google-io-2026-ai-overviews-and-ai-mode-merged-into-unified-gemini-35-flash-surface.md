@@ -8,9 +8,9 @@ hub: technical
 confidence: verified
 source: {url: 'https://presenc.ai/research/google-io-2026-ai-overviews-update', platform: web}
 published: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-25
 locale: en
-tags: [ai-overviews, gemini-3-5-flash, unified-surface]
+tags: [ai-overviews, gemini-3-5-flash, unified-surface, url-overlap]
 difficulty: intermediate
 related: []
 conflicts_with: []

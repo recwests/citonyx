@@ -1,23 +1,27 @@
 ---
 title: Zero-Click Searches Reach 68.01% in 2026, Up From 60.45% in 2024
-description: Zero-click search rate rose from 60.45% (2024) to 68.01% (2026) — a 12.5%
-  growth in two years. AI Overviews now appear on 20%+ of queries, cutting organic
-  CTR by ~60% when present.
+description: Zero-click rate rose from 60.45% (2024) to 68.01% (2026). AI Overviews
+  ~83% zero-click, AI Mode ~93% zero-click. Traditional Google ~60%.
 practice_type: measurement
 hub: measurement
 confidence: verified
 source: {url: 'https://www.staycitable.com/blog/state-of-ai-citations-2026/', platform: web}
 published: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-25
 locale: en
-tags: [referral-traffic, ai-overviews, ctr-decline, organic-traffic, search-behavior]
+tags: [ai-overviews, ctr-decline, organic-traffic, referral-traffic, search-behavior,
+  sparktoro]
 difficulty: beginner
 related: []
 conflicts_with: []
 manual: false
 ---
 ## Summary
-Zero-click searches rose from 60.45% (2024) to 68.01% (2026) per SparkToro/Similarweb — a 23-percentage-point climb since 2016. AI Overviews now appear on 20%+ of all queries and cut organic click-through rates by roughly 60% when present. Structural feature engineering demonstrated 17.3% citation-rate improvement across 6 engines.
+Zero-click searches rose from 60.45% (2024) to 68.01% (2026) per SparkToro/Similarweb — a 23-percentage-point climb since 2016. By surface (2026): Traditional Google ~60%, Google with AI Overviews ~83%, AI Mode ~93%. AI Overviews appear on 20%+ of all queries and cut organic CTR by ~60% when present. Cited sites inside Overviews see 35% more organic clicks than standard position-one results.
 
 ## Details
-Stay Citable's 'State of AI Citations 2026' report synthesizes 2025-2026 data into 14 headline findings. Google hit 68.01% zero-click in early 2026. Global household brands appear in 73% of relevant AI answers; mid-market and regional brands operate at significantly lower visibility. The report provides a 90-day measurement protocol across ChatGPT, Perplexity, Gemini, Claude, Grok, and Copilot (50-100 prompts per audit).
+- SparkToro June 2026: 68% of US Google searches end without click — only 276 of every 1,000 reach the open web.
+- Growth Memo: AI Mode 93% zero-click rate. Similarweb: AI Overviews ~83% zero-click.
+- Digital Bloom: 61% organic CTR decline on AIO-triggering queries (1.76% to 0.61%).
+- ISB/Carnegie Mellon randomized experiment: 38% organic click decline from AIO presence.
+- The offset: being cited inside an AI Overview produces more traffic than ranking below it — citation = traffic, even if reduced.

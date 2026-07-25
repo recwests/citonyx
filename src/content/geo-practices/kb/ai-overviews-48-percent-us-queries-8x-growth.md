@@ -3,18 +3,19 @@ title: AI Overviews Now Appear on 48-50% of Google US Queries — 8x Growth in 1
 description: 'Omnibound/BrightEdge: AIOs expanded from 6.49% (Jan 2025) to ~48-50%
   (Feb 2026). Healthcare 88%, Education 83% trigger rates. 2 billion monthly users.'
 practice_type: measurement
+hub: measurement
 confidence: verified
 source: {url: 'https://axis-intelligence.com/google-ai-overviews-statistics/', platform: web,
   author: Omnibound / BrightEdge / Axis Intelligence}
 published: 2026-06-25
-updated: 2026-07-13
+updated: 2026-07-25
 locale: en
-tags: [ai-overviews, google, market-data]
+tags: [ai-overviews, ai-overviews-86-percent-us-searches, citation-behavior, google,
+  market-data, organic-top-10]
 difficulty: beginner
 related: [ai-overviews-86-percent-us-searches, google-ai-overviews-48-percent-ctr-drop-61]
 conflicts_with: []
 manual: false
-hub: measurement
 ---
 ## Summary
 Google AI Overviews now appear on ~48-55% of all US search queries — up from 6.49% in January 2025, an ~8x expansion in 15 months. Google confirmed "roughly 50% of US queries" in February 2026. Healthcare triggers at 88%, Education 83%, Entertainment 37%.

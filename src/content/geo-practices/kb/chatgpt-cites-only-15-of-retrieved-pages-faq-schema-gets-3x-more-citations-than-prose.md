@@ -9,9 +9,9 @@ hub: content
 confidence: verified
 source: {url: 'https://subscribepr.com/blog/how-to-get-cited-by-chatgpt/', platform: web}
 published: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-25
 locale: en
-tags: [chatgpt, citation-rate, schema-markup, content-structure, content-strategy]
+tags: [bing-overlap, chatgpt, chatgpt-search, citation-filter, citation-rate, content-strategy]
 difficulty: beginner
 related: []
 conflicts_with: []

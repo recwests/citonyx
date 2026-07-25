@@ -3,18 +3,19 @@ title: Grok Sources 45% of Citations from X/Twitter — Verified Accounts 2.8x M
 description: Presenc.ai analysis found Grok cites X/Twitter for 45% of sources — 34%
   organic posts, 11% verified-only. Posts with 5,000+ likes get 4.6x citation probability.
 practice_type: basics
+hub: basics
 confidence: verified
 source: {url: 'https://presenc.ai/research/grok-citation-patterns-2026', platform: web,
   author: Presenc.ai}
 published: 2026-07-01
-updated: 2026-07-12
+updated: 2026-07-25
 locale: en
-tags: [grok, x-twitter, citation-behavior, social-proof]
+tags: [citation-behavior, claude-chatgpt-8-percent-source-overlap, engagement-weighting,
+  grok, platform-specific, social-proof]
 difficulty: intermediate
 related: [platform-citation-divergence-breadth-depth, claude-chatgpt-8-percent-source-overlap]
 conflicts_with: []
 manual: false
-hub: basics
 ---
 ## Summary
 Grok displays a unique citation pattern: 45% of sources come from X/Twitter (34% organic posts, 11% verified-only). Verified accounts receive a 2.8x citation multiplier. Posts with 5,000+ likes are 4.6x more likely to be cited; 50,000+ likes achieve 11.2x probability. Average 4.7 sources per answer.

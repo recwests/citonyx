@@ -9,9 +9,10 @@ confidence: verified
 source: {url: 'https://www.semrush.com/news/463141-semrush-releases-expanded-2026-ai-visibility-index-analyzing-126-million-ai-search-prompts/',
   platform: web}
 published: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-25
 locale: en
-tags: [visibility-index, multi-model, semrush, citation-gap]
+tags: [brand-consistency, citation-gap, multi-model, semrush, visibility-fragmentation,
+  visibility-index]
 difficulty: intermediate
 related: []
 conflicts_with: []

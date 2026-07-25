@@ -9,10 +9,9 @@ hub: measurement
 confidence: verified
 source: {url: 'https://turboaudit.ai/generative-engine-optimization', platform: web}
 published: 2026-07-20
-updated: 2026-07-22
+updated: 2026-07-25
 locale: en
-tags: [30-day-cycle, ahrefs, citation-multiplier, content-structure, convertmate,
-  depth]
+tags: [30-day-cycle, ahrefs, citation-multiplier, content-structure, convertmate]
 difficulty: beginner
 related: []
 conflicts_with: []
