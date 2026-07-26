@@ -8,9 +8,9 @@ confidence: verified
 source: {url: 'https://betteraisearch.com/tactics/brand-entity-ai-search', platform: web,
   author: 'Louise Linehan, Xibeijia Guan'}
 published: 2026-07-06
-updated: 2026-07-25
+updated: 2026-07-26
 locale: en
-tags: [ahrefs, ai-visibility, digital-pr, citation-factors, correlation-study]
+tags: [ahrefs, ai-overviews, ai-visibility, digital-pr, citation-factors, correlation-study]
 difficulty: intermediate
 related: []
 conflicts_with: []

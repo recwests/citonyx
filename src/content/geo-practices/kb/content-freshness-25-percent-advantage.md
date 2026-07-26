@@ -8,9 +8,9 @@ confidence: verified
 source: {url: 'https://www.digitalapplied.com/blog/ai-search-citation-ranking-factors-2026-data-study',
   platform: web, author: Digital Applied}
 published: 2026-07-06
-updated: 2026-07-25
+updated: 2026-07-26
 locale: en
-tags: [17m-urls, ahrefs, chatgpt, citation-age, citation-factors, content-freshness]
+tags: [17m-urls, ahrefs, chatgpt, citation-age, citation-factors, citation-study]
 difficulty: beginner
 related: []
 conflicts_with: []

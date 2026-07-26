@@ -7,10 +7,9 @@ hub: measurement
 confidence: verified
 source: {url: 'https://primores.org/wiki/seo/geo-aeo-benchmarks-2026', platform: web}
 published: 2026-07-19
-updated: 2026-07-25
+updated: 2026-07-26
 locale: en
-tags: [75m-users, ai-overviews, citation-share, gemini-3-5-flash, referral-traffic,
-  unified-search]
+tags: [75m-users, market-data, ai-overviews, citation-share, gemini-3-5-flash, google]
 difficulty: intermediate
 related: []
 conflicts_with: []
@@ -25,3 +24,11 @@ Google AI Mode launched to general availability in May 2026 and reached 75M dail
 AI Mode compresses source selection dramatically. Traditional Google offered 10+ organic results; AI Mode cites 1-3 sources. Citation share replaces rank tracking. Average session time is 49 seconds (77 sec for brand comparison queries). Brands must track 'Share of Model' instead of traditional SERP position.
 
 The merge means brands previously tracking AI Overviews and AI Mode separately now monitor a single citation pool. However, URL overlap between the two former surfaces is only 10-14%, meaning the unified surface still draws from distinct sources. AI Mode's fan-out technique (up to 16 sub-queries per search) pulls from deeper index positions. 88% of AI Mode citations come from outside organic top 10. The 92-94% zero-click rate means brand citation (being named in the answer) is the primary value — not click-through.
+
+- Google I/O 2026: AI Overviews 2.5B MAU, AI Mode surpassed 1B MAU.
+- AI Mode grew from ~0.25% to >1% of Google sessions in 2 months (4x).
+- Zero-click rate 92-94% in AI Mode.
+- AI Mode expanded to 180+ countries and 35+ languages.
+- Google launched embedded link carousels in AI Mode (desktop, mobile coming).
+- Google launched 'Web Guide' — AI feature organizing results into topic groups.
+- Practical takeaway: AI Mode is growing fast with near-total zero-click behavior. Citation presence is the only performance driver — optimize for extractability, not click-through.
