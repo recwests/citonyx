@@ -1,22 +1,27 @@
 ---
-title: AI Crawlers Operate on ~2s Hard Timeout — Slow Servers Lose Citations
-description: AI systems fetch pages with ~2s hard timeout. HTTP 499 errors indicate
-  AI client closed connection before server responded. TTFB under 1s critical.
+title: AI Crawlers Operate on ~2s Hard Timeout — FCP Under 0.4s Correlates with 6.7
+  AI Citations
+description: 'Two converging findings: AI systems fetch pages with ~2s timeout (HTTP
+  499), and SE Ranking finds pages with FCP under 0.4s average 6.7 citations vs 2.1
+  for slower pages — a 3.2x gap.'
 practice_type: technical
+hub: technical
 confidence: verified
 source: {url: 'https://moz.com/blog/strategies-to-dominate-ai-search', platform: web,
   author: Michael King}
-published: 2026-06-30
-updated: 2026-07-13
+published: 2026-06-03
+updated: 2026-07-27
 locale: en
-tags: [page-speed, ttfb, http-499, ai-crawler-timeout, edge-caching]
+tags: [page-speed, ttfb, fcp, http-499, ai-crawler-timeout, ai-citations]
 difficulty: intermediate
 related: [js-rendered-content-77-percent-fail, ai-crawlers-activity-40-percent-2026]
 conflicts_with: []
 manual: false
-hub: technical
 ---
 ## Summary
-AI systems like ChatGPT and Perplexity fetch pages in real-time with a ~2s hard timeout — Google already has content cached. HTTP 499 errors in log files indicate AI client closed connection before server responded. TTFB under 1s is critical for content to reach AI's context window.
+
+Two converging speed-citation findings. AI crawlers operate on a ~2s hard timeout — HTTP 499 errors indicate the AI client closed connection before server responded. Separately, SE Ranking 2026 research shows pages with First Contentful Paint under 0.4s average 6.7 AI citations vs 2.1 for slower pages — a 3.2x gap. Page speed is a measurable AI citation factor.
+
 ## Details
-Unlike Googlebot which crawls on its own schedule, AI engines fetch pages on-demand when generating answers. This means server response time directly determines whether your content gets into the AI's context window. A server taking >2s to respond results in HTTP 499 errors (client closed connection) — the AI moves to the next source. Edge caching via CDN is the fastest fix. Page speed optimization (CDN, caching, minimized TTFB) directly impacts whether your content is available for AI citation.
+
+Unlike Googlebot, AI engines fetch pages on-demand when generating answers. Server response >2s → HTTP 499 → AI moves to next source. Edge caching via CDN is the fastest fix. SE Ranking's FCP study builds on this: FCP under 0.4s is a more aggressive threshold than Core Web Vitals recommend, suggesting AI retrieval is more speed-sensitive than traditional crawlers. Practical: optimize FCP aggressively for key pages — minimize render-blocking resources, use CDN caching, preload critical CSS. A server taking >2s or with FCP >0.4s both reduce the probability of content entering the AI's context window.
