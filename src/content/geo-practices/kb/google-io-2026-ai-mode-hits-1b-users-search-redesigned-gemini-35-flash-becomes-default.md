@@ -1,25 +1,28 @@
 ---
 title: 'Google I/O 2026: AI Mode hits 1B users, Search redesigned, Gemini 3.5 Flash
   becomes default'
-description: 'Google I/O (May 19, 2026): AI Mode crossed 1B monthly users in 12 months.
-  Search box redesigned for first time in 25 years. Gemini 3.5 Flash became default
-  model. Information agents launched 24/7.'
-practice_type: tools
+description: Google merged AI Overviews and AI Mode at I/O 2026; AI Mode passed 1B
+  MAU and Search revenue grew 17% YoY in Q2 2026. Gemini 3.5 Flash became default
+  model.
+practice_type: measurement
 hub: tools
 confidence: verified
-source: {url: 'https://blog.google/products-and-platforms/products/search/search-io-2026/',
+source: {url: 'https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026',
   platform: web}
 published: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-01
 locale: en
-tags: [google-io, ai-overviews, gemini-3-5, search-redesign, agents]
+tags: [google-io, ai-overviews, gemini]
 difficulty: beginner
 related: []
 conflicts_with: []
 manual: false
 ---
 ## Summary
-At I/O 2026, Google announced: AI Mode surpassed 1B monthly users with queries doubling every quarter; Gemini 3.5 Flash became default in AI Mode globally; Search box redesigned for multimodal input (text, images, files, videos, Chrome tabs); 24/7 information agents launched; Personal Intelligence expanded to 200 countries/98 languages. Query lengths tripled, follow-up searches up 40% monthly.
+At I/O 2026 Google merged AI Overviews and AI Mode into one Search experience; AI Mode passed 1 billion monthly active users and Gemini 3.5 Flash became the default model. Google says AI features in Search now send billions of clicks to websites weekly, and Search revenue grew 17% YoY in Q2 2026 — AI answers are expanding query volume, not just replacing links.
 
 ## Details
-The Search box redesign is the first major overhaul in 25+ years, now accepting multimodal input. AI Mode is no longer opt-in — it powers the entire Google Search experience. Google framed this as 'best of a search engine with best of AI.' AI Overviews now reach 2.5B monthly users. 16% of AI Mode searches are multimodal. Planning queries grow 80% faster than overall AI Search usage. The update marks the end of '10 blue links' as default for many query types.
+- Sundar Pichai (Q2 2026 call, July 22 2026): one seamless search experience across AI Overviews and AI Mode; AI Mode expanded globally since October 2025.
+- Google reports AI Mode response costs at their lowest since launch and ~22B tokens/minute through model APIs.
+- Search box redesigned for multimodal input; AI Overviews reach 2.5B monthly users; 16% of AI Mode searches are multimodal; planning queries grow 80% faster than overall usage.
+- Caveat: Google's billions-of-clicks-weekly claim carries no denominator or query-level data (Search Console still reports impressions, not clicks, for AI features), while independent studies measure CTR declines instead — both can be true if total clicks rise as per-result CTR falls.

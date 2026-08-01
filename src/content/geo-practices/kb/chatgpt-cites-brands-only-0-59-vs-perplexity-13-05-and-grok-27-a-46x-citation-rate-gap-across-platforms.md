@@ -1,32 +1,28 @@
 ---
 title: ChatGPT cites brands only 0.59% vs Perplexity 13.05% and Grok 27% — a 46x citation
   rate gap across platforms
-description: A 2026 study of 34,234 AI responses found ChatGPT cites brands 0.59%
-  of the time, Perplexity 13.05%, and Grok 27%. Brand citation rate varies 46x depending
-  on platform.
+description: 'Superlines'' 34,234-response study: Grok has the highest citation rate
+  (27.01%) and brand visibility (8.47%) vs ChatGPT 0.59%/0.14% — a ~615x citation-volume
+  gap across platforms.'
 practice_type: measurement
 hub: measurement
-confidence: verified
-source: {url: 'https://www.leapd.ai/blog/ai-visibility/how-chatgpt-google-ai-overviews-and-perplexity-source-information-in-2026',
-  platform: web}
+confidence: experimental
+source: {url: 'https://www.superlines.io/articles/ai-search-statistics', platform: web}
 published: 2026-07-25
-updated: 2026-07-25
+updated: 2026-08-01
 locale: en
-tags: [citation-rate, multi-model, digital-pr]
-difficulty: beginner
+tags: [grok, citation-rate, multi-model]
+difficulty: intermediate
 related: []
 conflicts_with: [perplexity-brand-citation-rate-is-22x-higher-than-chatgpt]
 manual: false
 ---
 ## Summary
-
-Analysis of 34,234 AI responses revealed a 46x brand citation rate gap: ChatGPT 0.59%, Perplexity 13.05%, Grok 27%. Perplexity averages 8.2 citations per response (3.4x ChatGPT) and cites content published in the last 30 days at an 82% rate. A brand invisible on one platform is often well-cited on another — platform-specific citation strategy is non-negotiable.
+Analysis of 34,234 AI responses (Superlines, Jan-Feb 2026) revealed Grok has the highest citation rate at 27.01% and brand visibility of 8.47%, versus ChatGPT at 0.59% and 0.14% — a ~615x citation-volume gap across platforms. Brands invisible in Grok are missing its highest citing surface even while winning elsewhere.
 
 ## Details
-
-- 34,234 AI responses analyzed (Leapd, April 2026): ChatGPT cites brands 0.59%, Perplexity 13.05%, Grok 27%.
-- Perplexity averages 8.2 citations per response vs ChatGPT's ~2.5 — structural opportunity: more slots per answer (Everything-PR, June 2026).
-- Perplexity cites content published within last 30 days at 82% rate vs ChatGPT's reliance on training data (Seer Interactive, June 2025).
-- Visible year signals in titles improve Perplexity citation rates by ~30%.
-- Only 11% domain overlap between ChatGPT and Perplexity citations (Profound, 680M citations, March 2026).
-- Practical takeaway: run separate audits per platform. A brand ranking well on ChatGPT can be invisible on Perplexity and vice versa.
+- Other platforms: Perplexity 13.05% citation rate, Gemini 6.38%, Google AI Overview 2.11%.
+- Perplexity averages 8.2 citations per response vs ChatGPT's ~2.5 and cites content published within 30 days at an 82% rate.
+- Implication: single-platform tracking misses 40-60% of brand mentions (Alignify) — measure and optimize per engine.
+- Grok has X-native citation behavior (117M MAU, OrganikPI) — X presence and fresh content feed it.
+- Caveat: Grok's volume doesn't equal traffic; Perplexity and AI search convert higher per citation.

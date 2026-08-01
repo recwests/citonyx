@@ -1,25 +1,29 @@
 ---
 title: Case Study Benchmark 2026 — 2,300% AI Traffic Growth, 90-180 Day Inflection
   Point
-description: 'Presenc AI compiled documented GEO case studies: manufacturing 2,300%,
-  auto parts 200% monthly, fintech Ramp 7x, WordPress +148%, legal 312%.'
+description: 'Documented GEO case studies: Go Fish Digital +43% AI traffic and 25x
+  conversions, Presenc AI manufacturing 2,300%, CreativeWeb/Farringdons +140%, SteelSeries
+  23x, HubSpot 3x leads.'
 practice_type: case-studies
-confidence: verified
-source: {url: 'https://broworks.net', platform: web, author: Presenc AI / Broworks
-    / Go Fish Digital}
+hub: case-studies
+confidence: experimental
+source: {url: 'https://gofishdigital.com/blog/generative-engine-optimization-geo-case-study-driving-leads',
+  platform: web, author: Presenc AI / Broworks / Go Fish Digital}
 published: 2026-04-23
-updated: 2026-07-16
+updated: 2026-08-01
 locale: en
-tags: [case-study, measurement]
-difficulty: beginner
+tags: [case-study, measurement, roi, prompt-mapping]
+difficulty: intermediate
 related: [fulton-35x-ai-revenue-case-study, snack-brand-75-percent-citation-rate,
   87-percent-citation-rate-reviews-pr]
 conflicts_with: []
 manual: false
-hub: case-studies
 ---
 ## Summary
-Accumulated GEO case studies: Go Fish Digital (3-month: +43% AI traffic, +83.33% conversions, 25x higher conversion rate vs traditional), Presenc AI (manufacturing 2,300%, fintech 7x, legal 312%), Broworks (10% total organic from LLMs, 27% SQL conversion), Fuel Online (+140% high-intent demo requests), HubSpot (3x lead conversion from AEO via question-led H2s + 40-60 word answers), Hashmeta (+50% zero-click visibility for e-commerce), CreativeWeb (140% increase AI search traffic, 62% rise in AI mentions for Farringdons).
+Accumulated GEO case studies: Go Fish Digital (3-month: +43% AI traffic, +83.33% conversions, 25x higher conversion rate vs traditional), Presenc AI (manufacturing 2,300%, fintech 7x, legal 312%), Broworks (10% total organic from LLMs, 27% SQL conversion), Fuel Online (+140% high-intent demo requests), HubSpot (3x lead conversion from AEO), Hashmeta (+50% zero-click visibility), CreativeWeb (Farringdons: 140% increase AI traffic, 62% rise in AI mentions).
 
 ## Details
-Common pattern across all successful case studies: answer-first content, question-led H2s, 40-60 word direct answers, structured supporting content, schema markup, third-party coverage. Go Fish Digital: prompt mapping, benchmarking via GA4 regex filters + log-file analysis, fact-dense content, query fan-out expansion. HubSpot pattern: question-led H2 → 40-60 word direct answer → expanded context → FAQPage schema. Hashmeta e-commerce client: +50% zero-click visibility via product pages rebuilt around explicit question intent. SaaS brand: 20+ free-trial signups/month from ChatGPT via single canonical comparison page per competitor. CreativeWeb: 140% increase in LLM/AI search traffic, 62% rise in AI mentions for Farringdons. Minimum viable AEO block: direct answer in first 60 words, FAQPage schema, llms.txt manifest entry. Most brands see first GEO results in 3-6 months.
+- Common patterns: answer-first content, question-led H2s, 40-60 word direct answers, structured supporting content, schema markup, third-party coverage.
+- Go Fish Digital method: prompt mapping around buyer research journeys; benchmarking with GA4 regex filters (chatgpt.com|gpt|copilot) and log-file analysis; 5-8 cornerstone assets engineered for information gain, statistical grounding and external authority confirmation; fan-out pages for adjacent prompts. The 25x conversion multiplier reflects users pre-qualified by AI answers before the click.
+- Farringdons (CreativeWeb): build entities not just pages; engineer trust signals (named experts, editorial standards, cited sources); optimize for answers not rankings; design distribution for citations; measure AI visibility not just traffic. Common failure: treating GEO as 'SEO with AI keywords' yields zero results.
+- Caveats: agency-published, small n and short windows; Go Fish already had strong authority, so results may not generalize to newer brands; results compound when GEO is a continuous system rather than a one-off campaign.

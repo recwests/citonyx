@@ -1,29 +1,28 @@
 ---
 title: Google AI Overviews cut publisher CTR by 39.8% — causal evidence from randomized
   field experiment
-description: A randomized field experiment on 1,065 desktop Chrome users found AI
-  Overviews caused a 39.8% drop in outbound organic clicks and 34.5% rise in zero-click
-  searches.
+description: A randomized field experiment on 1,065 US users (68,089 searches) found
+  AI Overviews caused a 39.8% drop in outbound clicks. Recovered clicks were not lower
+  quality.
 practice_type: measurement
 hub: measurement
 confidence: verified
-source: {url: 'https://getairefs.com/blog/google-ai-overviews-statistics-june-2026',
-  platform: web}
+source: {url: 'https://keywordseverywhere.com/news/ai-overviews', platform: web}
 published: 2026-07-24
-updated: 2026-07-24
+updated: 2026-08-01
 locale: en
-tags: [ctr-impact, ai-overviews, research, referral-traffic]
+tags: [referral-traffic, randomized-study, click-impact, ai-overviews]
 difficulty: intermediate
 related: []
 conflicts_with: []
 manual: false
 ---
 ## Summary
-A randomized field experiment (SSRN, April 2026, 1,065 users) provided the first causal evidence that Google AI Overviews reduce outbound organic clicks by 39.8% and increase zero-click searches by 34.5%. Multiple independent correlational studies confirm the direction: Pew found a 47% relative decline, Ahrefs documented a 58% average CTR drop for top-ranking pages by May 2026, and Seer Interactive tracked a 61% fall in organic CTR on Overviews-triggering queries.
+The first randomized field experiment on AI Overviews (Indian School of Business and Carnegie Mellon, SSRN, 1,065 US users, 68,089 searches) found hiding the overview raised outbound clicks from 0.37 to 0.62 per search — a 39.8% reduction attributable to AI Overviews. Recovered clicks were not lower quality.
 
 ## Details
-- First causal (not correlational) evidence: randomized field experiment with 1,065 desktop Chrome users, published on SSRN April 2026, revised June 17 2026.
-- Pew Research Center: 68,000 real search sessions — users clicked a result 8% of the time with AI Overviews vs 15% without (47% relative decline).
-- Ahrefs (May 2026, 300,000 keywords): top-ranking organic result lost 58% of expected clicks when an AI Overview appeared.
-- Seer Interactive (42 orgs, 25M+ impressions): organic CTR fell 61% (1.76% → 0.61%), paid CTR fell 68%.
-- Caveat: Google's Search revenue still grew 19% YoY to $60.4B in Q1 2026 — the overall pie expands even as per-result clicks shrink.
+- Causal design via browser extension; the effect concentrates on informational queries (~0.26 extra clicks per search); navigational and transactional estimates were inconclusive.
+- Caveats: working paper, small self-selected panel, not peer-reviewed.
+- Related 2026 signals: Ahrefs — top result CTR drops ~58% when an AI Overview is present; BrightEdge measured AIO on ~48% of tracked queries (Healthcare 88%); Pew — users click a result on 8% of visits with an AI summary vs 15% without; SparkToro — 68% of US searches end without a click.
+- New surfaces add citation slots: the Top Stories carousel (US mobile, July 17) and labeled Preferred Sources (2x click-through, 345,000+ sources selected) are direct publisher levers.
+- Compiled in the Keywords Everywhere AI Overviews tracker, updated July 27 2026.
