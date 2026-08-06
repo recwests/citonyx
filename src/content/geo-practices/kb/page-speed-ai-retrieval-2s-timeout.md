@@ -10,7 +10,7 @@ confidence: verified
 source: {url: 'https://moz.com/blog/strategies-to-dominate-ai-search', platform: web,
   author: Michael King}
 published: 2026-06-03
-updated: 2026-07-27
+updated: 2026-08-05
 locale: en
 tags: [page-speed, ttfb, fcp, http-499, ai-crawler-timeout, ai-citations]
 difficulty: intermediate
@@ -24,4 +24,4 @@ Two converging speed-citation findings. AI crawlers operate on a ~2s hard timeou
 
 ## Details
 
-Unlike Googlebot, AI engines fetch pages on-demand when generating answers. Server response >2s → HTTP 499 → AI moves to next source. Edge caching via CDN is the fastest fix. SE Ranking's FCP study builds on this: FCP under 0.4s is a more aggressive threshold than Core Web Vitals recommend, suggesting AI retrieval is more speed-sensitive than traditional crawlers. Practical: optimize FCP aggressively for key pages — minimize render-blocking resources, use CDN caching, preload critical CSS. A server taking >2s or with FCP >0.4s both reduce the probability of content entering the AI's context window.
+Unlike Googlebot, AI engines fetch pages on-demand when generating answers. Server response >2s → HTTP 499 → AI moves to next source. Edge caching via CDN is the fastest fix. SE Ranking's FCP study builds on this: FCP under 0.4s is a more aggressive threshold than Core Web Vitals recommend, suggesting AI retrieval is more speed-sensitive than traditional crawlers. Indig and Gauge analysis of 1.2 million AI responses confirmed speed as a binary gate. SparkToro study of 2,961 queries found ChatGPT overwhelmingly cites pages loading under 2 seconds. Practical: optimize FCP aggressively for key pages — minimize render-blocking resources, use CDN caching, preload critical CSS. A server taking >2s or with FCP >0.4s both reduce the probability of content entering the AI's context window.
