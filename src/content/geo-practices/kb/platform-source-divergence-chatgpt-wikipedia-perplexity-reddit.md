@@ -9,7 +9,7 @@ confidence: verified
 source: {url: 'https://www.digitalapplied.com/blog/ai-search-agents-google-perplexity-chatgpt',
   platform: web, author: Digital Applied Team}
 published: 2026-05-10
-updated: 2026-07-16
+updated: 2026-08-08
 locale: en
 tags: [multi-model, citation-behavior, multi-platform-geo, wikipedia, reddit, youtube]
 difficulty: intermediate
@@ -22,4 +22,4 @@ hub: content
 Profound analysis of 680M citations reveals radical platform divergence: ChatGPT leans on Wikipedia (47.9% of top-10 citations), Perplexity on Reddit (46.7%), Google AI Overviews on YouTube (23.3%). Only ~11% of domains cited by both ChatGPT and Perplexity. Superlines data (March 2026): same brand can see citation volumes differ by 615x between Grok and Claude. Multi-platform GEO is mandatory — testing one platform does not predict another.
 
 ## Details
-Perplexity's citation mix is shifting: Tinuiti Q1 2026 report shows Reddit citations in Perplexity declined from 46.7% to 24% as the platform diversifies sources. ChatGPT's Wikipedia dependence creates structural risk — any Wikipedia content shift directly impacts ChatGPT citations. Google AI Overviews shows most balanced distribution: Reddit 21%, YouTube 18.8%, LinkedIn 13%. For B2B SaaS, Gartner Reviews captures 81.7% of analyst citations, with 96% from user reviews not gated reports. Strategy: build platform-specific content tailored to each engine's source preferences rather than a unified approach.
+Perplexity's citation mix is shifting: Tinuiti Q1 2026 report shows Reddit citations in Perplexity declined from 46.7% to 24% as the platform diversifies sources. ChatGPT's Wikipedia dependence creates structural risk — any Wikipedia content shift directly impacts ChatGPT citations. Google AI Overviews shows most balanced distribution: Reddit 21%, YouTube 18.8%, LinkedIn 13%. For B2B SaaS, Gartner Reviews captures 81.7% of analyst citations, with 96% from user reviews not gated reports. Otterly.ai 2026 data (via Vrid.ai) corroborates the split: Wikipedia appears in roughly 48% of ChatGPT's cited sources, Reddit in about 47% of Perplexity's, and content published in the last 30 days is cited about 3.2x more on Perplexity — so for ChatGPT target comparative/evaluative queries with docs and comparison pages, for Perplexity maintain community presence and a monthly refresh cadence. ChatGPT fresh-chat first queries default to reference sources; narrowing follow-ups (budget, use-case) pull it into comparison pages, so test with multi-turn prompts. Strategy: build platform-specific content tailored to each engine's source preferences rather than a unified approach.

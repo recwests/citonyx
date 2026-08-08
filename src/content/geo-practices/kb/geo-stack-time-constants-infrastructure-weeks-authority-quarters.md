@@ -10,7 +10,7 @@ confidence: verified
 source: {url: 'https://automatenexus.com/blog/how-we-got-cited-by-ai-geo-case-study',
   platform: web, author: Erin Moore}
 published: 2026-08-01
-updated: 2026-08-05
+updated: 2026-08-08
 locale: en
 tags: [geo-timeline, authority-building, case-study, measurement]
 difficulty: intermediate
@@ -25,4 +25,4 @@ GEO is a stack with different time constants. On-site infrastructure (schema, ll
 
 ## Details
 
-AutomateNexus ran a transparent GEO case study on their own site. Baseline measurement revealed they were not named in ChatGPT or Perplexity for their money query. The infrastructure layer — schema, llms.txt, Bing IndexNow — was in place within days. The retrieval layer showed early movement within weeks. The authority layer — earning off-site reviews, roundup placement, and mentions in trusted sources — is measured in quarters. Key lesson: start the slowest-moving lever (authority) first since it takes longest to pay off. The infrastructure is fast but won't get you named alone. Most competitors skip the patient authority work, which is where the real competitive advantage lies.
+AutomateNexus ran a transparent GEO case study on their own site. Baseline measurement revealed they were not named in ChatGPT or Perplexity for their money query, with every cited source a roundup listicle. The infrastructure layer — schema, llms.txt, Bing IndexNow, sitemaps — was in place within days. The retrieval layer showed early movement within weeks. The authority layer — earning off-site reviews, roundup placement, and mentions in trusted sources — is measured in quarters. Key lesson: start the slowest-moving lever (authority) first since it takes longest to pay off. Use IndexNow into Bing since ChatGPT search reads Bing's index. The infrastructure is fast but won't get you named alone. Most competitors skip the patient authority work, which is where the real competitive advantage lies. Warning: providers promising AI-answer dominance in weeks are ignoring the authority layer. Caveat: single-site n=1 case study in an infrastructure-vendor context.
