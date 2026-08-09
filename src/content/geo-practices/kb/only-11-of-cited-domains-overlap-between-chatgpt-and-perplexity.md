@@ -5,11 +5,11 @@ description: Across 100,000 identical prompts, only 11% of cited domains appear 
   AI-cited URLs are 25.7% fresher than organic.
 practice_type: content
 hub: measurement
-confidence: verified
+confidence: experimental
 source: {url: 'https://leadsnow.ai/chatgpt-vs-perplexity-citation-overlap-per-engine-aeo',
   platform: web}
 published: 2026-07-19
-updated: 2026-08-08
+updated: 2026-08-09
 locale: en
 tags: [per-engine-aeo, freshness, citation-behavior]
 difficulty: intermediate
@@ -25,5 +25,7 @@ Across 100,000 identical prompts, only 11.0% of cited domains appear in both Cha
 - Separately, an Ahrefs-style analysis found only about 12% of URLs cited by AI engines overlap a domain's own Google top-10 ranking — roughly 88% of AI citations come from pages that do not rank on page one; a page can rank #1 on Google and still be absent from its own AI Overview.
 - AirOps found only 15% of 548,534 pages ChatGPT retrieved were actually cited; 32.9% of cited pages surfaced only via fan-out sub-queries with zero recorded search volume — map follow-up questions, not just the head term.
 - Freshness appetite differs: ChatGPT cites URLs ~458 days newer than organic, Perplexity ~250, AI Overviews roughly the same age as organic.
+- Otterly.ai 2026 AI Citations Report (six studies, Aug 2024–Apr 2026): Wikipedia ~48% of ChatGPT's cited sources, Reddit ~47% of Perplexity's, Reddit ~21% in Google AI Overviews. Brand-name citation rates: AI Overviews ~60%, ChatGPT ~45%, Perplexity ~29%.
+- ChatGPT-specific: target comparative/evaluative queries and put the answer in the first two sentences; definitional queries default to reference sources.
 - Playbook: for ChatGPT, publish authoritative, extraction-ready answers covering sub-questions plus earned mentions on the editorial shortlist; for Perplexity, build genuine community presence; for AI Overviews, classic rankings plus quotable one-to-two-sentence claims and video.
 - Superlines documented up to 615x citation volume variance for the same brand between platforms; brands tracking only one platform miss most of their citation landscape.

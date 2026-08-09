@@ -9,7 +9,7 @@ confidence: verified
 source: {url: 'https://www.radiantelephant.com/geo-tactics-what-works-evidence-based-research-review/',
   platform: web, author: BrightEdge / Seer Interactive / Radiant Elephant (synthesis)}
 published: 2026-02-15
-updated: 2026-07-16
+updated: 2026-08-09
 locale: en
 tags: [ai-overviews, referral-traffic, market-data]
 difficulty: beginner
@@ -24,4 +24,4 @@ BrightEdge (Feb 2026): AI Overviews on 48% of tracked queries (up from ~13% earl
 Being cited in AI Overviews is now the primary CTR preservation strategy. Not being cited is the real penalty. The Ahrefs finding (only 37.9% of cited URLs rank in Google top 10 as of March 2026) means traditional top-10 ranking offers diminishing protection. Being cited inside the AI answer is the new top-10. Query fan-out mechanism (8-16 sub-queries per query) naturally diversifies sources, making comprehensive topic coverage a structural advantage.
 
 ## Details
-Ahrefs confirms: 58% lower CTR for position 1 when AI Overviews appear. Ahrefs: organic CTR dropped 34.5% for position-1. Pew: 8% click-through with AI summaries vs 15% without. BrightEdge 2026: Best [product] queries show AIO presence at 83% — up from 5% in 2025. AI Mode and AI Overviews cite same URLs only 13% of time (Ahrefs 2026). 77% of cited domains appear in only one surface (Victorious SEO). Being cited in AIO increases adjacent organic CTR by 35% — channels compound, not compete. 83% of AI Overview citations come from pages outside organic top 10. The practical implication: brands must optimize for answer presence as a separate KPI from clicks.
+Ahrefs' 2026 longitudinal study of 300,000 keywords split between AIO-triggering and non-triggering queries: position-one CTR on AIO keywords dropped to 1.6% in December 2025, a 58% reduction against baseline (earlier 2025 data showed 34.5%). Seer Interactive measured a 61% organic CTR drop across 3,119 informational queries. But Seer's April 2026 study of 53 brands and 5.47M queries found being cited in an AI Overview is associated with ~120% more organic clicks per impression. Pew: 8% click-through with AI summaries vs 15% without. BrightEdge 2026: Best [product] queries show AIO presence at 83% — up from 5% in 2025. AI Mode and AI Overviews cite same URLs only 13% of time (Ahrefs 2026). 77% of cited domains appear in only one surface (Victorious SEO). Being cited in AIO increases adjacent organic CTR by 35% — channels compound, not compete. 83% of AI Overview citations come from pages outside organic top 10. The practical implication: citation inside the answer matters more than the organic position below it; brands must optimize for answer presence as a separate KPI from clicks.

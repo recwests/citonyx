@@ -4,10 +4,10 @@ title: Original Datasets Are the Highest-ROI GEO Tactic — AI Cannot Synthesize
 description: 'Ranked ROI: original datasets (★★★★★), comparison tables (★★★★★), first-party
   research (★★★★★). AI can''t generate data it doesn''t have access to.'
 practice_type: basics
-confidence: verified
+confidence: experimental
 source: {url: 'https://www.airops.com', platform: web, author: AirOps / ChatGPT synthesis}
 published: 2026-07-01
-updated: 2026-07-08
+updated: 2026-08-09
 locale: en
 tags: [roi, original-research]
 difficulty: beginner
@@ -21,3 +21,5 @@ GEO tactics ranked by ROI in July 2026: original datasets (★★★★★), com
 
 ## Details
 The tiered ROI model is based on synthesis of multiple 2026 studies. Original datasets provide the highest citation moat because AI engines cannot fabricate or synthesize proprietary data — they must cite it. Comparison tables offer easy extraction and structured citation. First-party research (surveys, benchmarks, experiments) provides a natural citation reason. Entity mentions and expert authorship build trust signals but require prior authority. Schema markup helps parsing but has limited standalone effect (Ahrefs 1,885-page controlled study: -4.6% to +2.2% lift). llms.txt is confirmed experimental with minimal citation impact. Generic blog posts adding no unique data are lowest ROI.
+
+**Case in point (Exploding Topics, 2026):** a proprietary AI trust-gap study was cited three times within the first three headings of a ChatGPT answer. The study earned roughly 3,800 Google AI Overview keywords worth over $28,000 in attributed traffic, despite only ~325 direct AI-referral visits (~4% of study traffic) — because only ~8% of users click source links (Pew Research), true citation exposure was estimated ~10x higher. Publish surveys, platform data and benchmarks nobody else has; primary-source data compounds citation authority across a long tail of queries.

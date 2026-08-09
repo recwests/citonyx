@@ -8,7 +8,7 @@ practice_type: technical
 confidence: verified
 source: {url: 'https://tygartmedia.com/google-ai-overviews-citation-playbook/', platform: web}
 published: 2026-07-06
-updated: 2026-07-22
+updated: 2026-08-09
 locale: en
 tags: [ai-overviews, attribution, further-exploration, may-2026-update, perspectives-blocks]
 difficulty: intermediate
@@ -21,4 +21,4 @@ hub: basics
 Google shipped a major AI Overviews update on May 6, 2026. Five changes: (1) Forum/social 'perspectives' blocks embedding Reddit quotes alongside cited URLs, (2) subscription-aware citation highlights (logged-in news outlets flagged, click-through significantly higher), (3) suggested exploration topics at end of AI responses, (4) Further Exploration section with bulleted link cluster + 'Expert Advice' snippet, (5) hover-to-preview link cards showing site name, page summary, metadata before click.
 
 ## Details
-Two of five changes (perspectives blocks and Further Exploration) are net-new citation slots with different optimization rules. Perspectives block requires off-site presence on Reddit, WordPress, forums — content on third-party platforms. Further Exploration favors diverse, interlinked resource pages. The other three changes shift which citations users actually click. Practical: for AI Overviews, off-site community presence (Reddit, forums) now directly feeds the AI answer surface, not just brand awareness. Pages need to be structured as both primary citations and exploration resources.
+Two of five changes (perspectives blocks and Further Exploration) are net-new citation slots with different optimization rules. Perspectives block requires off-site presence on Reddit, WordPress, forums — content on third-party platforms. Google's official announcement (May 2026) frames the module as "perspectives from public online discussions, social media and other firsthand sources": quoted answers from Reddit threads, WordPress blogs and forums shown with the creator handle and a direct link to the source post, with inline citation placement near claims. Further Exploration favors diverse, interlinked resource pages. The other three changes shift which citations users actually click. Practical: for AI Overviews, off-site community presence (Reddit, forums) now directly feeds the AI answer surface, not just brand awareness. Ensure founders, product experts and brand representatives participate authentically in the communities where buyers congregate — firsthand-experience signals now map to a dedicated citation slot. Pages need to be structured as both primary citations and exploration resources.

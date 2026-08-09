@@ -9,7 +9,7 @@ confidence: experimental
 source: {url: 'https://idukki.io/blog/which-ai-engine-cites-you-1200-prompt-study',
   platform: web}
 published: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-09
 locale: en
 tags: [verified-reviews, review-json-ld, review-depth, citation-factors]
 difficulty: advanced
@@ -22,6 +22,8 @@ In a 90-day, 1,200-prompt panel across ChatGPT, Claude, Perplexity, Gemini and C
 
 ## Details
 - Checklist: count server-rendered verified reviews on top-10 product pages (zero is the first fix), add Review JSON-LD with datePublished, author, reviewRating and reviewBody, and validate.
+- Server-rendering matters: pages loading the first five reviews client-side showed 60–70% lower citation rates than identical server-rendered pages.
 - Domain authority was weakly correlated for Perplexity — structure and review freshness mattered more than link equity there.
 - In beauty and personal care, agents quoted ingredient lists and dermatologist-cited claims; brands with cited evidence were named nearly 2x more.
+- Adjacent signal: only 21% of cited brands had an llms.txt file vs under 8% of the full pool — agent-readiness investing correlates with citations.
 - Caveat: panel observations, not controlled experiments. Source: Idukki (2026).

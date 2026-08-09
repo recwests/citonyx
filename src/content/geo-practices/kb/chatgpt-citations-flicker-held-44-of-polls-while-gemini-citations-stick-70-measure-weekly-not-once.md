@@ -9,7 +9,7 @@ confidence: experimental
 source: {url: 'https://leadsnow.ai/we-ran-5051-ai-citation-polls-first-party-data-2026',
   platform: web}
 published: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-09
 locale: en
 tags: [citation-persistence, flicker, polling-cadence]
 difficulty: advanced
@@ -22,6 +22,8 @@ Citation persistence — the number almost nobody measures — requires repeated
 
 ## Details
 - Practical implications: measure weekly because any single check, positive or negative, is noise, and a monthly screenshot of ChatGPT visibility is not evidence.
+- Ever-cited rates across 5,051 polls / 77 days: DuckDuckGo 66% of 68 prompts, Gemini 39%, ChatGPT 18% — ChatGPT is the hardest door to hold.
+- 74% of the 47 ever-cited prompts were cited by exactly one engine; only 5 prompts were cited by all three. Every prompt ChatGPT cited, Gemini had also cited, suggesting Gemini is the gateway engine.
 - The rig: 451 ChatGPT polls and 411 Gemini polls every 2 days, 19 May to 3 Aug 2026.
 - Mirrors Minty Orange's three-check loss rule and other findings of high answer instability.
 - Caveat: one domain, one niche. Source: Leads Now AI (Aug 2026).
