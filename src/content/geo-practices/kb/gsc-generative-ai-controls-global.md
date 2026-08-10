@@ -8,7 +8,7 @@ confidence: verified
 source: {url: 'https://www.searchenginejournal.com/what-opting-out-of-googles-ai-search-features-means-now/584321/',
   platform: web, author: Barry Schwartz}
 published: 2026-07-09
-updated: 2026-08-08
+updated: 2026-08-10
 locale: en
 tags: [google-search-console, ai-controls, generative-ai, publisher-control, ai-overviews]
 difficulty: beginner
@@ -24,5 +24,7 @@ Google is rolling out a Search Console setting — the 'Search generative AI con
 - The toggle is not a ranking signal: opting out doesn't change classic Search results, only the AI surfaces; changes take effect within days of the June 17 2026 CMA respect date.
 - It applies only to Google Search; Gemini apps, ChatGPT, Claude, Perplexity and Atlas are unaffected.
 - Initial rollout was to a subset of UK site owners; page-level controls are due by March 2027 under the CMA timeline.
-- For most brands the default (included) is right — opting out forfeits AI impressions and traffic with no other benefit.
-- Initially launched a month ago only for .co.uk sites; rollout confirmed via multiple practitioners: Jamie Indigo, John McAlpin, Kuldeep Sharma, Zakk Glista, Jennifer Otto. Google also recently expanded AI performance reports beyond UK alongside this rollout.
+- For most brands the default (included) is right — opting out forfeits AI impressions and traffic with no other benefit; AI Overviews citations can increase click probability and let you own the narrative.
+- The Search Generative AI performance report in GSC is now becoming widely available beyond the UK, showing AI Overviews and AI Mode impressions, URL appearances and country/device/date breakdowns.
+- Google also rolled out GSC platform reporting for X, Instagram, YouTube and TikTok globally in late July 2026.
+- Initially launched a month ago only for .co.uk sites; rollout confirmed via multiple practitioners: Jamie Indigo, John McAlpin, Kuldeep Sharma, Zakk Glista, Jennifer Otto.

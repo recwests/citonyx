@@ -6,7 +6,7 @@ practice_type: content
 confidence: experimental
 source: {url: 'https://www.meltwater.com/en/blog/how-to-increase-ai-citations', platform: web}
 published: 2026-08-09
-updated: 2026-08-09
+updated: 2026-08-10
 locale: en
 tags: [content-structure, direct-answers, capability-pages, relaunch]
 difficulty: intermediate
@@ -21,5 +21,6 @@ After an eight-year SEO foundation, Meltwater relaunched its site in May 2026 an
 ## Details
 - Homepage citations rose from 9,040 to 21,931 (LLM rank 57 to 15); Social Listening added +11,691 and the Platform page about +10,000 citations.
 - Six content signals: self-contained sections; lead every section with the direct answer; cite specific stats with sources; keep terminology consistent across pages; visible FAQ content (not just FAQ schema); track per-engine.
-- A handful of pages declined, so track page-by-page and platform-by-platform rather than a single blended number.
-- Vendor case study: numbers are self-reported via Meltwater's GenAI Lens, not independently audited.
+- A handful of pages declined even as the site gained, so track page-by-page and platform-by-platform rather than a single blended number.
+- Supports Pew Research data: users click a traditional result on 8% of pages with an AI summary vs 15% without.
+- Single vendor case study: numbers are self-reported via Meltwater's GenAI Lens and not independently audited — treat as directional rather than proof; the content patterns match several independent studies.

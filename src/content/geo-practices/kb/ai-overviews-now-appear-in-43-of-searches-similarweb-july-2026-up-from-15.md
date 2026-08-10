@@ -1,15 +1,16 @@
 ---
-title: AI Overviews now appear in 43% of searches (Similarweb July 2026), up from
-  15%
-description: Google AI Overviews prevalence surged from 15% to 43% YoY; AI Mode visits
-  rose to 279M/month. ChatGPT citations still just 6.8% of US desktop queries.
+title: AI Overviews now appear in 43-48% of searches (Similarweb/Semrush July 2026),
+  up from ~15%
+description: Google AI Overviews prevalence surged from ~15% to 43% YoY (Similarweb);
+  Semrush measures ~48%. AI Mode visits rose to 279M/month. Informational queries
+  run higher.
 practice_type: measurement
 hub: measurement
 confidence: verified
-source: {url: 'https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows',
+source: {url: 'https://www.seroundtable.com/half-google-searches-ai-overviews-41780.html',
   platform: web}
 published: 2026-07-28
-updated: 2026-08-06
+updated: 2026-08-10
 locale: en
 tags: [ai-overviews, market-data, prevalence]
 difficulty: beginner
@@ -18,12 +19,11 @@ conflicts_with: []
 manual: false
 ---
 ## Summary
-Google AI Overviews appear in ~43% of US searches as of July 2026 (Similarweb), nearly triple last year's 15%; AI Mode visits rose from 126M (June 2025) to 279M (May 2026). ChatGPT citations appear in only 6.8% of US desktop queries despite strong growth.
+Similarweb data shows AI Overviews appear on about 43% of Google queries, while Semrush measures about 48% — up from roughly 15% and 13-20% respectively a year ago (Search Engine Roundtable, Jul 30 2026). Coverage runs higher on informational queries, and AI Mode visits are growing faster than Overviews. AI Mode visits reached 279M/month.
 
 ## Details
-- Publishers keep losing referral traffic: AI responses with citations rose fivefold in a year.
-- ChatGPT US desktop referrals jumped after the May 7 2026 search update — visits landing on webpages more than doubled, from 25% in March 2026 to ~60% by May 30.
-- Industries like travel, retail and sports generate cited responses more often.
-- Average search length is climbing as short keyword queries give way to longer conversational prompts; Google is becoming a destination rather than a gateway, pressuring publishers on referral traffic. Optimize for AI-citation visibility on Google's own surfaces in addition to classic blue-link rankings.
-- France was the last major market to get AIO on July 22, 2026; 2.5B+ monthly users across 200+ countries; the top organic result loses 58% of clicks when an AIO is present (Ahrefs).
-- Caveat: Similarweb's 43% is a clickstream panel without published methodology, far above keyword-panel trackers (Semrush ~16%, Conductor 25%) — treat it as one panel among several rather than a universal prevalence figure.
+- Similarweb's growth curve went from ~15% to 43% of queries in a short period; Semrush tracks ~48% (Barry Schwartz, Search Engine Roundtable, Jul 30 2026); a year earlier the figures were ~13-20%, so AI Overview presence has roughly tripled.
+- Category matters: informational queries show AI Overviews even more often, meaning zero-click pressure concentrates where content sites compete.
+- AI Mode (conversational) visit growth is outpacing AI Overviews, pointing at a shift from embedded answers to a separate answer surface.
+- ChatGPT citations appear in only 6.8% of US desktop queries despite strong growth; average search length keeps climbing as keywords give way to conversational prompts.
+- Caveat on methodology: Similarweb's 43% is a clickstream panel without published methodology; Semrush figures have been reported as ~16% (keyword-panel) and ~48% (prevalence) in different windows — treat the 43-48% range as a solid 2026 baseline while noting vendor disagreement (TechCrunch Jul 27 2026; SERoundtable Jul 30 2026).
