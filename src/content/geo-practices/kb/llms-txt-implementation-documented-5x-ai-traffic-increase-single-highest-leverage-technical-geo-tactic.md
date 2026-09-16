@@ -13,7 +13,7 @@ locale: en
 tags: [llmstxt, crawler-access, technical-geo]
 difficulty: intermediate
 related: []
-conflicts_with: []
+conflicts_with: [b2b-saas-llms-txt-adoption-423-percent-no-citation-correlation]
 manual: false
 hub: technical
 ---

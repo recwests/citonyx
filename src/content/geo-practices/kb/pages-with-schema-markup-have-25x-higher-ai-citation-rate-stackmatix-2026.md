@@ -13,7 +13,7 @@ locale: en
 tags: [howto]
 difficulty: intermediate
 related: []
-conflicts_with: []
+conflicts_with: [schema-markup-near-zero-effect-ai-citations-ahrefs]
 manual: false
 ---
 ## Summary
