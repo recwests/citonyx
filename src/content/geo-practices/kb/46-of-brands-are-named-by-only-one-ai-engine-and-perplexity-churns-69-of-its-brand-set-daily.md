@@ -7,9 +7,10 @@ description: 'Pineprompt''s Oct 2026 benchmark (18,792 answers, 7 engines): only
 practice_type: measurement
 hub: measurement
 confidence: experimental
-source: {url: 'https://pineprompt.com/research/ai-search-visibility-benchmark', platform: web}
+source: {url: 'https://pineprompt.com/research/ai-search-visibility-benchmark', platform: web,
+  author: Pineprompt}
 published: 2026-10-19
-updated: 2026-10-19
+updated: 2026-10-20
 locale: en
 tags: [brand-overlap, per-engine, citation-decay]
 difficulty: advanced
@@ -22,7 +23,9 @@ Pineprompt ran 200 non-branded buyer prompts daily for 14 days (30 Sept to 13 Oc
 
 ## Details
 - Day-to-day brand churn is highest on Perplexity at 68.8% and lowest on ChatGPT at 36%; Claude 41-46%, Copilot 51.3%, Gemini 55.8%.
-- Perplexity cited a source in 100% of its answers at 10.1 citations each; Gemini was lowest with 90.7% of answers carrying citations.
+- Perplexity cited a source in 100% of its answers at 10.1 citations each; Google AI Overviews averaged 7.1 and Claude 4.4 to 5.0, while Gemini was lowest with 90.7% of answers carrying citations.
 - Google AI Overview and ChatGPT share 45.6% of named brands (Jaccard), and AI Mode and ChatGPT 45.2%.
 - Category medians vary little: 91.2% to 98% of answers carry citations and 6.5 to 7.3 citations per answer.
+- Single-day snapshots overstate volatility on Perplexity and Copilot, so trend lines need at least a week of runs before a change is treated as real.
+- The underlying CSV is published under CC BY 4.0, so the benchmark can be re-run rather than taken on trust.
 - Limits: a fixed US-English prompt set over 14 days; answers are non-deterministic, so figures describe a window, not a permanent engine property.

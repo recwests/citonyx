@@ -1,24 +1,28 @@
 ---
-title: 'Retrieval-first GEO: citation rewrites can degrade retrieval and reranking'
-description: July 2026 critical survey of 45 GEO studies and SAGEO Arena preprint
-  found that optimizing for citations can actually impair retrieval. Technical accessibility
-  must come before citation optimization.
+title: 'Retrieval-first GEO: citation rewrites can cut a page''s retrieval by 16%'
+description: A survey pooling 45 GEO studies found citation-oriented rewrites can
+  cut a page's retrieval inside generative answers by about 16%. Fix crawlability
+  before optimizing for quotes.
 practice_type: technical
-confidence: verified
+confidence: conflicting
 source: {url: 'https://neuraladx.com/why-ai-citation-optimisation-can-backfire-retrieval-first/',
   platform: web}
 published: 2026-07-01
-updated: 2026-07-01
+updated: 2026-10-20
 locale: en
 tags: [retrieval-first, citation-degradation, pipeline, sageo, survey]
 difficulty: advanced
-related: []
+related: [geo-rewrites-work-only-when-the-target-entity-is-specified]
 conflicts_with: []
 manual: false
 hub: technical
 ---
 ## Summary
-A July 2026 critical survey of 45 GEO studies and the SAGEO Arena preprint found that citation-oriented content rewrites can impair retrieval and reranking. Optimizing for quotability may alter semantic focus and relevance signals, degrading end-to-end performance.
+A July 2026 critical survey of 45 GEO studies and the SAGEO Arena preprint found that citation-oriented content rewrites can impair retrieval and reranking, with one aggregation putting the loss of a page's retrieval inside generative answers at roughly 16%. Optimizing for quotability may alter semantic focus and relevance signals, degrading end-to-end performance rather than improving it.
 
 ## Details
-The July 2026 GEO survey describes a pipeline spanning search activation, crawling/indexing, retrieval, reranking/context allocation, citation, prominence, and user behavior. Its key caution: 'citation-oriented rewrites can impair retrieval.' The SAGEO Arena preprint (Feb 2026) evaluates optimization in a fuller retrieval-reranking-generation setting and reports existing approaches can degrade performance. Google states its generative features use RAG to retrieve relevant pages from its Search index — a page must be indexed and eligible. OpenAI says OAI-SearchBot access is needed for full content inclusion. Perplexity says blocking PerplexityBot prevents full text indexing. Only 38% of Google AI Overview citations came from top-10 organic results in early 2026 (down from 76% a year earlier). Strategy: prioritize crawlability, indexation, and semantic relevance first; apply citation optimization only after technical accessibility is established.
+The July 2026 GEO survey describes a pipeline spanning search activation, crawling/indexing, retrieval, reranking/context allocation, citation, prominence, and user behavior. Its key caution: citation-oriented rewrites can impair retrieval. The SAGEO Arena preprint (Feb 2026) evaluates optimization in a fuller retrieval-reranking-generation setting and reports existing approaches can degrade performance. The 16% figure, reported via PPC Land, is framed as structural: the more completely an engine synthesises a page into its own answer, the less it needs to retrieve that page again.
+
+- Caveats: heterogeneous methods and engines pooled into one average, no vertical breakdown, no engine vendor confirmation, and a third-party aggregation rather than a direct measurement. Hence the conflicting confidence.
+- Platform rules still apply: Google's generative features retrieve from the Search index, OpenAI needs OAI-SearchBot access for full content inclusion, and Perplexity says blocking PerplexityBot prevents full-text indexing.
+- Strategy: prioritise crawlability, indexation and semantic relevance first, track retrieval per URL before and after any rewrite, and apply citation optimization only after technical accessibility is established.

@@ -6,9 +6,10 @@ description: All 1,100 URLs in the widely repeated 4.2x citation study had alrea
 practice_type: measurement
 hub: measurement
 confidence: conflicting
-source: {url: 'https://geoparrot.com/geo-quality-score-citation-experiment', platform: web}
+source: {url: 'https://geoparrot.com/geo-quality-score-citation-experiment', platform: web,
+  author: GeoParrot Team}
 published: 2026-10-18
-updated: 2026-10-18
+updated: 2026-10-20
 locale: en
 tags: [content-strategy, control-group, claim-check]
 difficulty: advanced
@@ -21,3 +22,7 @@ A widely repeated claim that pages scoring high on a 16-pillar content-quality c
 
 ## Details
 The critique: GEO-16 only measured whether an already-cited page was later cited by a second engine, not whether hygiene predicts citation at all. The new design pulls the top-10 organic results per query as the candidate pool, labels each page cited or not, and scores eight page-readable checks: visible date, named author, JSON-LD, FAQ block, answer in the first 150 words, an original statistic, a list or table, and descriptive subheadings.
+
+- Locked predictions: the cited-versus-uncited hygiene gap stays under 0.15, and authority tier beats page hygiene at a 2x citation rate.
+- Limits: ten topics, roughly 20-40 citations, observational, one logged-out snapshot on ChatGPT and Google AI Mode.
+- The pre-registration itself is the deliverable: the method is reusable before results land, and the study should not be cited as proof of a 4.2x effect either way.
